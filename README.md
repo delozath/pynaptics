@@ -12,11 +12,11 @@ Use cases include:
 - Data preprocessing pipelines
 - API clients (e.g., PubMed, ISBN lookup)
 
-#- Batch file handling and automation
+# - Batch file handling and automation
 
-#- Metadata extraction
+# - Metadata extraction
 
-#- Rapid prototyping for peripheral systems
+# - Rapid prototyping for peripheral systems
 
 ---
 
