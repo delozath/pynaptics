@@ -1,0 +1,2712 @@
+[
+  {
+    "DOI": "10.59298/rijpp/2024/321417",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Clinical Decision Support Systems (CDSS) are integral tools in modern healthcare, designed to assist clinicians by providing patient-specific recommendations based on vast medical data and knowledge. The advent of Artificial Intelligence (AI) has significantly enhanced CDSS, enabling sophisticated predictive analytics, early detection of complications, and personalized interventions. AI techniques like machine learning, natural language processing, and deep learning play crucial roles in refining CDSS functionality. However, challenges such as data quality, AI transparency, and clinician trust hinder widespread adoption. Future trends focus on improving AI integration in CDSS through better data representation, automation, and ethical considerations. This paper investigates the fundamental aspects of CDSS, the applications of AI in healthcare, and the challenges and future directions for AI-driven CDSS. Keywords: Clinical Decision Support Systems (CDSS), Artificial Intelligence (AI), Machine Learning, Healthcare Technology, Predictive Analytics.",
+    "author": [
+      {
+        "family": "Nyiramana",
+        "given": "Mukamurera P."
+      }
+    ],
+    "container-title": "RESEARCH INVENTION JOURNAL OF PUBLIC HEALTH AND PHARMACY",
+    "id": "Nyiramana2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "The Role of Artificial Intelligence in Clinical Decision Support Systems",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1097/ms9.0000000000003302",
+    "PMCID": "12140760",
+    "PMID": "40486596",
+    "abstract": "Lung cancer remains the leading cause of cancer-related deaths globally, often detected in advanced stages with poor prognosis. While surgical resection is the mainstay of curative treatment, early detection remains a significant challenge. Advances in personalized medicine, including genomic profiling and low-dose CT scans, have led to more tailored therapies, offering improved outcomes. Integrating artificial intelligence (AI) and machine learning (ML) into oncology has the potential to revolutionize lung cancer management by enhancing early detection, improving treatment precision, and supporting surgical decision-making. AI-driven technologies, such as deep learning algorithms and predictive models, have demonstrated effectiveness in identifying lung nodules, predicting immunotherapy response, and reducing diagnostic errors. Additionally, AI-powered robotics have contributed to improved surgical precision and better patient recovery. However, the widespread adoption of AI in clinical practice faces challenges, including data standardization, ethical concerns, and the need for robust validation. This study explores the question: How can AI and ML optimize thoracic surgical oncology by improving early detection, enhancing surgical precision, and enabling personalized care? This review highlights the significance of AI and ML in thoracic surgery and oncology, discussing their current applications, limitations, and future potential to advance personalized cancer care and improve patient outcomes.",
+    "author": [
+      {
+        "family": "Ijlal",
+        "given": "Aisha"
+      },
+      {
+        "family": "Mumtaz",
+        "given": "Hassan"
+      },
+      {
+        "family": "Hassan",
+        "given": "Syed Muhammad"
+      },
+      {
+        "family": "Mustafa",
+        "given": "Qurat-Ul-Ain"
+      },
+      {
+        "family": "Khalil",
+        "given": "Ahmed Bazil Bin"
+      },
+      {
+        "family": "Ali",
+        "given": "Umna"
+      },
+      {
+        "family": "Tanveer",
+        "given": "Zainab Khayal"
+      },
+      {
+        "family": "Sajjad",
+        "given": "Laiba"
+      }
+    ],
+    "container-title": "Annals of Medicine and Surgery",
+    "id": "Ijlal2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Bridging surgical oncology and personalized medicine: the role of artificial intelligence and machine learning in thoracic surgery",
+    "title-short": "Bridging surgical oncology and personalized medicine",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/jcm13041061",
+    "PMCID": "10889757",
+    "PMID": "38398374",
+    "abstract": "Artificial intelligence has yielded remarkably promising results in several medical fields, namely those with a strong imaging component. Gynecology relies heavily on imaging since it offers useful visual data on the female reproductive system, leading to a deeper understanding of pathophysiological concepts. The applicability of artificial intelligence technologies has not been as noticeable in gynecologic imaging as in other medical fields so far. However, due to growing interest in this area, some studies have been performed with exciting results. From urogynecology to oncology, artificial intelligence algorithms, particularly machine learning and deep learning, have shown huge potential to revolutionize the overall healthcare experience for women’s reproductive health. In this review, we aim to establish the current status of AI in gynecology, the upcoming developments in this area, and discuss the challenges facing its clinical implementation, namely the technological and ethical concerns for technology development, implementation, and accountability.",
+    "author": [
+      {
+        "family": "Brandão",
+        "given": "Marta"
+      },
+      {
+        "family": "Mendes",
+        "given": "F."
+      },
+      {
+        "family": "Martins",
+        "given": "M."
+      },
+      {
+        "family": "Cardoso",
+        "given": "P."
+      },
+      {
+        "family": "Macedo",
+        "given": "Guilherme"
+      },
+      {
+        "family": "Mascarenhas",
+        "given": "Teresa"
+      },
+      {
+        "family": "Saraiva",
+        "given": "M. M. Mascarenhas"
+      }
+    ],
+    "container-title": "Journal of Clinical Medicine",
+    "id": "Brandao2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Revolutionizing Women’s Health: A Comprehensive Review of Artificial Intelligence Advancements in Gynecology",
+    "title-short": "Revolutionizing Women’s Health",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.20473/mog.v32i22024.128-135",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "HIGHLIGHTS 1. The article highlights how Artificial Intelligence with Large Language Models (AI-LLMs) greatly improves diagnosis and treatment personalization in obstetrics & gynecology, and also enhances medical education through interactive simulations and up-to-date learning materials.2. The article also discusses the ethical issues linked to AI, emphasizing the need for cooperation among different stakeholders to use AI responsibly in medicine, focusing on protecting data privacy and minimizing reliance on technology.   ABSTRACT The introduction of Artificial Intelligence through Large Language Models (AI-LLM) into medicine holds great promise for improving patient care and medical education, especially in obstetrics and gynecology. AI-LLM can significantly improve diagnostic accuracy and treatment efficiency by utilizing large medical databases, which is especially useful for dealing with rare diseases that are difficult to document or understand by human practitioners alone. In addition, AI-LLM can provide informed patient care recommendations by analyzing large amounts of data and providing insights based on unique patient profiles, with the added benefit of being accessible 24/7 via the internet. This constant availability ensures that patients receive prompt information and assistance as needed. In the field of education, AI-LLMs enhance the learning experience by incorporating interactive simulations into the curriculum, improving medical students’ and professionals’ practical knowledge. They also ensure that educational materials are always up-to-date reflecting the most recent research and worldwide medical standards. This access latest information from global resources helps to bridge the educational gap, making advanced knowledge more accessible to learners regardless of their geographic location. However, the introduction of AI-LLMs is not without challenges. Ethical issues, such as data privacy and the risk of overreliance on technology, must be addressed. Effective management of these concerns necessitates collaboration among medical professionals, technological experts, academics, hospital committees, and representatives of patients. This multidisciplinary teamwork is vital for upholding ethical norms and preserving patient dignity and respect. AI-LLMs can considerably improve both patient care and medical education in obstetrics and gynecology provided they are appropriately balanced with innovation and ethics.",
+    "author": [
+      {
+        "family": "Gumilar",
+        "given": "K. E."
+      },
+      {
+        "family": "Tan",
+        "given": "Ming-Liang"
+      }
+    ],
+    "container-title": "Majalah Obstetri\n&; Ginekologi",
+    "id": "Gumilar2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "The promise and challenges of Artificial Intelligence-Large Language Models (AI-LLMs) in obstetric and gynecology",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.60087/jaigs.v1i1.p37",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "This article explores the transformative impact of Artificial Intelligence (AI) in healthcare, with a specific focus on how predictive analytics and decision support systems are revolutionizing patient care. Predictive analytics enable early disease prevention and diagnosis by identifying patterns and risk factors, contributing to improved patient outcomes and cost-effective healthcare. Machine learning facilitates personalized treatment plans, leveraging individual patient data for tailored interventions that enhance efficacy and minimize adverse effects. AI-driven algorithms in medical imaging enhance diagnostic accuracy, providing rapid and precise assessments. Decision support systems, powered by AI, streamline healthcare workflows by offering real-time insights based on patient data and clinical guidelines, facilitating evidence-based decision-making. Remote patient monitoring, facilitated by AI, allows for proactive healthcare interventions by tracking vital signs and identifying potential health issues in real time. The article also discusses challenges and ethical considerations associated with AI integration in healthcare, emphasizing the importance of responsible deployment and regulatory frameworks. The comprehensive exploration underscores how AI is not only transforming patient care but also shaping the future of healthcare delivery.",
+    "author": [
+      {
+        "family": "Ramírez",
+        "given": "José Gabriel Carrasco"
+      }
+    ],
+    "container-title": "Journal of Artificial Intelligence General science (JAIGS) ISSN:3006-4023",
+    "id": "Ramirez2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "AI in Healthcare: Revolutionizing Patient Care with Predictive Analytics and Decision Support Systems",
+    "title-short": "AI in Healthcare",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1515/cclm-2023-1037",
+    "PMCID": "null",
+    "PMID": "38015744",
+    "abstract": "Abstract Artificial intelligence (AI) and machine learning (ML) are becoming vital in laboratory medicine and the broader context of healthcare. In this review article, we summarized the development of ML models and how they contribute to clinical laboratory workflow and improve patient outcomes. The process of ML model development involves data collection, data cleansing, feature engineering, model development, and optimization. These models, once finalized, are subjected to thorough performance assessments and validations. Recently, due to the complexity inherent in model development, automated ML tools were also introduced to streamline the process, enabling non-experts to create models. Clinical Decision Support Systems (CDSS) use ML techniques on large datasets to aid healthcare professionals in test result interpretation. They are revolutionizing laboratory medicine, enabling labs to work more efficiently with less human supervision across pre-analytical, analytical, and post-analytical phases. Despite contributions of the ML tools at all analytical phases, their integration presents challenges like potential model uncertainties, black-box algorithms, and deskilling of professionals. Additionally, acquiring diverse datasets is hard, and models’ complexity can limit clinical use. In conclusion, ML-based CDSS in healthcare can greatly enhance clinical decision-making. However, successful adoption demands collaboration among professionals and stakeholders, utilizing hybrid intelligence, external validation, and performance assessments.",
+    "author": [
+      {
+        "family": "Çubukçu",
+        "given": "H."
+      },
+      {
+        "family": "Topcu",
+        "given": "D."
+      },
+      {
+        "family": "Yenice",
+        "given": "Sedef"
+      }
+    ],
+    "container-title": "Clinical Chemistry and Laboratory Medicine",
+    "id": "Cubukcu2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Machine learning-based clinical decision support using laboratory data",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.7759/cureus.69405",
+    "PMCID": "11473215",
+    "PMID": "39411643",
+    "abstract": "The integration of artificial intelligence (AI) and its autonomous learning processes (or machine learning) in medicine has revolutionized the global health landscape, providing faster and more accurate diagnoses, personalization of medical treatment, and efficient management of clinical information. However, this transformation is not without ethical challenges, which require a comprehensive and responsible approach. There are many fields where AI and medicine intersect, such as health education, patient-doctor interface, data management, diagnosis, intervention, and decision-making processes. For some of these fields, there are some guidelines to regulate them. AI has numerous applications in medicine, including medical imaging analysis, diagnosis, predictive analytics for patient outcomes, drug discovery and development, virtual health assistants, and remote patient monitoring. It is also used in robotic surgery, clinical decision support systems, AI-powered chatbots for triage, administrative workflow automation, and treatment recommendations. Despite numerous applications, there are several problems related to the use of AI identified in the literature in general and in medicine in particular. These problems are data privacy and security, bias and discrimination, lack of transparency (Black Box Problem), integration with existing systems, cost and accessibility disparities, risk of overconfidence in AI, technical limitations, accountability for AI errors, algorithmic interpretability, data standardization issues, unemployment, and challenges in clinical validation. Of the various problems already identified, the most worrying are data bias, the black box phenomenon, questions about data privacy, responsibility for decision-making, security issues for the human species, and technological unemployment. There are still several ethical problems associated with the use of AI autonomous learning algorithms, namely epistemic, normative, and comprehensive ethical problems (overarching). Addressing all these issues is crucial to ensure that the use of AI in healthcare is implemented ethically and responsibly, providing benefits to populations without compromising fundamental values. Ongoing dialogue between healthcare providers and the industry, the establishment of ethical guidelines and regulations, and considering not only current ethical dilemmas but also future perspectives are fundamental points for the application of AI to medical practice. The purpose of this review is to discuss the ethical issues of AI algorithms used mainly in data management, diagnosis, intervention, and decision-making processes.",
+    "author": [
+      {
+        "family": "Marques",
+        "given": "Marta"
+      },
+      {
+        "family": "Almeida",
+        "given": "A."
+      },
+      {
+        "family": "Pereira",
+        "given": "Helder"
+      }
+    ],
+    "container-title": "Cureus",
+    "id": "Marques2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "The Medicine Revolution Through Artificial Intelligence: Ethical Challenges of Machine Learning Algorithms in Decision-Making",
+    "title-short": "The Medicine Revolution Through Artificial Intelligence",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/antibiotics14020134",
+    "PMCID": "11851606",
+    "PMID": "40001378",
+    "abstract": "Antimicrobial resistance (AMR) poses a critical global health threat, necessitating innovative approaches in antimicrobial stewardship (AMS). Artificial intelligence (AI) and machine learning (ML) have emerged as transformative tools in this domain, enabling data-driven interventions to optimize antibiotic use and combat resistance. This comprehensive review explores the multifaceted role of AI and ML models in enhancing antimicrobial stewardship efforts across healthcare systems. AI-powered predictive analytics can identify patterns of resistance, forecast outbreaks, and guide personalized antibiotic therapies by leveraging large-scale clinical and epidemiological data. ML algorithms facilitate rapid pathogen identification, resistance profiling, and real-time monitoring, enabling precise decision making. These technologies also support the development of advanced diagnostic tools, reducing the reliance on broad-spectrum antibiotics and fostering timely, targeted treatments. In public health, AI-driven surveillance systems improve the detection of AMR trends and enhance global monitoring capabilities. By integrating diverse data sources—such as electronic health records, laboratory results, and environmental data—ML models provide actionable insights to policymakers, healthcare providers, and public health officials. Additionally, AI applications in antimicrobial stewardship programs (ASPs) promote adherence to prescribing guidelines, evaluate intervention outcomes, and optimize resource allocation. Despite these advancements, challenges such as data quality, algorithm transparency, and ethical considerations must be addressed to maximize the potential of AI and ML in this field. Future research should focus on developing interpretable models and fostering interdisciplinary collaborations to ensure the equitable and sustainable integration of AI into antimicrobial stewardship initiatives.",
+    "author": [
+      {
+        "family": "Pennisi",
+        "given": "Flavia"
+      },
+      {
+        "family": "Pinto",
+        "given": "Antonio"
+      },
+      {
+        "family": "Ricciardi",
+        "given": "G. E."
+      },
+      {
+        "family": "Signorelli",
+        "given": "C."
+      },
+      {
+        "family": "Gianfredi",
+        "given": "V."
+      }
+    ],
+    "container-title": "Antibiotics",
+    "id": "Pennisi2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "The Role of Artificial Intelligence and Machine Learning Models in Antimicrobial Stewardship in Public Health: A Narrative Review",
+    "title-short": "The Role of Artificial Intelligence and Machine Learning Models in Antimicrobial Stewardship in Public Health",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.60087/jaigs.v1i1.30",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "This article explores the transformative impact of Artificial Intelligence (AI) in healthcare, with a specific focus on how predictive analytics and decision support systems are revolutionizing patient care. Predictive analytics enable early disease prevention and diagnosis by identifying patterns and risk factors, contributing to improved patient outcomes and cost-effective healthcare. Machine learning facilitates personalized treatment plans, leveraging individual patient data for tailored interventions that enhance efficacy and minimize adverse effects. AI-driven algorithms in medical imaging enhance diagnostic accuracy, providing rapid and precise assessments. Decision support systems, powered by AI, streamline healthcare workflows by offering real-time insights based on patient data and clinical guidelines, facilitating evidence-based decision-making. Remote patient monitoring, facilitated by AI, allows for proactive healthcare interventions by tracking vital signs and identifying potential health issues in real time. The article also discusses challenges and ethical considerations associated with AI integration in healthcare, emphasizing the importance of responsible deployment and regulatory frameworks. The comprehensive exploration underscores how AI is not only transforming patient care but also shaping the future of healthcare delivery.",
+    "author": [
+      {
+        "family": "Rana",
+        "given": "Md. Shohel"
+      },
+      {
+        "family": "Shuford",
+        "given": "Jeff"
+      }
+    ],
+    "container-title": "Journal of Artificial Intelligence General science (JAIGS) ISSN:3006-4023",
+    "id": "Rana2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "AI in Healthcare: Transforming Patient Care through Predictive Analytics and Decision Support Systems",
+    "title-short": "AI in Healthcare",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/informatics11030068",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": ": Precision medicine has emerged as a transformative approach aimed at tailoring treatment to individual patients, moving away from the traditional one-size-fits-all model. However, Clinical decision support systems encounter challenges, particularly in terms of data aspects. In response, our study proposes a data-driven framework rooted in Simon’s decision-making model. This framework leverages advanced technologies such as artificial intelligence and data analytics to enhance clinical decision-making in precision medicine. By addressing limitations and integrating AI and analytics, our study contributes to the advancement of optimal clinical decision-making practices in precision healthcare.",
+    "author": [
+      {
+        "family": "Mosavi",
+        "given": "Nasim Sadat"
+      },
+      {
+        "family": "Santos",
+        "given": "Manuel Filipe"
+      }
+    ],
+    "container-title": "Informatics",
+    "id": "Mosavi2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Enhancing Clinical Decision Support for Precision Medicine: A Data-Driven Approach",
+    "title-short": "Enhancing Clinical Decision Support for Precision Medicine",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.5498/wjp.v14.i8.1148",
+    "PMCID": "11331387",
+    "PMID": "39165556",
+    "abstract": "Precision medicine is transforming psychiatric treatment by tailoring personalized healthcare interventions based on clinical, genetic, environmental, and lifestyle factors to optimize medication management. This study investigates how artificial intelligence (AI) and machine learning (ML) can address key challenges in integrating pharmacogenomics (PGx) into psychiatric care. In this integration, AI analyzes vast genomic datasets to identify genetic markers linked to psychiatric conditions. AI-driven models integrating genomic, clinical, and demographic data demonstrated high accuracy in predicting treatment outcomes for major depressive disorder and bipolar disorder. This study also examines the pressing challenges and provides strategic directions for integrating AI and ML in genomic psychiatry, highlighting the importance of ethical considerations and the need for personalized treatment. Effective implementation of AI-driven clinical decision support systems within electronic health records is crucial for translating PGx into routine psychiatric care. Future research should focus on developing enhanced AI-driven predictive models, privacy-preserving data exchange, and robust informatics systems to optimize patient outcomes and advance precision medicine in psychiatry.",
+    "author": [
+      {
+        "family": "Okpete",
+        "given": "U. E."
+      },
+      {
+        "family": "Byeon",
+        "given": "Haewon"
+      }
+    ],
+    "container-title": "World Journal of Psychiatry",
+    "id": "Okpete2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Challenges and prospects in bridging precision medicine and artificial intelligence in genomic psychiatric treatment",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.30574/ijsra.2023.9.1.0359",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Artificial intelligence receives modern healthcare upgrades to elevate clinical diagnostics and therapy guidance and treatment evaluation systems. Better decision quality and higher efficiency depend on machine learning models that serve as essential tools for clinical decision support. The deployment of AI-driven healthcare systems faces scrutiny about their biased and unfair characteristics because medical data tends to mirror existing healthcare inequalities. Healthcare outcomes experience diverse anomalies when AI algorithms carry bias, which produces specific harm to marginalized populations. Microbiological diagnosis biases originate from three core elements: imbalanced data collection methods, ineffective model training practices and structural healthcare deficiencies. Equitable healthcare delivery requires proper solutions to these inequalities to maintain patient trust in AI medical systems. This research studies the principal causes of bias within doctor-focused machine learning programs while analyzing biased algorithms’ influence on distinct population segments. The research analyzes present initiatives dedicated to tackling prejudice and promoting ethical AI standards and fairness enhancement within medical environments. The research investigates validated approaches which lower social inequalities through sustained AI delivery systems for universal healthcare access.",
+    "author": [
+      {
+        "family": "Zartashea",
+        "given": "Fnu"
+      }
+    ],
+    "container-title": "International Journal of Science and Research Archive",
+    "id": "Zartashea2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Bias and fairness in AI-driven healthcare: Addressing disparities in machine learning models",
+    "title-short": "Bias and fairness in AI-driven healthcare",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.25163/angiotherapy.8910249",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Emergency medicine is undergoing a transformative shift with the integration of Artificial Intelligence (AI) and predictive analytics into clinical practice. This review explores the applications, benefits, and challenges of AI in emergency care settings. AI technologies, including machine learning and natural language processing, are increasingly utilized to enhance triage systems, anticipate patient deterioration, and support clinical decision-making. Predictive models facilitate early detection and intervention for critical conditions such as sepsis and cardiac arrest, leading to improved outcomes and resource optimization. Additionally, AI-powered simulations and virtual reality platforms are advancing the training and preparedness of emergency care professionals. Despite these advancements, the implementation of AI is impeded by ethical concerns, trust and transparency issues, data privacy challenges, and disparities in technological accessibility. Furthermore, the lack of interpretability in AI-generated recommendations poses risks to clinical credibility and patient safety. Successful integration of AI into emergency medicine demands coordinated efforts among developers, healthcare providers, and policymakers. When thoughtfully applied, AI and predictive analytics hold the potential to significantly enhance the quality, efficiency, and effectiveness of emergency care. However, achieving widespread adoption requires overcoming technical, ethical, and educational barriers to foster trust and usability within the medical community.",
+    "container-title": "Journal of Angiotherapy",
+    "id": "undefined2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Revolutionizing Emergency Medicine: The Integration of Artificial Intelligence and Predictive Analytics in Clinical Decision-Making and Training - A Comprehensive Review",
+    "title-short": "Revolutionizing Emergency Medicine",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "",
+        "given": ""
+      }
+    ]
+  },
+  {
+    "DOI": "10.32628/ijsrst25121245",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "The integration of Big Data Analytics and Artificial Intelligence (AI) in healthcare is revolutionizing diagnostics, treatment, and disease prevention. This paper explores how these advanced technologies enhance clinical decision-making, improve patient outcomes, and optimize healthcare processes. By leveraging vast datasets, AI-driven algorithms facilitate early disease detection, predictive analytics, and personalized medicine, significantly reducing diagnostic errors and enabling timely interventions. Furthermore, machine learning models assist in tailoring treatment plans based on patient-specific data, leading to more effective and efficient therapeutic strategies. In disease prevention, big data analytics enable epidemiological surveillance, tracking disease patterns, and identifying at-risk populations. AI-powered predictive models support proactive interventions, reducing the burden of chronic illnesses and infectious diseases. The paper highlights key advancements in AI applications, including deep learning in medical imaging, natural language processing in electronic health records, and real-time analytics in wearable health devices. Despite these transformative benefits, challenges such as data privacy, ethical concerns, and integration complexities remain barriers to widespread adoption. The study concludes that while AI and big data analytics hold immense potential to reshape healthcare, addressing regulatory, infrastructural, and ethical considerations is crucial for sustainable implementation. By fostering interdisciplinary collaboration and robust policy frameworks, healthcare systems can harness these technologies to drive innovation, enhance efficiency, and improve global health outcomes.",
+    "author": [
+      {
+        "family": "Nwokedi",
+        "given": "Collins Nwannebuike"
+      },
+      {
+        "family": "Soyege",
+        "given": "Olakunle Saheed"
+      },
+      {
+        "family": "Balogu",
+        "given": "Obe Destiny"
+      },
+      {
+        "family": "Mustapha",
+        "given": "Ashiata Yetunde"
+      },
+      {
+        "family": "Tomoh",
+        "given": "Busayo Olamide"
+      },
+      {
+        "family": "Mbata",
+        "given": "Akachukwu Obianuju"
+      },
+      {
+        "family": "Iguma",
+        "given": "Dorothy Ruth"
+      }
+    ],
+    "container-title": "International Journal of Scientific Research in Science and Technology",
+    "id": "Nwokedi2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Big Data Analytics and Artificial Intelligence in Healthcare: Transforming Diagnostics, Treatment, and Disease Prevention.",
+    "title-short": "Big Data Analytics and Artificial Intelligence in Healthcare",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.51594/csitrj.v6i3.1872",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "The integration of Ethical Artificial Intelligence (AI) and Machine Learning (ML) in Health Innovation Information Systems is transforming clinical excellence by enhancing decision-making, optimizing healthcare workflows, and improving patient outcomes. AI-driven health technologies, such as predictive analytics, automated diagnostics, and personalized medicine, offer significant benefits in disease detection, treatment planning, and patient monitoring. However, their implementation raises ethical concerns related to data privacy, algorithmic bias, transparency, and accountability, necessitating a robust framework for responsible AI adoption in healthcare. A key ethical challenge in AI-driven health systems is ensuring fairness and bias mitigation, as poorly trained models may reinforce existing disparities in healthcare access and treatment. The use of explainable AI (XAI) is critical to enhancing transparency, allowing clinicians and patients to understand AI-generated recommendations. Additionally, the rise of Big Data and Internet of Medical Things (IoMT) requires stringent data governance policies to protect patient confidentiality under global regulations such as HIPAA, GDPR, and FDA guidelines. This study explores the balance between AI automation and human oversight, emphasizing the role of AI as an assistive tool rather than a replacement for clinical expertise. It highlights emerging AI innovations, including federated learning, blockchain-secured data sharing, and real-time AI-assisted decision support, while addressing risks such as liability, cybersecurity threats, and regulatory compliance. By developing ethically-aligned AI frameworks, healthcare organizations can maximize AI’s potential while upholding patient safety, equity, and trust. This paper provides insights into the future of AI governance, policy recommendations, and best practices to ensure that AI-driven health innovation aligns with ethical and clinical excellence. Keywords: Ethical Artificial Intelligence (AI), Machine Learning in Healthcare, Predictive Analytics in Medicine, Health Information Systems, AI Governance and Policy, Clinical Decision Support Systems.",
+    "author": [
+      {
+        "family": "Nwadiokwu",
+        "given": "Obiajuru Triumph"
+      }
+    ],
+    "container-title": "Computer Science\n&; IT Research Journal",
+    "id": "Nwadiokwu2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Ethical AI and machine learning integration in health innovation information systems for clinical excellence",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3389/fpubh.2024.1420032",
+    "PMCID": "11246905",
+    "PMID": "39011326",
+    "abstract": "Objectives The increased utilization of Artificial intelligence (AI) in healthcare changes practice and introduces ethical implications for AI adoption in medicine. We assess medical doctors’ ethical stance in situations that arise in adopting an AI-enabled Clinical Decision Support System (AI-CDSS) for antibiotic prescribing decision support in a healthcare institution in Singapore. Methods We conducted in-depth interviews with 30 doctors of varying medical specialties and designations between October 2022 and January 2023. Our interview guide was anchored on the four pillars of medical ethics. We used clinical vignettes with the following hypothetical scenarios: (1) Using an antibiotic AI-enabled CDSS’s recommendations for a tourist, (2) Uncertainty about the AI-CDSS’s recommendation of a narrow-spectrum antibiotic vs. concerns about antimicrobial resistance, (3) Patient refusing the “best treatment” recommended by the AI-CDSS, (4) Data breach. Results More than half of the participants only realized that the AI-enabled CDSS could have misrepresented non-local populations after being probed to think about the AI-CDSS’s data source. Regarding prescribing a broad- or narrow-spectrum antibiotic, most participants preferred to exercise their clinical judgment over the AI-enabled CDSS’s recommendations in their patients’ best interest. Two-thirds of participants prioritized beneficence over patient autonomy by convincing patients who refused the best practice treatment to accept it. Many were unaware of the implications of data breaches. Conclusion The current position on the legal liability concerning the use of AI-enabled CDSS is unclear in relation to doctors, hospitals and CDSS providers. Having a comprehensive ethical legal and regulatory framework, perceived organizational support, and adequate knowledge of AI and ethics are essential for successfully implementing AI in healthcare.",
+    "author": [
+      {
+        "family": "Huang",
+        "given": "Zhilian"
+      },
+      {
+        "family": "Lim",
+        "given": "Hannah Yee-Fen"
+      },
+      {
+        "family": "Ow",
+        "given": "Jing Teng"
+      },
+      {
+        "family": "Sun",
+        "given": "Shirley Hsiao-Li"
+      },
+      {
+        "family": "Chow",
+        "given": "A."
+      }
+    ],
+    "container-title": "Frontiers in Public Health",
+    "id": "Huang2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Doctors’ perception on the ethical use of AI-enabled clinical decision support systems for antibiotic prescribing recommendations in Singapore",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.54660/.ijfmr.2022.3.1.72-88",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Healthcare inequality remains a persistent global challenge, particularly affecting marginalized and underserved populations. Disparities in access, quality, and health outcomes are exacerbated by socioeconomic, geographic, and systemic barriers. This paper proposes a conceptual model for addressing healthcare inequality through the implementation of Artificial Intelligence (AI)-based Decision Support Systems (DSS). The model integrates advanced data analytics, machine learning algorithms, and real-time health information to support clinical and policy decisions aimed at reducing disparities in healthcare delivery. The conceptual model operates on three core pillars: data integration, predictive analytics, and equitable decision-making. First, the model aggregates data from diverse sources—including electronic health records (EHRs), social determinants of health, and population health databases—to build a comprehensive profile of healthcare needs in various communities. Second, AI-driven predictive analytics are employed to identify at-risk populations, forecast disease trends, and allocate resources efficiently. Finally, the system provides tailored decision support for healthcare providers and policymakers, ensuring that interventions are responsive to the specific needs of disadvantaged groups. A key feature of the model is its emphasis on explainable AI (XAI), which ensures transparency, accountability, and trust in AI-generated recommendations. The model also incorporates fairness-aware algorithms to mitigate bias in data and decision-making, promoting inclusivity and ethical use of technology. Case simulations demonstrate how the system can optimize screening programs, prioritize high-risk patients, and guide equitable health policy formulation. This paper underscores the transformative potential of AI-based DSS in reducing healthcare inequality by enabling data-driven, context-sensitive, and inclusive health interventions. By aligning technology with principles of social justice and health equity, the model offers a strategic pathway for addressing longstanding disparities in healthcare systems. Future research will focus on real-world implementation, stakeholder engagement, and continuous learning to refine the model and expand its applicability across different healthcare settings.",
+    "author": [
+      {
+        "family": "Chianumba",
+        "given": "Ernest Chinonso"
+      },
+      {
+        "family": "Ikhalea",
+        "given": "Nura"
+      },
+      {
+        "family": "Mustapha",
+        "given": "Ashiata Yetunde"
+      },
+      {
+        "family": "Forkuo",
+        "given": "Adelaide Yeboah"
+      }
+    ],
+    "container-title": "Journal of Frontiers in Multidisciplinary Research",
+    "id": "Chianumba2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "A Conceptual Model for Addressing Healthcare Inequality Using AI-Based Decision Support Systems",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1002/pd.6411",
+    "PMCID": "null",
+    "PMID": "37503802",
+    "abstract": "Abstract The objective is to summarize the current use of artificial intelligence (AI) in obstetric ultrasound. PubMed, Cochrane Library, and ClinicalTrials.gov databases were searched using the following keywords “neural networks”, OR “artificial intelligence”, OR “machine learning”, OR “deep learning”, AND “obstetrics”, OR “obstetrical”, OR “fetus”, OR “foetus”, OR “fetal”, OR “foetal”, OR “pregnancy”, or “pregnant”, AND “ultrasound” from inception through May 2022. The search was limited to the English language. Studies were eligible for inclusion if they described the use of AI in obstetric ultrasound. Obstetric ultrasound was defined as the process of obtaining ultrasound images of a fetus, amniotic fluid, or placenta. AI was defined as the use of neural networks, machine learning, or deep learning methods. The authors’ search identified a total of 127 papers that fulfilled our inclusion criteria. The current uses of AI in obstetric ultrasound include first trimester pregnancy ultrasound, assessment of placenta, fetal biometry, fetal echocardiography, fetal neurosonography, assessment of fetal anatomy, and other uses including assessment of fetal lung maturity and screening for risk of adverse pregnancy outcomes. AI holds the potential to improve the ultrasound efficiency, pregnancy outcomes in low resource settings, detection of congenital malformations and prediction of adverse pregnancy outcomes.",
+    "author": [
+      {
+        "family": "Horgan",
+        "given": "Rebecca"
+      },
+      {
+        "family": "Nehme",
+        "given": "Lea"
+      },
+      {
+        "family": "Abuhamad",
+        "given": "Alfred"
+      }
+    ],
+    "container-title": "Prenatal Diagnosis",
+    "id": "Horgan2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Artificial intelligence in obstetric ultrasound: A scoping review",
+    "title-short": "Artificial intelligence in obstetric ultrasound",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1002/widm.1312",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": ": Explainable artificial intelligence (AI) is attracting much interest in medicine. Technically, the problem of explainability is as old as AI itself and classic AI represented comprehensible retraceable approaches. However, their weakness was in dealing with uncertainties of the real world. Through the introduction of probabilistic learning, applications became increasingly successful, but increasingly opaque. Explainable AI deals with the implementation of transparency and traceability of statistical black-box machine learning methods, particularly deep learning (DL). We argue that there is a need to go beyond explainable AI. To reach a level of explainable medicine we need causability. In the same way that usability encompasses measurements for the quality of use, causability encompasses measurements for the quality of explanations. In this article, we provide some necessary definitions to discriminate between explainability and causability as well as a use-case of DL interpretation and of human explanation in histopathology. The main contribution of this article is the notion of causability, which is differentiated from explainability in that causability is a property of a person, while explainability is a property of a system This article is categorized under: Fundamental Concepts of Data and Knowledge > Human Centricity and User Interaction.",
+    "author": [
+      {
+        "family": "Holzinger",
+        "given": "Andreas"
+      },
+      {
+        "family": "Langs",
+        "given": "Georg"
+      },
+      {
+        "family": "Denk",
+        "given": "Helmut"
+      },
+      {
+        "family": "Zatloukal",
+        "given": "Kurt"
+      },
+      {
+        "family": "Müller",
+        "given": "Heimo"
+      }
+    ],
+    "container-title": "Wiley Interdisciplinary Reviews-Data Mining and Knowledge Discovery",
+    "id": "Holzinger2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Causability and explainability of artificial intelligence in medicine.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.7759/cureus.7124",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": ": Artificial intelligence (AI) is growing exponentially in various fields, including medicine. This paper reviews the pertinent aspects of AI in obstetrics and gynecology (OB/GYN)and how these can be applied to improve patient outcomes and reduce the healthcare costsand workload for clinicians. Herein, we will address current AI uses in OB/GYN, and the use of AI as a tool to interpret fetal heart rate (FHR) and cardiotocography (CTG) to aid in the detection of preterm labor, pregnancy complications, and reviewdiscrepancies in its interpretation between clinicians to reduce maternal and infant morbidity and mortality. AI systems can be used as tools to create algorithms identifying asymptomatic women with short cervical length who are at risk of preterm birth. Additionally, the benefits of using the vast data capacity of AI storage can assist in determining the risk factors for preterm labor using multiomics and extensive genomic data. In the field of gynecological surgery, the use of augmented reality helps surgeons detect vital structures, thus decreasing complications, reducing operative time, and helping surgeons in training to practice in a realistic setting. Using three-dimensional (3D) printers can provide materials that mimic real tissues and also helps trainees to practice on a realistic model. Furthermore, 3D imaging allows better depth perception than its two-dimensional (2D) counterpart, allowing the surgeon to create preoperative plans according to tissue depth and dimensions. Although AI has some limitations, this new technology can improve the prognosis and management of patients, reduce healthcare costs, and help OB/GYN practitioners to reduce their workload and increase their efficiency and accuracy by incorporating AI systems into their daily practice. AI has the potential to guide practitioners in decision-making, reaching a diagnosis, and improving case management. It can reduce healthcare costs by decreasing medical errors and providing more dependable predictions. AI systems can accurately provide information on the large array of patients in clinical settings, although more robust data is required.",
+    "author": [
+      {
+        "family": "Iftikhar",
+        "given": "Pulwasha M"
+      },
+      {
+        "family": "Kuijpers",
+        "given": "Marcela V"
+      },
+      {
+        "family": "Khayyat",
+        "given": "Azadeh"
+      },
+      {
+        "family": "Iftikhar",
+        "given": "Aqsa"
+      },
+      {
+        "family": "De",
+        "given": "Maribel"
+      },
+      {
+        "family": "Sa",
+        "given": "Maribel De Gouvia De"
+      }
+    ],
+    "container-title": "Cureus",
+    "id": "Iftikhar2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Artificial Intelligence: A New Paradigm in Obstetrics and Gynecology Research and Clinical Practice",
+    "title-short": "Artificial Intelligence",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1002/uog.24843",
+    "PMCID": "null",
+    "PMID": "34940999",
+    "abstract": "To develop and validate an artificial intelligence system, the Prenatal Ultrasound Diagnosis Artificial Intelligence Conduct System (PAICS), to detect different patterns of fetal intracranial abnormalities in ultrasound images of reference screening planes for congenital central nervous system (CNS) malformation screening.Neurosonographic images from normal fetuses and fetuses with CNS malformations ( gestational age range: 18 - 40weeks) were collected from two tertiary hospitals in China, and were randomly assigned (8:1:1) to training, fine-tuning, and internal validation datasets for developing and evaluating the PAICS. The system was built based on a real-time Convolutional Neural Network (CNN) algorithm (YOLO, v3). The performance of the PAICS was further validated externally by an image dataset from the third tertiary hospital, and compared with the diagnoses by sonologists of different expertise levels. Furthermore, a subset of the prospective video dataset was employed to evaluate the performance of PAICS in the real-time scan scenario. The diagnostic accuracy, sensitivity, specificity, and area under the curve (AUC) of the receiver operating characteristic (ROC) curve were calculated to assess the performance of PAICS and sonologists.A total of 43890 images from 16297 pregnancies and 169 videos from 166 pregnancies were used to develop and validate the PAICS. The system achieved an outstanding performance in identifying 10 types of image patterns, with macroaverage and microaverage AUCs of 0.933 (0.798 - 1.000) and 0.977(0.970 - 0.985) in the internal image dataset; 0.902(0.816 - 0.989) and 0.898(0.885 - 0.911) in the external image dataset, 0.969 (0.866 -1.000) and 0.981(0.974 - 0.988) in the prospective real-time scan setting. The performance of PAICS was comparable to that of experts in terms of macro- and micro- accuracy (p=0.863, p=0.775), sensitivity (p=0.883, p=0.846), and AUC (p=0.891, p=0.788), whereas with shorter time consumption (0.025s per image for PAICS vs 4.4s for experts, p <0.001).Both in the image dataset and the real-time scan setting, PAICS achieved an excellent diagnostic performance in recognition of various fetal CNS abnormalities. The performance was comparable to that of experts yet with shorter time consumption. CNN algorithm could be trained to detect abnormalities from fetuses with CNS malformations. PAICS has the potential to be an effective and efficient tool for CNS malformation screening in clinical practice. This article is protected by copyright. All rights reserved.",
+    "author": [
+      {
+        "family": "Lin",
+        "given": "Mei-Fang"
+      },
+      {
+        "family": "Lin",
+        "given": "Min"
+      },
+      {
+        "family": "He",
+        "given": "X."
+      },
+      {
+        "family": "He",
+        "given": "Xin"
+      },
+      {
+        "family": "Guo",
+        "given": "H."
+      },
+      {
+        "family": "Guo",
+        "given": "Han"
+      },
+      {
+        "family": "He",
+        "given": "M."
+      },
+      {
+        "family": "He",
+        "given": "Miao"
+      },
+      {
+        "family": "Zhang",
+        "given": "L."
+      },
+      {
+        "family": "Xian",
+        "given": "J."
+      },
+      {
+        "family": "Xian",
+        "given": "Jianbo"
+      },
+      {
+        "family": "Lei",
+        "given": "Ting"
+      },
+      {
+        "family": "Xu",
+        "given": "Q."
+      },
+      {
+        "family": "Xu",
+        "given": "Qi"
+      },
+      {
+        "family": "Zheng",
+        "given": "J."
+      },
+      {
+        "family": "Zheng",
+        "given": "Jinjian"
+      },
+      {
+        "family": "Feng",
+        "given": "J."
+      },
+      {
+        "family": "Feng",
+        "given": "Jianxing"
+      },
+      {
+        "family": "Hao",
+        "given": "C."
+      },
+      {
+        "family": "Hao",
+        "given": "Chuanyong"
+      },
+      {
+        "family": "Yang",
+        "given": "Y."
+      },
+      {
+        "family": "Yang",
+        "given": "Yanyan"
+      },
+      {
+        "family": "Nan",
+        "given": "Wang"
+      },
+      {
+        "family": "Wang",
+        "given": "N"
+      },
+      {
+        "family": "Xie",
+        "given": "H."
+      },
+      {
+        "family": "Xie",
+        "given": "Hua"
+      }
+    ],
+    "container-title": "Ultrasound in Obstetrics & Gynecology",
+    "id": "Lin2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Use of real‐time artificial intelligence in detection of abnormal image patterns in standard sonographic reference planes for screening for fetal intracranial malformations",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1097/aog.0000000000004706",
+    "PMCID": "null",
+    "PMID": "35272300",
+    "abstract": "In the digital age of the 21st century, we have witnessed an explosion in data matched by remarkable progress in the field of computer science and engineering, with the development of powerful and portable artificial intelligence-powered technologies. At the same time, global connectivity powered by mobile technology has led to an increasing number of connected users and connected devices. In just the past 5 years, the convergence of these technologies in obstetrics and gynecology has resulted in the development of innovative artificial intelligence-powered digital health devices that allow easy and accurate patient risk stratification for an array of conditions spanning early pregnancy, labor and delivery, and care of the newborn. Yet, breakthroughs in artificial intelligence and other new and emerging technologies currently have a slow adoption rate in medicine, despite the availability of large data sets that include individual electronic health records spanning years of care, genomics, and the microbiome. As a result, patient interactions with health care remain burdened by antiquated processes that are inefficient and inconvenient. A few health care institutions have recognized these gaps and, with an influx of venture capital investments, are now making in-roads in medical practice with digital products driven by artificial intelligence algorithms. In this article, we trace the history, applications, and ethical challenges of the artificial intelligence that will be at the forefront of digitally transforming obstetrics and gynecology and medical practice in general.",
+    "author": [
+      {
+        "family": "Shazly",
+        "given": "Sherif A"
+      },
+      {
+        "family": "Trabuco",
+        "given": "Emanuel C"
+      },
+      {
+        "family": "Ngufor",
+        "given": "Che G"
+      },
+      {
+        "family": "Famuyide",
+        "given": "Abimbola O"
+      }
+    ],
+    "container-title": "Obstetrics & Gynecology",
+    "id": "Shazly2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Introduction to Machine Learning in Obstetrics and Gynecology.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1002/ijc.35092",
+    "PMCID": "null",
+    "PMID": "38989809",
+    "abstract": "The aim of this paper was to explore the role of artificial intelligence (AI) applied to ultrasound imaging in gynecology oncology. Web of Science, PubMed, and Scopus databases were searched. All studies were imported to RAYYAN QCRI software. The overall quality of the included studies was assessed using QUADAS‐AI tool. Fifty studies were included, of these 37/50 (74.0%) on ovarian masses or ovarian cancer, 5/50 (10.0%) on endometrial cancer, 5/50 (10.0%) on cervical cancer, and 3/50 (6.0%) on other malignancies. Most studies were at high risk of bias for subject selection (i.e., sample size, source, or scanner model were not specified; data were not derived from open‐source datasets; imaging preprocessing was not performed) and index test (AI models was not externally validated) and at low risk of bias for reference standard (i.e., the reference standard correctly classified the target condition) and workflow (i.e., the time between index test and reference standard was reasonable). Most studies presented machine learning models (33/50, 66.0%) for the diagnosis and histopathological correlation of ovarian masses, while others focused on automatic segmentation, reproducibility of radiomics features, improvement of image quality, prediction of therapy resistance, progression‐free survival, and genetic mutation. The current evidence supports the role of AI as a complementary clinical and research tool in diagnosis, patient stratification, and prediction of histopathological correlation in gynecological malignancies. For example, the high performance of AI models to discriminate between benign and malignant ovarian masses or to predict their specific histology can improve the diagnostic accuracy of imaging methods.",
+    "author": [
+      {
+        "family": "Moro",
+        "given": "F."
+      },
+      {
+        "family": "Ciancia",
+        "given": "M."
+      },
+      {
+        "family": "Zaçe",
+        "given": "D."
+      },
+      {
+        "family": "Vagni",
+        "given": "M."
+      },
+      {
+        "family": "Tran",
+        "given": "Huong Elena"
+      },
+      {
+        "family": "Giudice",
+        "given": "M. T."
+      },
+      {
+        "family": "Zoccoli",
+        "given": "S. G."
+      },
+      {
+        "family": "Mascilini",
+        "given": "F."
+      },
+      {
+        "family": "Ciccarone",
+        "given": "F."
+      },
+      {
+        "family": "Boldrini",
+        "given": "L."
+      },
+      {
+        "family": "D’Antonio",
+        "given": "Francesco"
+      },
+      {
+        "family": "Scambia",
+        "given": "G."
+      },
+      {
+        "family": "Testa",
+        "given": "A."
+      }
+    ],
+    "container-title": "International Journal of Cancer",
+    "id": "Moro2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Role of artificial intelligence applied to ultrasound in gynecology oncology: A systematic review",
+    "title-short": "Role of artificial intelligence applied to ultrasound in gynecology oncology",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/healthcare11111617",
+    "PMCID": "10252230",
+    "PMID": "37297757",
+    "abstract": "Background: IntraUterine Growth Restriction (IUGR) is a global public health concern and has major implications for neonatal health. The early diagnosis of this condition is crucial for obtaining positive outcomes for the newborn. In recent years Artificial intelligence (AI) and machine learning (ML) techniques are being used to identify risk factors and provide early prediction of IUGR. We performed a systematic review (SR) and meta-analysis (MA) aimed to evaluate the use and performance of AI/ML models in detecting fetuses at risk of IUGR. Methods: We conducted a systematic review according to the PRISMA checklist. We searched for studies in all the principal medical databases (MEDLINE, EMBASE, CINAHL, Scopus, Web of Science, and Cochrane). To assess the quality of the studies we used the JBI and CASP tools. We performed a meta-analysis of the diagnostic test accuracy, along with the calculation of the pooled principal measures. Results: We included 20 studies reporting the use of AI/ML models for the prediction of IUGR. Out of these, 10 studies were used for the quantitative meta-analysis. The most common input variable to predict IUGR was the fetal heart rate variability (n = 8, 40%), followed by the biochemical or biological markers (n = 5, 25%), DNA profiling data (n = 2, 10%), Doppler indices (n = 3, 15%), MRI data (n = 1, 5%), and physiological, clinical, or socioeconomic data (n = 1, 5%). Overall, we found that AI/ML techniques could be effective in predicting and identifying fetuses at risk for IUGR during pregnancy with the following pooled overall diagnostic performance: sensitivity = 0.84 (95% CI 0.80–0.88), specificity = 0.87 (95% CI 0.83–0.90), positive predictive value = 0.78 (95% CI 0.68–0.86), negative predictive value = 0.91 (95% CI 0.86–0.94) and diagnostic odds ratio = 30.97 (95% CI 19.34–49.59). In detail, the RF-SVM (Random Forest–Support Vector Machine) model (with 97% accuracy) showed the best results in predicting IUGR from FHR parameters derived from CTG. Conclusions: our findings showed that AI/ML could be part of a more accurate and cost-effective screening method for IUGR and be of help in optimizing pregnancy outcomes. However, before the introduction into clinical daily practice, an appropriate algorithmic improvement and refinement is needed, and the importance of quality assessment and uniform diagnostic criteria should be further emphasized.",
+    "author": [
+      {
+        "family": "Rescinito",
+        "given": "Riccardo"
+      },
+      {
+        "family": "Ratti",
+        "given": "Matteo"
+      },
+      {
+        "family": "Payedimarri",
+        "given": "Anil Babu"
+      },
+      {
+        "family": "Panella",
+        "given": "Massimiliano"
+      }
+    ],
+    "container-title": "Healthcare",
+    "id": "Rescinito2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Prediction Models for Intrauterine Growth Restriction Using Artificial Intelligence and Machine Learning: A Systematic Review and Meta-Analysis",
+    "title-short": "Prediction Models for Intrauterine Growth Restriction Using Artificial Intelligence and Machine Learning",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1097/aog.0000000000005944",
+    "PMCID": "null",
+    "PMID": "40472381",
+    "abstract": "Publications on artificial intelligence (AI) applications have dramatically increased for most medical specialties, including obstetrics. Here, we review the most recent pertinent publications on AI programs in obstetrics, describe trends in AI applications for specific obstetric problems, and assess AI’s possible effects on obstetric care. Searches were performed in PubMed (MeSH), MEDLINE, Ovid, ClinicalTrials.gov, Google Scholar, and Web of Science using a combination of keywords and text words related to ”obstetrics,” ”pregnancy,” ”artificial intelligence,” ”machine learning,” ”deep learning,” and ”neural networks,” for articles published between June 1, 2019, and May 31, 2024. A total of 1,768 articles met at least one search criterion. After eliminating reviews, duplicates, retractions, inactive research protocols, unspecified AI programs, and non-English-language articles, 207 publications remained for further review. Most studies were conducted outside of the United States, were published in nonobstetric journals, and focused on risk prediction. Study population sizes ranged widely from 10 to 953,909, and model performance abilities also varied widely. Evidence quality was assessed by the description of model construction, predictive accuracy, and whether validation had been performed. Most studies had patient groups differing considerably from U.S. populations, rendering their generalizability to U.S. patients uncertain. Artificial intelligence ultrasound applications focused on imaging issues are those most likely to influence current obstetric care. Other promising AI models include early risk screening for spontaneous preterm birth, preeclampsia, and gestational diabetes mellitus. The rate at which AI studies are being performed virtually guarantees that numerous applications will eventually be introduced into future U.S. obstetric practice. Very few of the models have been deployed in obstetric practice, and more high-quality studies are needed with high predictive accuracy and generalizability. Assuming these conditions are met, there will be an urgent need to educate medical students, postgraduate trainees and practicing physicians to understand how to effectively and safely implement this technology.",
+    "author": [
+      {
+        "family": "Devoe",
+        "given": "Lawrence D."
+      },
+      {
+        "family": "Muhanna",
+        "given": "Maya"
+      },
+      {
+        "family": "Maher",
+        "given": "James"
+      },
+      {
+        "family": "Evans",
+        "given": "Mark I."
+      },
+      {
+        "family": "Klein-Seetharaman",
+        "given": "Judith"
+      }
+    ],
+    "container-title": "Obstetrics and Gynecology",
+    "id": "Devoe2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Current State of Artificial Intelligence Model Development in Obstetrics.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1515/jpm-2024-0347",
+    "PMCID": "null",
+    "PMID": "39383043",
+    "abstract": "Abstract Artificial intelligence (AI) has emerged as a transformative technology in the field of healthcare, offering significant advancements in various medical disciplines, including obstetrics. The integration of artificial intelligence into 3D/4D ultrasound analysis of fetal facial profiles presents numerous benefits. By leveraging machine learning and deep learning algorithms, AI can assist in the accurate and efficient interpretation of complex 3D/4D ultrasound data, enabling healthcare providers to make more informed decisions and deliver better prenatal care. One such innovation that has significantly improved the analysis of fetal facial profiles is the integration of AI in 3D/4D ultrasound imaging. In conclusion, the integration of artificial intelligence in the analysis of 3D/4D ultrasound data for fetal facial profiles offers numerous benefits, including improved accuracy, consistency, and efficiency in prenatal diagnosis and care.",
+    "author": [
+      {
+        "family": "Bachnas",
+        "given": "M. A."
+      },
+      {
+        "family": "Andonotopo",
+        "given": "W."
+      },
+      {
+        "family": "Dewantiningrum",
+        "given": "Julian"
+      },
+      {
+        "family": "Pramono",
+        "given": "Mochammad Besari Adi"
+      },
+      {
+        "family": "Stanojević",
+        "given": "Milan"
+      },
+      {
+        "family": "Kurjak",
+        "given": "Asim"
+      }
+    ],
+    "container-title": "Journal of Perinatal Medicine",
+    "id": "Bachnas2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "The utilization of artificial intelligence in enhancing 3D/4D ultrasound analysis of fetal facial profiles",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.5468/ogs.23231",
+    "PMCID": "10948210",
+    "PMID": "38247132",
+    "abstract": "The use of chatbot technology, particularly chat generative pre-trained transformer (ChatGPT) with an impressive 175 billion parameters, has garnered significant attention across various domains, including Obstetrics and Gynecology (OBGYN). This comprehensive review delves into the transformative potential of chatbots with a special focus on ChatGPT as a leading artificial intelligence (AI) technology. Moreover, ChatGPT harnesses the power of deep learning algorithms to generate responses that closely mimic human language, opening up myriad applications in medicine, research, and education. In the field of medicine, ChatGPT plays a pivotal role in diagnosis, treatment, and personalized patient education. Notably, the technology has demonstrated remarkable capabilities, surpassing human performance in OBGYN examinations, and delivering highly accurate diagnoses. However, challenges remain, including the need to verify the accuracy of the information and address the ethical considerations and limitations. In the wide scope of chatbot technology, AI systems play a vital role in healthcare processes, including documentation, diagnosis, research, and education. Although promising, the limitations and occasional inaccuracies require validation by healthcare professionals. This review also examined global chatbot adoption in healthcare, emphasizing the need for user awareness to ensure patient safety. Chatbot technology holds great promise in OBGYN and medicine, offering innovative solutions while necessitating responsible integration to ensure patient care and safety.",
+    "author": [
+      {
+        "family": "Lee",
+        "given": "YooKyung"
+      },
+      {
+        "family": "Kim",
+        "given": "So Yun"
+      }
+    ],
+    "container-title": "Obstetrics & Gynecology Science",
+    "id": "Lee2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Potential applications of ChatGPT in obstetrics and gynecology in Korea: a review article",
+    "title-short": "Potential applications of ChatGPT in obstetrics and gynecology in Korea",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.7759/cureus.34891",
+    "PMCID": "10013256",
+    "PMID": "36925982",
+    "abstract": "The exponential growth of artificial intelligence (AI) has fascinated its application in various fields and so in the field of healthcare. Technological advancements in theories and learning algorithms and the availability of processing through huge datasets have created a breakthrough in the medical field with computing systems. AI can potentially drive clinicians and practitioners with appropriate decisions in managing cases and reaching a diagnosis, so its application is extensively spread in the medical field. Thus, computerized algorithms have made predictions so simple and accurate. This is because AI can proffer information accurately even to many patients. Furthermore, the subsets of AI, namely, machine learning (ML) and deep learning (DL) methods, have aided in detecting complex patterns from huge datasets and using such patterns in making predictions. Despite numerous challenges, AI implementation in obstetrics and gynecology is found to have a spellbound development. Therefore, this review propounds exploring the implementation of AI in obstetrics and gynecology to improve the outcomes and clinical experience. In that context, the evolution and progress of AI, the role of AI in ultrasound diagnosis in distinct phases of pregnancy, clinical benefits, preterm birth postpartum period, and applications of AI in gynecology are elucidated in this review with future recommendations.",
+    "author": [
+      {
+        "family": "Malani",
+        "given": "Sagar N"
+      },
+      {
+        "family": "Shrivastava",
+        "given": "Deepti"
+      },
+      {
+        "family": "Raka",
+        "given": "Mayur S"
+      }
+    ],
+    "container-title": "Cureus",
+    "id": "Malani2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "A Comprehensive Review of the Role of Artificial Intelligence in Obstetrics and Gynecology",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.4274/tjod.galenos.2025.83278",
+    "PMCID": "12136125",
+    "PMID": "40462403",
+    "abstract": "Objective One of the most common chromosomal abnormalities seen during pregnancy is Down syndrome (Trisomy 21). To determine the risk of Down syndrome, first-trimester combined screening tests are essential. Using data from the first-trimester screening test, this study compares machine learning and deep learning models to forecast the risk of Down syndrome. Materials and Methods Within the scope of the study, biochemical and biophysical data of 959 pregnant women who underwent first-trimester screening tests at Çukurova University Obstetrics and Gynecology Clinic between 2020-2024 were analyzed. After cleaning missing and erroneous data, various preprocessing and normalization techniques were applied to the final dataset consisting of 853 observations. Down syndrome risk prediction was performed using different machine learning models, and model performances were compared based on accuracy rates and other evaluation metrics. Results Experimental results show that the CatBoost model provides the highest success rate, with an accuracy rate of 95.31%. In addition, the XGBoost and LightGBM models exhibited high performance, with accuracy rates of 95.19% and 94.84%, respectively. The study also examines the effects of the class imbalance problem on model performance in detail and evaluates various strategies to reduce this imbalance. Conclusion The findings show that gradient boosting-based machine learning models have significant potential in Down syndrome risk prediction. This approach is expected to contribute to the reduction of unnecessary invasive tests and improve clinical decision-making processes by increasing the accuracy rate in prenatal screening processes. Future studies should aim to increase the generalization capacity of the model on larger data sets and to provide integration with different machine learning algorithms.",
+    "author": [
+      {
+        "family": "Yalcin",
+        "given": "Emre"
+      },
+      {
+        "family": "Koç",
+        "given": "Tarık"
+      },
+      {
+        "family": "Aslan",
+        "given": "Serpil"
+      },
+      {
+        "family": "Demir",
+        "given": "Şule"
+      },
+      {
+        "family": "Evrüke",
+        "given": "I."
+      },
+      {
+        "family": "Sucu",
+        "given": "Mete"
+      },
+      {
+        "family": "Avan",
+        "given": "Mesut"
+      },
+      {
+        "family": "Uzay",
+        "given": "Fatma İşlek"
+      }
+    ],
+    "container-title": "Journal of Turkish Society of Obstetric and Gynecology",
+    "id": "Yalcin2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Artificial intelligence in prenatal diagnosis: Down syndrome risk assessment with the power of gradient boosting-based machine learning algorithms",
+    "title-short": "Artificial intelligence in prenatal diagnosis",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.2196/35465",
+    "PMCID": "9069308",
+    "PMID": "35297766",
+    "abstract": "The applications of artificial intelligence (AI) processes have grown significantly in all medical disciplines during the last decades. Two main types of AI have been applied in medicine: symbolic AI (eg, knowledge base and ontologies) and nonsymbolic AI (eg, machine learning and artificial neural networks). Consequently, AI has also been applied across most obstetrics and gynecology (OB/GYN) domains, including general obstetrics, gynecology surgery, fetal ultrasound, and assisted reproductive medicine, among others.The aim of this study was to provide a systematic review to establish the actual contributions of AI reported in OB/GYN discipline journals.The PubMed database was searched for citations indexed with ”artificial intelligence” and at least one of the following medical subject heading (MeSH) terms between January 1, 2000, and April 30, 2020: ”obstetrics”; ”gynecology”; ”reproductive techniques, assisted”; or ”pregnancy.” All publications in OB/GYN core disciplines journals were considered. The selection of journals was based on disciplines defined in Web of Science. The publications were excluded if no AI process was used in the study. Review, editorial, and commentary articles were also excluded. The study analysis comprised (1) classification of publications into OB/GYN domains, (2) description of AI methods, (3) description of AI algorithms, (4) description of data sets, (5) description of AI contributions, and (6) description of the validation of the AI process.The PubMed search retrieved 579 citations and 66 publications met the selection criteria. All OB/GYN subdomains were covered: obstetrics (41%, 27/66), gynecology (3%, 2/66), assisted reproductive medicine (33%, 22/66), early pregnancy (2%, 1/66), and fetal medicine (21%, 14/66). Both machine learning methods (39/66) and knowledge base methods (25/66) were represented. Machine learning used imaging, numerical, and clinical data sets. Knowledge base methods used mostly omics data sets. The actual contributions of AI were method/algorithm development (53%, 35/66), hypothesis generation (42%, 28/66), or software development (3%, 2/66). Validation was performed on one data set (86%, 57/66) and no external validation was reported. We observed a general rising trend in publications related to AI in OB/GYN over the last two decades. Most of these publications (82%, 54/66) remain out of the scope of the usual OB/GYN journals.In OB/GYN discipline journals, mostly preliminary work (eg, proof-of-concept algorithm or method) in AI applied to this discipline is reported and clinical validation remains an unmet prerequisite. Improvement driven by new AI research guidelines is expected. However, these guidelines are covering only a part of AI approaches (nonsymbolic) reported in this review; hence, updates need to be considered.",
+    "author": [
+      {
+        "family": "Dhombres",
+        "given": "Ferdinand"
+      },
+      {
+        "family": "Bonnard",
+        "given": "Jules"
+      },
+      {
+        "family": "Bailly",
+        "given": "Kévin"
+      },
+      {
+        "family": "Maurice",
+        "given": "Paul"
+      },
+      {
+        "family": "Maurice",
+        "given": "P"
+      },
+      {
+        "family": "Papageorghiou",
+        "given": "Aris"
+      },
+      {
+        "family": "Papageorghiou",
+        "given": "Aris T."
+      },
+      {
+        "family": "Jouannic",
+        "given": "Jean-Marie"
+      },
+      {
+        "family": "Jouannic",
+        "given": "Jean‐Marie"
+      }
+    ],
+    "container-title": "Journal of Medical Internet Research",
+    "id": "Dhombres2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Contributions of artificial intelligence reported in Obstetrics and Gynecology journals: a systematic review.",
+    "title-short": "Contributions of artificial intelligence reported in Obstetrics and Gynecology journals",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.59615/ijie.4.4.37",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Artificial Intelligence (AI) and Machine Learning (ML) advancements have revolutionized precision medicine, offering transformative breast cancer diagnosis and treatment solutions. By leveraging vast datasets, AI-powered models provide enhanced accuracy in tumor detection, classification, and prognosis, surpassing traditional diagnostic methods. Machine learning algorithms, including deep learning networks, uncover intricate patterns within imaging, genomic, and clinical data, enabling personalized treatment strategies. This paper highlights the integration of AI in breast cancer care, discussing state-of-the-art techniques, challenges in clinical implementation, and future opportunities. Through a comparative analysis of data-driven models, we demonstrate their potential to optimize early detection, improve patient outcomes, and support oncologists in decision-making processes.",
+    "author": [
+      {
+        "family": "Reddy",
+        "given": "Anuradha"
+      }
+    ],
+    "container-title": "International Journal of Innovation in Engineering",
+    "id": "Reddy2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "AI and Machine Learning in Breast Cancer: Advancing Precision Medicine Through Data-Driven Models",
+    "title-short": "AI and Machine Learning in Breast Cancer",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/electronics11193240",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "The use of artificial intelligence in healthcare in general and in obstetrics and gynecology in particular has great potential. Specifically, machine learning methods could help improve the health and well-being of pregnant women, closely monitoring their health parameters during pregnancy, or reducing maternal and perinatal morbidity and mortality with early detection of pathologies. In this work, we propose a machine learning model to predict risk events in pregnancy, in particular the prediction of pre-eclampsia and intrauterine growth restriction, using Doppler measures of the uterine artery, sFlt-1, and PlGF values. For this purpose, we used a public dataset from a study carried out by the University Medical Center of Ljubljana, in which data were collected from 95 pregnant women with pre-eclampsia and intrauterine growth restriction. We adopted a multi-label approach to accomplish the prediction task. Different classifiers were evaluated and compared. The performance of each model was tested in terms of accuracy, precision, recall, F1 score, Hamming loss, and AUC-ROC. On the basis of these parameters, a variation of the decision tree classifier was found to be the best performing model. Our model had a robust recall metric (0.89) and an AUC ROC metric (0.87), taking into account the size of the data and the unbalance of the class.",
+    "author": [
+      {
+        "family": "Gómez-Jemes",
+        "given": "Lola"
+      },
+      {
+        "family": "Oprescu",
+        "given": "Andreea Madalina"
+      },
+      {
+        "family": "Chimenea",
+        "given": "Ángel"
+      },
+      {
+        "family": "García-Díaz",
+        "given": "Lutgardo"
+      },
+      {
+        "family": "García‐Díaz",
+        "given": "Lutgardo"
+      },
+      {
+        "family": "Romero-Ternero",
+        "given": "M. C."
+      }
+    ],
+    "container-title": "Electronics",
+    "id": "Gomez-Jemes2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Machine Learning to Predict Pre-Eclampsia and Intrauterine Growth Restriction in Pregnant Women",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1002/uog.21967",
+    "PMCID": "null",
+    "PMID": "31909548",
+    "abstract": "OBJECTIVES: To evaluate the feasibility of classifying sonographic images of fetal brain images taken in standard axial planes as normal or abnormal, using deep learning algorithms. METHODS: A total of 92748 prenatal examinations were used in the study. After inclusion and exclusion, 10251 normal and 2529 abnormal pregnancies were included. Abnormal cases were confirmed by neonatal ultrasound, follow-up examination or autopsy. After a series of data pretraining processes, 15372 normal and 14047 abnormal fetal brain images were included. They were divided into training and test datasets (on a case level rather than on an image level), at a ratio of approximately 8:2. Training data were used to train the algorithms to classify images as normal or abnormal, and the accuracy was then tested on the test datasets. The algorithms were trained for three purposes: image segmentation along fetal skull, classifying the image and localizing the lesion. Performance of segmentation was assessed using precision, recall, and Dice’s coefficient (DICE), calculated to measure the extent of overlap between human-labeled and machine-segmented regions. Sensitivity and specificity were calculated for classification accuracy assessment. Additionally, for abnormal images, how well a lesion was localized was determined. RESULTS: Segmentation precision, recall and DICE were 97.9%, 90.9% and 94.1%, respectively. For classification the overall accuracy was 96.3%. The sensitivity and specificity for abnormal images were 96.9% and 95.9%, respectively. The area under the receiver operating characteristic curve was 0.989 (95% CI: 0.986-0.991). For 2491 abnormal fetal brain images, the lesions were precisely, closely and irrelevantly located in 61.6% (1535/2491), 24.7% (614/2491) and 13.7% (342/2491), respectively. CONCLUSIONS: Deep learning algorithms could be trained for segmentation and classification of normal and abnormal images and provide heat maps for lesion localization. This study laid a foundation for further research on the differential diagnosis of fetal intracranial abnormalities. This article is protected by copyright. All rights reserved.",
+    "author": [
+      {
+        "family": "Xie",
+        "given": "Hong‐Ning"
+      },
+      {
+        "family": "Xie",
+        "given": "Hong-Ning"
+      },
+      {
+        "family": "Xie",
+        "given": "Hongning"
+      },
+      {
+        "family": "Wang",
+        "given": "Nan"
+      },
+      {
+        "family": "Nan",
+        "given": "Wang"
+      },
+      {
+        "family": "He",
+        "given": "Miao"
+      },
+      {
+        "family": "Zhang",
+        "given": "Lihe"
+      },
+      {
+        "family": "Zhang",
+        "given": "Li‐He"
+      },
+      {
+        "family": "Cai",
+        "given": "Hongmin"
+      },
+      {
+        "family": "Xian",
+        "given": "Jianbo"
+      },
+      {
+        "family": "Lin",
+        "given": "Min"
+      },
+      {
+        "family": "Lin",
+        "given": "Meifang"
+      },
+      {
+        "family": "Lin",
+        "given": "Mei-Fang"
+      },
+      {
+        "family": "Zheng",
+        "given": "Jinjian"
+      },
+      {
+        "family": "Zheng",
+        "given": "Jv"
+      },
+      {
+        "family": "Yang",
+        "given": "Yanyan"
+      },
+      {
+        "family": "Yang",
+        "given": "Yongzhong"
+      }
+    ],
+    "container-title": "Ultrasound in Obstetrics & Gynecology",
+    "id": "Xie2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Using deep-learning algorithms to classify fetal brain ultrasound images as normal or abnormal",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.31893/multirev.2025285",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Emergency medicine is undergoing a significant transformation due to the integration of artificial intelligence (AI), which is enhancing patient care, boosting operational efficiency, and revolutionizing clinical decision-making. This analysis examines the present applications and prospects of AI in emergency medicine, with a focus on its capacity to enhance diagnostic precision, improve triage systems, and tailor treatment strategies. Emergency departments worldwide are increasingly adopting AI-driven tools, including advanced triage systems, predictive analytics, and automated diagnostic support. These technologies have shown impressive abilities in medical image analysis, patient outcome prediction, and clinical documentation assistance. Nevertheless, the implementation of AI in emergency medicine faces obstacles such as data accessibility and quality, ethical issues, and the need for comprehensive regulatory frameworks. To ensure responsible AI system development and deployment, collaboration among healthcare professionals, data scientists, ethicists, and policymakers is essential. Future AI advancements in emergency medicine are expected to include improved predictive analytics, precise diagnostics, and individualized patient care. AI-enabled remote monitoring and telehealth services also show potential for alleviating pressure on emergency services and improving patient outcomes. As AI technology progresses, it is vital to address the constraints and challenges associated with its implementation, including data sharing, model interpretability, and potential biases. Ongoing research and stakeholder discussions are crucial to fully leverage AI’s potential in emergency medicine while prioritizing patient safety, privacy, and equitable access to healthcare services.",
+    "author": [
+      {
+        "family": "Kuttan",
+        "given": "Nigil"
+      },
+      {
+        "family": "Pundkar",
+        "given": "Aditya"
+      },
+      {
+        "family": "Gadkari",
+        "given": "Charuta"
+      },
+      {
+        "family": "Patel",
+        "given": "Aniket"
+      },
+      {
+        "family": "Kumar",
+        "given": "Abhishek"
+      }
+    ],
+    "container-title": "Multidisciplinary Reviews",
+    "id": "Kuttan2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Transforming emergency medicine with artificial intelligence: From triage to clinical decision support",
+    "title-short": "Transforming emergency medicine with artificial intelligence",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.9734/ajmah/2024/v22i81066",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "The use of artificial intelligence (AI) in healthcare analytics has brought about a transformation in the medical field of diagnosis and treatment optimization. AI technologies have unmatched abilities in processing substantial amounts of medical data and extracting valuable insights by combining big data analytics and advanced machine learning algorithms. AI algorithms provide healthcare professionals with enhanced accuracy and speed in diagnosing illnesses, predicting patient results, and tailoring treatment plans across the entire healthcare journey. This abstract explores how artificial intelligence (AI) can revolutionize healthcare analytics in various areas such as genomics, electronic health records (EHRs), medical imaging, and clinical decision support systems. Healthcare providers can improve healthcare services by optimizing workflows, enhancing patient outcomes, and using AI-driven initiatives to make services more accessible and high in quality. In order to ensure ethical and accountable use of AI in healthcare, it is necessary to address problems such as algorithm bias, data privacy worries, and regulatory obstacles. Despite these challenges, the ongoing advancement of AI technologies has vast potential to transform patient care models and healthcare delivery methods.",
+    "author": [
+      {
+        "family": "Khinvasara",
+        "given": "Tushar"
+      },
+      {
+        "family": "Cuthrell",
+        "given": "Kimberly Morton"
+      },
+      {
+        "family": "Tzenios",
+        "given": "Nikolaos"
+      }
+    ],
+    "container-title": "Asian Journal of Medicine and Health",
+    "id": "Khinvasara2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Harnessing Artificial Intelligence in Healthcare Analytics: From Diagnosis to Treatment Optimization",
+    "title-short": "Harnessing Artificial Intelligence in Healthcare Analytics",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.36676/978-81-980948-7-2",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "This book, Artificial Intelligence in Healthcare: A Practical Guide, offers a comprehensive and practical exploration of the transformative role of Artificial Intelligence (AI) in the modern healthcare ecosystem. It traverses the evolution, integration, and application of AI technologies—from foundational concepts like machine learning, deep learning, natural language processing, and computer vision to their real-world deployment in diagnostics, imaging, personalized medicine, robotics, and healthcare administration. The book underscores how AI-driven systems enhance clinical decision-making, enable early and accurate diagnosis, streamline hospital operations, and support personalized patient care through data-driven insights. It also examines the digital transformation of healthcare, exploring how big data, cloud computing, and the Internet of Things (IoT) synergistically drive AI adoption. Each chapter reflects on the use of AI across medical domains such as radiology, pathology, genomics, surgery, and public health. The author critically addresses key challenges including algorithmic bias, data privacy, regulatory compliance, and ethical implications, while highlighting the future potential of technologies like explainable AI, federated learning, and quantum computing. Designed for practitioners, researchers, and students alike, the book serves as both an academic reference and a field guide, equipping readers with the knowledge and vision necessary to navigate and contribute to the rapidly evolving landscape of AI in healthcare.",
+    "author": [
+      {
+        "family": "Patel",
+        "given": "Akshar Parshubhai"
+      }
+    ],
+    "container-title": "null",
+    "id": "Patel2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Artificial Intelligence in Healthcare: A Practical Guide",
+    "title-short": "Artificial Intelligence in Healthcare",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.20953/1726-1678-2025-1-75-88",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "The last decade has been marked by the introduction of artificial intelligence (AI) into medical science and practice and, in particular, into obstetrics and gynecology. Due to its ability to learn, high-performance computing and improved image quality as a result of current imaging technologies, AI can provide effective assistance to specialists in diagnosis, prognosis and monitoring of various diseases, personalized selection of treatment measures, medication development, evaluation of the efficacy of medical care, and detection and analysis of medical errors. Objective. To analyze current scientific publications on the application of AI in obstetrics and gynecology. Materials and methods. A literature search was conducted in Cochrane Library, PubMed/Medline, Embase, Google Scholar, Scopus, and Elibrary databases using the following key words: “artificial intelligence”, “augmented reality”, “pathology in obstetrics and gynecology”, “gynecological malignancies”. The paper includes systematic reviews, meta-analyses, cohort studies, original articles on the application of AI in obstetrics and gynecology published between 1950 and 2024. Results. A total of 81 articles meeting the selection criteria were found, which were analyzed and included in this literature review. Publications on AI in obstetrics and gynecology dominated. There was an overall increase in the number of publications related to AI in obstetrics and gynecology over the last decade. Conclusion. The use of AI in diagnosis, prognosis and monitoring of pathologies in obstetrics and gynecology is a promising, actively developing direction in current medicine, which necessitates further research in this field. Key words: artificial intelligence, machine learning, neural networks, pathology in obstetrics and gynecology, diagnosis, prognosis",
+    "author": [
+      {
+        "family": "Ishchenko",
+        "given": "A. I."
+      },
+      {
+        "family": "Dzhibladze",
+        "given": "T."
+      },
+      {
+        "family": "Davydov",
+        "given": "A. I."
+      },
+      {
+        "family": "Khokhlova",
+        "given": "I."
+      },
+      {
+        "family": "Zuev",
+        "given": "V."
+      },
+      {
+        "family": "Ageev",
+        "given": "M."
+      },
+      {
+        "family": "Zakaryan",
+        "given": "A. A."
+      },
+      {
+        "family": "Ostroumova",
+        "given": "M. V."
+      },
+      {
+        "family": "Koryagina",
+        "given": "A. D."
+      },
+      {
+        "family": "Svidinskaya",
+        "given": "E."
+      },
+      {
+        "family": "Komarova",
+        "given": "A."
+      },
+      {
+        "family": "Siordiya",
+        "given": "A. A."
+      }
+    ],
+    "container-title": "Voprosy ginekologii akušerstva i perinatologii",
+    "id": "Ishchenko2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Artificial intelligence in obstetrics and gynecology",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.48550/arxiv.2407.16062",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Precision health, increasingly supported by digital technologies, is a domain of research that broadens the paradigm of precision medicine, advancing everyday healthcare. This vision goes hand in hand with the groundbreaking advent of artificial intelligence (AI), which is reshaping the way we diagnose, treat, and monitor both clinical subjects and the general population. AI tools powered by machine learning have shown considerable improvements in a variety of healthcare domains. In particular, reinforcement learning (RL) holds great promise for sequential and dynamic problems such as dynamic treatment regimes and just-in-time adaptive interventions in digital health. In this work, we discuss the opportunity offered by AI, more specifically RL, to current trends in healthcare, providing a methodological survey of RL methods in the context of precision and digital health. Focusing on the area of adaptive interventions, we expand the methodological survey with illustrative case studies that used RL in real practice. This invited article has undergone anonymous review and is intended as a book chapter for the volume”Frontiers of Statistics and Data Science”edited by Subhashis Ghoshal and Anindya Roy for the International Indian Statistical Association Series on Statistics and Data Science, published by Springer. It covers the material from a short course titled”Artificial Intelligence in Precision and Digital Health”taught by the author Bibhas Chakraborty at the IISA 2022 Conference, December 26-30 2022, at the Indian Institute of Science, Bengaluru.",
+    "author": [
+      {
+        "family": "Deliu",
+        "given": "Nina"
+      },
+      {
+        "family": "Chakraborty",
+        "given": "Bibhas"
+      }
+    ],
+    "container-title": "arXiv.org",
+    "id": "Deliu2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Artificial Intelligence-based Decision Support Systems for Precision and Digital Health",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.5468/ogs.21234",
+    "PMCID": "8942755",
+    "PMID": "34905872",
+    "abstract": "This study reviews recent advances on the application of artificial intelligence for the early diagnosis of various maternal-fetal conditions such as preterm birth and abnormal fetal growth. It is found in this study that various machine learning methods have been successfully employed for different kinds of data capture with regard to early diagnosis of maternal-fetal conditions. With the more popular use of artificial intelligence, ethical issues should also be considered accordingly.",
+    "author": [
+      {
+        "family": "Ahn",
+        "given": "Ki Hoon"
+      },
+      {
+        "family": "Lee",
+        "given": "Kwang-Sig"
+      }
+    ],
+    "container-title": "Obstetrics & gynecology science",
+    "id": "Ahn2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Artificial intelligence in obstetrics.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1109/icaeee62219.2024.10561798",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Newborn weight refers to the weight of a baby at the time of birth. It is typically measured in units such as pounds and ounces or kilograms. The weight of a newborn is an essential metric used by healthcare professionals to assess the health of an infant and its development. This research emphasizes the prediction of newborn weight using Machine Learning (ML) and Explainable Artificial Intelligence (XAI). The proposed approach involves preprocessing a dataset encompassing various parameters of newborns and their mothers during pregnancy. The primary objective is to develop an automated system capable of accurately predicting the weight of a newborn. Employing a range of regression ensemble ML models, namely Bootstrap Aggregating regression (BAGGINGR), Random Forest Regression (RFR), Ensemble Voting Regression (VOTIINGR), Extreme Gradient Boosting Regression (XGBOOSTR), Stacked Generalization Regression (STACKINGR), and Gradient Boosting Decision Trees Regression (GBDTR). This research develops a cross-validation approach, and notably, the GBDT model emerges as the top performer, yielding impressive results with average metrics Mean Squared Error (MSE) of 247.26, Mean Absolute Error (MAE) of 12.29, R-squared (R2) of 0.23, Peak Signal-to-Noise Ratio (PSNR) at 20.99 dB, and Signal-to-Noise Ratio (SNR) at 48.65 dB. The outcomes of the research are interpreted through Local Interpretable Model-agnostic Explanations (LIME) and Shapley Additive Explanations (SHAP) in XAI, emphasizing the significance of interpreting these parameters. The proposed research has valuable insights to enhance the long-term health conditions of newborns, reduce mortality rates, and provide crucial support to healthcare professionals.",
+    "author": [
+      {
+        "family": "Chowdhury",
+        "given": "Safiul Haque"
+      },
+      {
+        "family": "Mamun",
+        "given": "Mohammad"
+      },
+      {
+        "family": "Hossain",
+        "given": "Muhammad Minoar"
+      },
+      {
+        "family": "Hossain",
+        "given": "Mohammad Ibrahim"
+      },
+      {
+        "family": "Iqbal",
+        "given": "Md. Sadiq"
+      },
+      {
+        "family": "Kashem",
+        "given": "M. A."
+      }
+    ],
+    "container-title": "2024 3rd International Conference on Advancement in Electrical and Electronic Engineering (ICAEEE)",
+    "id": "Chowdhury2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Newborn Weight Prediction And Interpretation Utilizing Explainable Machine Learning",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1038/nature21056",
+    "PMCID": "null",
+    "PMID": "28117445",
+    "abstract": "An artificial intelligence trained to classify images of skin lesions as benign lesions or malignant skin cancers achieves the accuracy of board-certified dermatologists. Andre Esteva et al. used 129,450 clinical images of skin disease to train a deep convolutional neural network to classify skin lesions. The result is an algorithm that can classify lesions from photographic images similar to those taken with a mobile phone. The accuracy of the system in detecting malignant melanomas and carcinomas matched that of trained dermatologists. The authors suggest that the technique could be used outside the clinic as a visual screen for cancer. Skin cancer, the most common human malignancy1,2,3, is primarily diagnosed visually, beginning with an initial clinical screening and followed potentially by dermoscopic analysis, a biopsy and histopathological examination. Automated classification of skin lesions using images is a challenging task owing to the fine-grained variability in the appearance of skin lesions. Deep convolutional neural networks (CNNs)4,5 show potential for general and highly variable tasks across many fine-grained object categories6,7,8,9,10,11. Here we demonstrate classification of skin lesions using a single CNN, trained end-to-end from images directly, using only pixels and disease labels as inputs. We train a CNN using a dataset of 129,450 clinical images—two orders of magnitude larger than previous datasets12—consisting of 2,032 different diseases. We test its performance against 21 board-certified dermatologists on biopsy-proven clinical images with two critical binary classification use cases: keratinocyte carcinomas versus benign seborrheic keratoses; and malignant melanomas versus benign nevi. The first case represents the identification of the most common cancers, the second represents the identification of the deadliest skin cancer. The CNN achieves performance on par with all tested experts across both tasks, demonstrating an artificial intelligence capable of classifying skin cancer with a level of competence comparable to dermatologists. Outfitted with deep neural networks, mobile devices can potentially extend the reach of dermatologists outside of the clinic. It is projected that 6.3 billion smartphone subscriptions will exist by the year 2021 (ref. 13) and can therefore potentially provide low-cost universal access to vital diagnostic care.",
+    "author": [
+      {
+        "family": "Esteva",
+        "given": "Andre"
+      },
+      {
+        "family": "Kuprel",
+        "given": "Brett"
+      },
+      {
+        "family": "Novoa",
+        "given": "Roberto A."
+      },
+      {
+        "family": "Ko",
+        "given": "Justin"
+      },
+      {
+        "family": "Ko",
+        "given": "Justin M."
+      },
+      {
+        "family": "Swetter",
+        "given": "Susan M."
+      },
+      {
+        "family": "Blau",
+        "given": "Helen M."
+      },
+      {
+        "family": "Thrun",
+        "given": "Sebastian"
+      }
+    ],
+    "container-title": "Nature",
+    "id": "Esteva2017",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Dermatologist-level classification of skin cancer with deep neural networks",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/ijerph17165993",
+    "PMCID": "7460520",
+    "PMID": "32824765",
+    "abstract": "Myometrial invasion affects the prognosis of endometrial cancer. However, discrepancies exist between pre-operative magnetic resonance imaging staging and post-operative pathological staging. This study aims to validate the accuracy of artificial intelligence (AI) for detecting the depth of myometrial invasion using a deep learning technique on magnetic resonance images. We obtained 4896 contrast-enhanced T1-weighted images (T1w) and T2-weighted images (T2w) from 72 patients who were diagnosed with surgico-pathological stage I endometrial carcinoma. We used the images from 24 patients (33.3%) to train the AI. The images from the remaining 48 patients (66.7%) were used to evaluate the accuracy of the model. The AI then interpreted each of the cases and sorted them into stage IA or IB. Compared with the accuracy rate of radiologists’ diagnoses (77.8%), the accuracy rate of AI interpretation in contrast-enhanced T1w was higher (79.2%), whereas that in T2w was lower (70.8%). The diagnostic accuracy was not significantly different between radiologists and AI for both T1w and T2w. However, AI was more likely to provide incorrect interpretations in patients with coexisting benign leiomyomas or polypoid tumors. Currently, the ability of this AI technology to make an accurate diagnosis has limitations. However, in hospitals with limited resources, AI may be able to assist in reading magnetic resonance images. We believe that AI has the potential to assist radiologists or serve as a reasonable alternative for pre-operative evaluation of the myometrial invasion depth of stage I endometrial cancers.",
+    "author": [
+      {
+        "family": "Dong",
+        "given": "Hsiang-Chun"
+      },
+      {
+        "family": "Dong",
+        "given": "Hsiang-Kai"
+      },
+      {
+        "family": "Yu",
+        "given": "Mu-Hsien"
+      },
+      {
+        "family": "Lin",
+        "given": "Yi-Hsin"
+      },
+      {
+        "family": "Chang",
+        "given": "Chia-Ming"
+      },
+      {
+        "family": "Chang",
+        "given": "Cheng‐Chang"
+      },
+      {
+        "family": "Chang",
+        "given": "Cheng-Chang"
+      }
+    ],
+    "container-title": "International Journal of Environmental Research and Public Health",
+    "id": "Dong2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Using Deep Learning with Convolutional Neural Network Approach to Identify the Invasion Depth of Endometrial Cancer in Myometrium Using MR Images: A Pilot Study.",
+    "title-short": "Using Deep Learning with Convolutional Neural Network Approach to Identify the Invasion Depth of Endometrial Cancer in Myometrium Using MR Images",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/j.ajogmf.2021.100462",
+    "PMCID": "null",
+    "PMID": "34403820",
+    "abstract": "Abstract Background : Optimal prenatal care relies on accurate gestational age dating (GA). After the first trimester, current GA estimation methods’ accuracy diminishes with increasing GA. Considering that in many countries, access to first trimester CRL is still difficult due to late-booking, infrequent access to prenatal care and unavailability of early ultrasound examination, the development of accurate methods for GA estimation in second and third trimester of pregnancy remains an unsolved challenge in fetal medicine. Objectives : to evaluate the performance of an artificial intelligence (AI) method based on automated analysis of fetal brain morphology on standard cranial ultrasound sections to estimate gestational age (GA) in second and third trimester fetuses as compared with current formulas using standard fetal biometry. Study Design : Standard trans-thalamic axial plane images from a total of 1,394 patients undergoing routine fetal ultrasound were used to develop an AI method to automatically estimate GA from the analysis of fetal brain information. We compared its performance -as stand alone or in combination with fetal biometries- against four currently used fetal biometry formulas on a series of 3,065 scans from 1,992 patients undergoing second (n=1,761) and/or third trimester (n=1,298) routine ultrasound, with known GA estimated from Crown Rump Length in the first trimester. Results : Overall, 95% confidence interval (CI) of the error in GA estimation was 14.2 days for the AI method alone and 11.0 when used in combination with fetal biometries, compared to 12.9 days of the best method using standard biometries alone. In the third trimester, lower 95% CI error were 14.3 days for AI in combination with biometries and 17 days for fetal biometries, while in the second trimester the CI error was 6.7 and 7 respectively. The performance differences were even larger in the small for gestational age fetuses group (14.8 and 18.5 respectively). Conclusions : An automated AI method using standard sonographic fetal planes yielded similar or lower error in GA estimation compared to fetal biometries, especially in the third trimester. These results support further research to improve the performance of these methods in larger studies.",
+    "author": [
+      {
+        "family": "Burgos-Artizzu",
+        "given": "Xavier P."
+      },
+      {
+        "family": "Coronado-Gutiérrez",
+        "given": "David"
+      },
+      {
+        "family": "Valenzuela-Alcaráz",
+        "given": "Brenda"
+      },
+      {
+        "family": "Valenzuela-Alcaraz",
+        "given": "Brenda"
+      },
+      {
+        "family": "Vellvé",
+        "given": "Kilian"
+      },
+      {
+        "family": "Eixarch",
+        "given": "E."
+      },
+      {
+        "family": "Eixarch",
+        "given": "Elisenda"
+      },
+      {
+        "family": "Crispi",
+        "given": "F."
+      },
+      {
+        "family": "Crispi",
+        "given": "Fatima"
+      },
+      {
+        "family": "Bonet‐Carne",
+        "given": "Elisenda"
+      },
+      {
+        "family": "Bonet-Carne",
+        "given": "Elisenda"
+      },
+      {
+        "family": "Bennásar",
+        "given": "M."
+      },
+      {
+        "family": "Bennasar",
+        "given": "Mar"
+      },
+      {
+        "family": "Gratacós",
+        "given": "Eduard"
+      }
+    ],
+    "container-title": "null",
+    "id": "Burgos-Artizzu2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Analysis of maturation features in fetal brain ultrasound via artificial intelligence for the estimation of gestational age.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1002/uog.22122",
+    "PMCID": "null",
+    "PMID": "32530098",
+    "abstract": "Artificial intelligence (AI) uses data and algorithms to aim to draw conclusions as good as humans (or even better). AI is already a part of our daily life - it is behind face recognition, speech recognition in virtual assistants (like Amazon Alexa, Apple’s Siri, Google Assistant, and Microsoft Cortana) and self-driving cars. AI software has been able to win world champions in Chess, Go and recently even Poker. Relevant to our community, it is a prominent source of innovation in healthcare, already helping to develop new drugs, support clinical decisions, and provide quality assurance in radiology. The full list of medical image analysis AI applications with US Food and Drug Administration (FDA) or European Union regulation (soon to fall under European Union Medical Device Regulation (EU-MDR)) is growing rapidly and covers diverse clinical needs, such as arrhythmia detection with your smartwatch or automatic triage of critical imaging studies to the top of the radiologist worklist. Deep learning, a leading tool of AI, is in particular good at image pattern recognition and therefore of high benefit to doctors who heavily depend on images, like sonologists, radiographers and pathologists. Although obstetric and gynecologic ultrasound are two of the most commonly performed imaging studies, AI has had little impact on this field so far. Nevertheless, there is huge potential to assist in repetitive ultrasound tasks, such as automatically identifying good acquisitions and immediate quality assure. For this potential to thrive interdisciplinary communication between AI developers and ultrasound professionals is necessary. In this opinion we explore the fundamentals of medical imaging AI, from theory to applicability, and introduce some key terms to medical professionals in the field of ultrasound. We believe that wider knowledge of AI will help accelerate its integration into healthcare. This article is protected by copyright. All rights reserved.",
+    "author": [
+      {
+        "family": "Drukker",
+        "given": "Lior"
+      },
+      {
+        "family": "Noble",
+        "given": "J. Alison"
+      },
+      {
+        "family": "Noble",
+        "given": "J. A."
+      },
+      {
+        "family": "Papageorghiou",
+        "given": "Aris T."
+      }
+    ],
+    "container-title": "Ultrasound in Obstetrics & Gynecology",
+    "id": "Drukker2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Introduction to artificial intelligence in ultrasound imaging in obstetrics and gynecology.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/biomedicines10030551",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Diagnostic support tools based on artificial intelligence (AI) have exhibited high performance in various medical fields. However, their clinical application remains challenging because of the lack of explanatory power in AI decisions (black box problem), making it difficult to build trust with medical professionals. Nevertheless, visualizing the internal representation of deep neural networks will increase explanatory power and improve the confidence of medical professionals in AI decisions. We propose a novel deep learning-based explainable representation “graph chart diagram” to support fetal cardiac ultrasound screening, which has low detection rates of congenital heart diseases due to the difficulty in mastering the technique. Screening performance improves using this representation from 0.966 to 0.975 for experts, 0.829 to 0.890 for fellows, and 0.616 to 0.748 for residents in the arithmetic mean of area under the curve of a receiver operating characteristic curve. This is the first demonstration wherein examiners used deep learning-based explainable representation to improve the performance of fetal cardiac ultrasound screening, highlighting the potential of explainable AI to augment examiner capabilities.",
+    "author": [
+      {
+        "family": "Sakai",
+        "given": "Akira"
+      },
+      {
+        "family": "Komatsu",
+        "given": "Masaaki"
+      },
+      {
+        "family": "Komatsu",
+        "given": "Reina"
+      },
+      {
+        "family": "Matsuoka",
+        "given": "Ryu"
+      },
+      {
+        "family": "Yasutomi",
+        "given": "Suguru"
+      },
+      {
+        "family": "Dozen",
+        "given": "Ai"
+      },
+      {
+        "family": "Shozu",
+        "given": "Kanto"
+      },
+      {
+        "family": "Arakaki",
+        "given": "Tatsuya"
+      },
+      {
+        "family": "Machino",
+        "given": "Hidenori"
+      },
+      {
+        "family": "Asada",
+        "given": "Ken"
+      },
+      {
+        "family": "Kaneko",
+        "given": "Syuzo"
+      },
+      {
+        "family": "Sekizawa",
+        "given": "Akihiko"
+      },
+      {
+        "family": "Hamamoto",
+        "given": "Ryuji"
+      }
+    ],
+    "container-title": "Biomedicines",
+    "id": "Sakai2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Medical professional enhancement using explainable artificial intelligence in fetal cardiac ultrasound screening (supplementary)",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.4036/iis.2020.a.03",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "We present an introduction to supervised machine learning methods with emphasis on neural networks, kernel support vector machines, and decision trees. These methods are representative methods of supervised learning. Recently, there has been a boom in artiﬁcial intelligence research. Neural networks are a key concept of deep learning and are the origin of the current boom in artiﬁcial intelligence research. Support vector machines are one of the most sophisticated learning methods from the perspective of prediction performance. Its high performance is primarily owing to the use of the kernel method, which is an important concept not only for support vector machines but also for other machine learning methods. Although these methods are the so-called black-box methods, the decision tree is a white-box method, where the judgment criteria of prediction by the predictor can be easily interpreted. Decision trees are used as the base method of ensemble learning, which is a reﬁned learning technique to improve prediction performance. We review the theory of supervised machine learning methods and illustrate their applications. We also discuss nonlinear optimization methods for the machine to learn the training dataset.",
+    "author": [
+      {
+        "family": "Baladram",
+        "given": "Mohammad Samy"
+      },
+      {
+        "family": "Koike",
+        "given": "Atsushi"
+      },
+      {
+        "family": "Yamada",
+        "given": "Kazunori"
+      },
+      {
+        "family": "Yamada",
+        "given": "Kazunori D"
+      }
+    ],
+    "container-title": "Interdisciplinary Information Sciences",
+    "id": "Baladram2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Introduction to Supervised Machine Learning for Data Science",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1111/joim.13483",
+    "PMCID": "9544754",
+    "PMID": "35426190",
+    "abstract": "The deployment of machine learning for tasks relevant to complementing standard of care and advancing tools for precision health has gained much attention in the clinical community, thus meriting further investigations into its broader use. In an introduction to predictive modelling using machine learning, we conducted a review of the recent literature that explains standard taxonomies, terminology and central concepts to a broad clinical readership. Articles aimed at readers with little or no prior experience of commonly used methods or typical workflows were summarised and key references are highlighted. Continual interdisciplinary developments in data science, biostatistics and epidemiology also motivated us to further discuss emerging topics in predictive and data-driven (hypothesis-less) analytics with machine learning. Through two methodological deep dives using examples from precision psychiatry and outcome prediction after lymphoma, we highlight how the use of, for example, natural language processing can outperform established clinical risk scores and aid dynamic prediction and adaptive care strategies. Such realistic and detailed examples allow for critical analysis of the importance of new technological advances in artificial intelligence for clinical decision-making. New clinical decision support systems can assist in prevention and care by leveraging precision medicine. This article is protected by copyright. All rights reserved.",
+    "author": [
+      {
+        "family": "Eloranta",
+        "given": "Sandra"
+      },
+      {
+        "family": "Boman",
+        "given": "Magnus"
+      }
+    ],
+    "container-title": "Journal of Internal Medicine",
+    "id": "Eloranta2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Predictive models for clinical decision making: Deep dives in practical machine learning",
+    "title-short": "Predictive models for clinical decision making",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/978-3-030-70296-0_6",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Today, devices and applications powered by artificial intelligence (AI) include modes of transportation, home appliances, and mobile applications; in short, they are ubiquitous. Many people will have at least heard of AI and perhaps even subdivisions of AI such as Machine Learning (ML) and Deep Learning (DL). Each of these represents an advanced tool of data science explored in this article. First, we briefly review the history of these developments in data science, tracing the history from the first mechanical computer in 1850 to the current state of DL in 2020. Each section overviews some basic definitions, tenets, and current and future developments. We discuss possible future directions of AI—including the transition to Artificial General Intelligence (AGI). Finally, we explore some of the ethical dilemmas posed by such advances and offer a call to data and social scientists to carefully consider the implications of these technologies.",
+    "author": [
+      {
+        "family": "Iman",
+        "given": "Mohammadreza"
+      },
+      {
+        "family": "Arabnia",
+        "given": "Hamid R."
+      },
+      {
+        "family": "Branchinst",
+        "given": "Robert Maribe"
+      }
+    ],
+    "container-title": "Transactions on Computational Science and Computational Intelligence",
+    "id": "Iman2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Pathways to Artificial General Intelligence: A Brief Overview of Developments and Ethical Issues via Artificial Intelligence, Machine Learning, Deep Learning, and Data Science",
+    "title-short": "Pathways to Artificial General Intelligence",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/j.fertnstert.2020.09.156",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Traditionally, new treatments have been developed for the population at large. Recently, large-scale genomic sequencing analyses have revealed tremendous genetic diversity between individuals. In diseases driven by genetic events such as cancer, genomic sequencing can unravel all the mutations that drive individual tumors. The ability to capture the genetic makeup of individual patients has led to the concept of precision medicine, a modern, technology-driven form of personalized medicine. Precision medicine matches each individual to the best treatment in a way that is tailored to his or her genetic uniqueness. To further personalize medicine, precision medicine increasingly incorporates and integrates data beyond genomics, such as epigenomics and metabolomics, as well as imaging. Increasingly, the robust use and integration of these modalities in precision medicine require the use of artificial intelligence and machine learning. This modern view of precision medicine, adopted early in certain areas of medicine such as cancer, has started to impact the field of reproductive medicine. Here we review the concepts and history of precision medicine and artificial intelligence, highlight their growing impact on reproductive medicine, and outline some of the challenges and limitations that these new fields have encountered in medicine.",
+    "author": [
+      {
+        "family": "Hajirasouliha",
+        "given": "Iman"
+      },
+      {
+        "family": "Elemento",
+        "given": "Olivier"
+      }
+    ],
+    "container-title": "Fertility and Sterility",
+    "id": "Hajirasouliha2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Precision medicine and artificial intelligence: overview and relevance to reproductive medicine",
+    "title-short": "Precision medicine and artificial intelligence",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/j.ijmedinf.2023.105040",
+    "PMCID": "null",
+    "PMID": "36907027",
+    "abstract": "Clinical decision support systems (CDSSs) can provide various functions and advantages to healthcare delivery. Quality healthcare during pregnancy and childbirth is of vital importance, and machine learning-based CDSSs have shown positive impact on pregnancy care.This paper aims to investigate what has been done in CDSSs in the context of pregnancy care using machine learning, and what aspects require attention from future researchers.We conducted a systematic review of existing literature following a structured process of literature search, paper selection and filtering, and data extraction and synthesis.17 research papers were identified on the topic of CDSS development for different aspects of pregnancy care using various machine learning algorithms. We discovered an overall lack of explainability in the proposed models. We also observed a lack of experimentation, external validation and discussion around culture, ethnicity and race from the source data, with most studies using data from a single centre or country, and an overall lack of awareness of applicability and generalisability of the CDSSs regarding different populations. Finally, we found a gap between machine learning practices and CDSS implementation, and an overall lack of user testing.Machine learning-based CDSSs are still under-explored in the context of pregnancy care. Despite the open problems that remain, the few studies that tested a CDSS for pregnancy care reported positive effects, reinforcing the potential of such systems to improve clinical practice. We encourage future researchers to take into consideration the aspects we identified in order for their work to translate into clinical use.",
+    "author": [
+      {
+        "family": "Du",
+        "given": "Yuhan"
+      },
+      {
+        "family": "McNestry",
+        "given": "Catherine"
+      },
+      {
+        "family": "Wei",
+        "given": "Lan"
+      },
+      {
+        "family": "Antoniadi",
+        "given": "Anna Markella"
+      },
+      {
+        "family": "McAuliffe",
+        "given": "Fionnuala M."
+      },
+      {
+        "family": "Mooney",
+        "given": "Catherine"
+      }
+    ],
+    "container-title": "null",
+    "id": "Du2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Machine learning-based clinical decision support systems for pregnancy care: A systematic review",
+    "title-short": "Machine learning-based clinical decision support systems for pregnancy care",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1002/cns3.5",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Abstract Artificial intelligence is the science and engineering of machines that can mimic human intelligence. Machine learning is the subfield of artificial intelligence in which computers have the ability to learn and iteratively improve their performance without being explicitly programmed. Deep learning algorithms learn by processing the data with increasing levels of abstraction in each layer. We present a narrative review of the relevant literature with a particular focus on deep learning for image classification and image segmentation in neuroimaging. For the first time in history, computers can automatically perform some clinically relevant tasks at the level, or even above the level, of the relevant medical specialists. A turning point in machine learning occurred in the 2010s as a result of (1) the multiple technical improvements that machine learning has been accumulating over several decades, (2) the exponential increase in computing power, and (3) the wide availability of very large databases with millions of observations and thousands of variables. Machine learning is starting to be successfully applied to several areas of medicine, including predictive analytics, decision support, natural language processing of free‐text notes, and automatic interpretation of electrophysiological recordings. Among all the applications of machine learning in medicine, deep learning for computer vision is the one that has enjoyed the greatest success. The emphasis of this review is the application of convolutional neural networks for image classification and for image segmentation in neuroimaging. Machine learning and deep learning are increasingly integrated into the clinical workflow and applied in neuroimaging interpretation. Natural language processing is likely to gain increasing importance in medicine in the near future. Complex decision‐making that mimics human thinking with reinforcement learning is still far away on the horizon.",
+    "author": [
+      {
+        "family": "Fernández",
+        "given": "Iván Sánchez"
+      },
+      {
+        "family": "Peters",
+        "given": "Jurriaan M."
+      }
+    ],
+    "container-title": "Annals of the Child Neurology Society",
+    "id": "Fernandez2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Machine learning and deep learning in medicine and neuroimaging",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/s2589-7500(19)30123-2",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Summary Background Deep learning offers considerable promise for medical diagnostics. We aimed to evaluate the diagnostic accuracy of deep learning algorithms versus health-care professionals in classifying diseases using medical imaging. Methods In this systematic review and meta-analysis, we searched Ovid-MEDLINE, Embase, Science Citation Index, and Conference Proceedings Citation Index for studies published from Jan 1, 2012, to June 6, 2019. Studies comparing the diagnostic performance of deep learning models and health-care professionals based on medical imaging, for any disease, were included. We excluded studies that used medical waveform data graphics material or investigated the accuracy of image segmentation rather than disease classification. We extracted binary diagnostic accuracy data and constructed contingency tables to derive the outcomes of interest: sensitivity and specificity. Studies undertaking an out-of-sample external validation were included in a meta-analysis, using a unified hierarchical model. This study is registered with PROSPERO, CRD42018091176. Findings Our search identified 31587 studies, of which 82 (describing 147 patient cohorts) were included. 69 studies provided enough data to construct contingency tables, enabling calculation of test accuracy, with sensitivity ranging from 9.7% to 100.0% (mean 79.1%, SD 0.2) and specificity ranging from 38.9% to 100.0% (mean 88.3%, SD 0.1). An out-of-sample external validation was done in 25 studies, of which 14 made the comparison between deep learning models and health-care professionals in the same sample. Comparison of the performance between health-care professionals in these 14 studies, when restricting the analysis to the contingency table for each study reporting the highest accuracy, found a pooled sensitivity of 87.0% (95% CI 83.0–90.2) for deep learning models and 86.4% (79.9–91.0) for health-care professionals, and a pooled specificity of 92.5% (95% CI 85.1–96.4) for deep learning models and 90.5% (80.6–95.7) for health-care professionals. Interpretation Our review found the diagnostic performance of deep learning models to be equivalent to that of health-care professionals. However, a major finding of the review is that few studies presented externally validated results or compared the performance of deep learning models and health-care professionals using the same sample. Additionally, poor reporting is prevalent in deep learning studies, which limits reliable interpretation of the reported diagnostic accuracy. New reporting standards that address specific challenges of deep learning could improve future studies, enabling greater confidence in the results of future evaluations of this promising technology. Funding None.",
+    "author": [
+      {
+        "family": "Liu",
+        "given": "Xiaoxuan"
+      },
+      {
+        "family": "Faes",
+        "given": "Livia"
+      },
+      {
+        "family": "Kale",
+        "given": "Aditya U"
+      },
+      {
+        "family": "Kale",
+        "given": "Aditya U."
+      },
+      {
+        "family": "Wagner",
+        "given": "Siegfried"
+      },
+      {
+        "family": "Wagner",
+        "given": "Siegfried K"
+      },
+      {
+        "family": "Fu",
+        "given": "Dun Jack"
+      },
+      {
+        "family": "Bruynseels",
+        "given": "Alice"
+      },
+      {
+        "family": "Mahendiran",
+        "given": "Thushika"
+      },
+      {
+        "family": "Moraes",
+        "given": "Gabriella"
+      },
+      {
+        "family": "Shamdas",
+        "given": "Mohith"
+      },
+      {
+        "family": "Kern",
+        "given": "Christoph"
+      },
+      {
+        "family": "Ledsam",
+        "given": "Joseph R."
+      },
+      {
+        "family": "Schmid",
+        "given": "Martin"
+      },
+      {
+        "family": "Balaskas",
+        "given": "Konstantinos"
+      },
+      {
+        "family": "Topol",
+        "given": "Eric J."
+      },
+      {
+        "family": "Bachmann",
+        "given": "Lucas M."
+      },
+      {
+        "family": "Keane",
+        "given": "Pearse A."
+      },
+      {
+        "family": "Denniston",
+        "given": "Alastair K"
+      },
+      {
+        "family": "Denniston",
+        "given": "Alastair K."
+      }
+    ],
+    "container-title": "null",
+    "id": "Liu2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "A comparison of deep learning performance against health-care professionals in detecting diseases from medical imaging: a systematic review and meta-analysis",
+    "title-short": "A comparison of deep learning performance against health-care professionals in detecting diseases from medical imaging",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/j.crphys.2023.100099",
+    "PMCID": "null",
+    "PMID": "37324652",
+    "abstract": "Machine learning technologies and translation of artificial intelligence tools to enhance the patient experience are changing obstetric and maternity care. An increasing number of predictive tools have been developed with data sourced from electronic health records, diagnostic imaging and digital devices. In this review, we explore the latest tools of machine learning, the algorithms to establish prediction models and the challenges to assess fetal well-being, predict and diagnose obstetric diseases such as gestational diabetes, pre-eclampsia, preterm birth and fetal growth restriction. We discuss the rapid growth of machine learning approaches and intelligent tools for automated diagnostic imaging of fetal anomalies and to asses fetoplacental and cervix function using ultrasound and magnetic resonance imaging. In prenatal diagnosis, we discuss intelligent tools for magnetic resonance imaging sequencing of the fetus, placenta and cervix to reduce the risk of preterm birth. Finally, the use of machine learning to improve safety standards in intrapartum care and early detection of complications will be discussed. The demand for technologies to enhance diagnosis and treatment in obstetrics and maternity should improve frameworks for patient safety and enhance clinical practice.",
+    "author": [
+      {
+        "family": "Arain",
+        "given": "Zara"
+      },
+      {
+        "family": "Iliodromiti",
+        "given": "Stamatina"
+      },
+      {
+        "family": "Slabaugh",
+        "given": "Gregory"
+      },
+      {
+        "family": "David",
+        "given": "Anna L."
+      },
+      {
+        "family": "Chowdhury",
+        "given": "Tina T."
+      }
+    ],
+    "container-title": "null",
+    "id": "Arain2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Machine learning and disease prediction in obstetrics",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/j.diii.2018.08.001",
+    "PMCID": "null",
+    "PMID": "30177447",
+    "abstract": "Abstract Purpose To evaluate the feasibility and reproducibility of artificial intelligence software (Smartplanes®) to automatically identify the transthalamic plane from 3D ultrasound volumes and to measure the biparietal diameter (BPD) and head circumference (HC) in fetus. Material and methods Thirty fetuses were evaluated at 17–30 weeks’ gestation. For each fetus two three-dimensional (3D) volumes of the fetal head along with one conventional two-dimensional (2D) image of the transthalamic plane were prospectively acquired. The Smartplanes® software identified the transthalamic plane from the 3D volumes and performed BPD and HC measurements automatically (3D auto). Two experienced sonographers also measured BPD and HC from 2D images and from the 3D volumes. Measurements were compared using Bland-Altman plots. Interclass correlation coefficient (ICC) was used to evaluate intra- and interobserver reproducibility. Results For each series of measurements, intra- and interobserver reproducibility rates were high with ICC values>0.98. The 95% confidence intervals between the BPD measurements were 2mm (3D versus 2D) and 4mm (3D auto versus 2D) and the HC measurements were 7.5mm (3D versus 2D) and 11mm (3D auto versus 2D). Conclusion Fetal head measurements obtained automatically by Smartplanes® software from 3D volumes show good agreement with those obtained by two experienced sonographers from conventional 2D images and 3D volumes. The reproducibility of these measurements is similar to that observed by experienced sonographers.",
+    "author": [
+      {
+        "family": "Grandjean",
+        "given": "G."
+      },
+      {
+        "family": "Grandjean",
+        "given": "G. Ambroise"
+      },
+      {
+        "family": "Hossu",
+        "given": "Gabriela"
+      },
+      {
+        "family": "Bertholdt",
+        "given": "Charline"
+      },
+      {
+        "family": "Bertholdt",
+        "given": "C."
+      },
+      {
+        "family": "Noble",
+        "given": "Penelope J."
+      },
+      {
+        "family": "Noble",
+        "given": "Prisca"
+      },
+      {
+        "family": "Noble",
+        "given": "P."
+      },
+      {
+        "family": "Morel",
+        "given": "Olivier"
+      },
+      {
+        "family": "Grangé",
+        "given": "G."
+      }
+    ],
+    "container-title": "Diagnostic and interventional imaging",
+    "id": "Grandjean2018",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Artificial intelligence assistance for fetal head biometry: Assessment of automated measurement software.",
+    "title-short": "Artificial intelligence assistance for fetal head biometry",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/j.fertnstert.2020.09.157",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Embryo evaluation and selection embody the aggregate manifestation of the entire invitro fertilization (IVF) process. It aims to choose the “best” embryos from the larger cohort of fertilized oocytes, the majority of which will be determined to be not viable either as a result of abnormal development or due to chromosomal imbalances. Indeed, it is generally acknowledged that even after embryo selection based on morphology, time-lapse microscopic photography, or embryo biopsy with preimplantation genetic testing, implantation rates in the human are difficult to predict. Our pursuit of enhancing embryo evaluation and selection, as well as increasing live birth rates, will require the adoption of novel technologies. Recently, several artificial intelligence (AI)-based methods have emerged as objective, standardized, and efficient tools for evaluating human embryos. Moreover, AI-based methods can be implemented for other clinical aspects of IVF, such as assessing patient reproductive potential and individualizing gonadotropin stimulation protocols. As AI has the capability to analyze “big” data, the ultimate goal will be to apply AI tools to the analysis of all embryological, clinical, and genetic data in an effort to provide patient-tailored treatments. In this chapter, we present an overview of existing AI technologies in reproductive medicine and envision their potential future applications in the field.",
+    "author": [
+      {
+        "family": "Zaninović",
+        "given": "Nikica"
+      },
+      {
+        "family": "Zaninovic",
+        "given": "Nikica"
+      },
+      {
+        "family": "Rosenwaks",
+        "given": "Zev"
+      }
+    ],
+    "container-title": "Fertility and Sterility",
+    "id": "Zaninović2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Artificial intelligence in human in vitro fertilization and embryology",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1371/journal.pone.0219388",
+    "PMCID": "null",
+    "PMID": "31348783",
+    "abstract": "Introduction: Ovarian tumors are the most common diagnostic challenge for gynecologists and ultrasound examination has become the main technique for assessment of ovarian pathology and for preoperative distinction between malignant and benign ovarian tumors. However, ultrasonography is highly examiner-dependent and there may be an important variability between two different specialists when examining the same case. The objective of this work is the evaluation of different well-known Machine Learning (ML) systems to perform the automatic categorization of ovarian tumors from ultrasound images. Methods: We have used a real patient database whose input features have been extracted from 348 images, from the IOTA tumor images database, holding together with the class labels of the images. For each patient case and ultrasound image, its input features have been previously extracted using Fourier descriptors computed on the Region Of Interest (ROI). Then, four ML techniques are considered for performing the classification stage: K-Nearest Neighbors (KNN), Linear Discriminant (LD), Support Vector Machine (SVM) and Extreme Learning Machine (ELM). Results: According to our obtained results, the KNN classifier provides inaccurate predictions (less than 60% of accuracy) independently of the size of the local approximation, whereas the classifiers based on LD, SVM and ELM are robust in this biomedical classification (more than 85% of accuracy). Conclusions: ML methods can be efficiently used for developing the classification stage in computer-aided diagnosis systems of ovarian tumor from ultrasound images. These approaches are able to provide automatic classification with a high rate of accuracy. Future work should aim at enhancing the classifier design using ensemble techniques. Another ongoing work is to exploit different kind of features extracted from ultrasound images.",
+    "author": [
+      {
+        "family": "Martínez-Más",
+        "given": "José"
+      },
+      {
+        "family": "Bueno-Crespo",
+        "given": "Andrés"
+      },
+      {
+        "family": "Khazendar",
+        "given": "Shan"
+      },
+      {
+        "family": "Remezal‐Solano",
+        "given": "Manuel"
+      },
+      {
+        "family": "Remezal-Solano",
+        "given": "Manuel"
+      },
+      {
+        "family": "Martínez-Cendán",
+        "given": "Juan-Pedro"
+      },
+      {
+        "family": "Jassim",
+        "given": "Sabah"
+      },
+      {
+        "family": "Du",
+        "given": "Hongbo"
+      },
+      {
+        "family": "Assam",
+        "given": "Hisham Al"
+      },
+      {
+        "family": "Bourne",
+        "given": "Tom"
+      },
+      {
+        "family": "Timmerman",
+        "given": "Dirk"
+      }
+    ],
+    "container-title": "PLOS ONE",
+    "id": "Martinez-Mas2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Evaluation of machine learning methods with Fourier Transform features for classifying ovarian tumors based on ultrasound images",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.4018/978-1-6684-8974-1.ch011",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "The back propagation algorithm can be used to predict baby movement during pregnancy. This algorithm works by using a feed-forward neural network to identify patterns in the data that represent the baby’s movements. It then uses back propagation to adjust the weights of the neural network to accurately predict the future movements. The ID3 algorithm can also be used to predict baby movement during pregnancy. This algorithm works by using a decision tree to identify patterns in the data that represent the baby’s movements. It then uses the ID3 algorithm to identify the best decision at each node and to create a decision tree that can accurately predict the future movements. AI and machine learning can be used to monitor a fetus’s vital signs in a number of ways. Back propagation and ID3 algorithms were used to detect any abnormality in the heartbeat, breathing patterns, or other physiological changes and used to track fetal movements, such as kicks and hiccups, as well as any changes in fetal position. Finally, AI and machine learning can be used to predict when a baby is ready to be born.",
+    "author": [
+      {
+        "family": "Alikkal",
+        "given": "Vinish"
+      },
+      {
+        "family": "Sujina",
+        "given": "S."
+      }
+    ],
+    "container-title": "null",
+    "id": "Alikkal2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Prediction of Baby Movement During Pregnancy Using Back Propagation and ID3",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.21037/atm.2020.03.63",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": ": Interest in the application of machine learning (ML) techniques to medicine is growing fast and wide because of their ability to endow decision support systems with so-called artificial intelligence, particularly in those medical disciplines that extensively rely on digital imaging. Nonetheless, achieving a pragmatic and ecological validation of medical AI systems in real-world settings is difficult, even when these systems exhibit very high accuracy in laboratory settings. This difficulty has been called the ”last mile of implementation.” In this review of the concept, we claim that this metaphorical mile presents two chasms: the hiatus of human trust and the hiatus of machine experience. The former hiatus encompasses all that can hinder the concrete use of AI at the point of care, including availability and usability issues, but also the contradictory phenomena of cognitive ergonomics, such as automation bias (overreliance on technology) and prejudice against the machine (clearly the opposite). The latter hiatus, on the other hand, relates to the production and availability of a sufficient amount of reliable and accurate clinical data that is suitable to be the ”experience” with which a machine can be trained. In briefly reviewing the existing literature, we focus on this latter hiatus of the last mile, as it has been largely neglected by both ML developers and doctors. In doing so, we argue that efforts to cross this chasm require data governance practices and a focus on data work, including the practices of data awareness and data hygiene. To address the challenge of bridging the chasms in the last mile of medical AI implementation, we discuss the six main socio-technical challenges that must be overcome in order to build robust bridges and deploy potentially effective AI in real-world clinical settings.",
+    "author": [
+      {
+        "family": "Cabitza",
+        "given": "Federico"
+      },
+      {
+        "family": "Campagner",
+        "given": "Andrea"
+      },
+      {
+        "family": "Balsano",
+        "given": "Clara"
+      }
+    ],
+    "container-title": "Annals of Translational Medicine",
+    "id": "Cabitza2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Bridging the “last mile” gap between AI implementation and operation: “data awareness” that matters",
+    "title-short": "Bridging the “last mile” gap between AI implementation and operation",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1038/s41591-021-01359-w",
+    "PMCID": "null",
+    "PMID": "34083812",
+    "abstract": "Machine learning (ML) holds great promise for impacting healthcare delivery; however, to date most methods are tested in ’simulated’ environments that cannot recapitulate factors influencing real-world clinical practice. We prospectively deployed and evaluated a random forest algorithm for therapeutic curative-intent radiation therapy (RT) treatment planning for prostate cancer in a blinded, head-to-head study with full integration into the clinical workflow. ML- and human-generated RT treatment plans were directly compared in a retrospective simulation with retesting (n=50) and a prospective clinical deployment (n=50) phase. Consistently throughout the study phases, treating physicians assessed ML- and human-generated RT treatment plans in a blinded manner following a priori defined standardized criteria and peer review processes, with the selected RT plan in the prospective phase delivered for patient treatment. Overall, 89% of ML-generated RT plans were considered clinically acceptable and 72% were selected over human-generated RT plans in head-to-head comparisons. RT planning using ML reduced the median time required for the entire RT planning process by 60.1% (118 to 47h). While ML RT plan acceptability remained stable between the simulation and deployment phases (92 versus 86%), the number of ML RT plans selected for treatment was significantly reduced (83 versus 61%, respectively). These findings highlight that retrospective or simulated evaluation of ML methods, even under expert blinded review, may not be representative of algorithm acceptance in a real-world clinical setting when patient care is at stake.",
+    "author": [
+      {
+        "family": "McIntosh",
+        "given": "Chris"
+      },
+      {
+        "family": "Conroy",
+        "given": "Leigh"
+      },
+      {
+        "family": "Tjong",
+        "given": "Michael C."
+      },
+      {
+        "family": "Craig",
+        "given": "Tim"
+      },
+      {
+        "family": "Craig",
+        "given": "Timothy J."
+      },
+      {
+        "family": "Bayley",
+        "given": "Andrew"
+      },
+      {
+        "family": "Catton",
+        "given": "Charles"
+      },
+      {
+        "family": "Gospodarowicz",
+        "given": "Mary K."
+      },
+      {
+        "family": "Gospodarowicz",
+        "given": "Mary"
+      },
+      {
+        "family": "Helou",
+        "given": "Joelle"
+      },
+      {
+        "family": "Isfahanian",
+        "given": "Naghmeh"
+      },
+      {
+        "family": "Kong",
+        "given": "Vickie"
+      },
+      {
+        "family": "Lam",
+        "given": "Tony K. T."
+      },
+      {
+        "family": "Lam",
+        "given": "Tony"
+      },
+      {
+        "family": "Raman",
+        "given": "Srinivas"
+      },
+      {
+        "family": "Warde",
+        "given": "Padraig"
+      },
+      {
+        "family": "Chung",
+        "given": "Peter"
+      },
+      {
+        "family": "Berlín",
+        "given": "Alejandro"
+      },
+      {
+        "family": "Berlin",
+        "given": "Alejandro"
+      },
+      {
+        "family": "Purdie",
+        "given": "Thomas"
+      },
+      {
+        "family": "Purdie",
+        "given": "Thomas G."
+      }
+    ],
+    "container-title": "Nature Medicine",
+    "id": "McIntosh2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Clinical integration of machine learning for curative-intent radiation treatment of patients with prostate cancer.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1016/j.medj.2021.04.006",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "Summary Machine learning is increasingly integrated into clinical practice, with applications ranging from pre-clinical data processing, bedside diagnosis assistance, patient stratification, treatment decision making, and early warning as part of primary and secondary prevention. However, a multitude of technological, medical, and ethical considerations are critical in machine-learning utilization, including the necessity for careful validation of machine-learning-based technologies in real-life contexts, unbiased evaluation of benefits and risks, and avoidance of technological over-dependence and associated loss of clinical, ethical, and social-related decision-making capacities. Other challenges include the need for careful benchmarking and external validations, dissemination of end-user knowledge from computational experts to field users, and responsible code and data sharing, enabling transparent assessment of pipelines. In this review, we highlight key promises and achievements in integration of machine-learning platforms into clinical medicine while highlighting limitations, pitfalls, and challenges toward enhanced integration of learning systems into the medical realm.",
+    "author": [
+      {
+        "family": "Adlung",
+        "given": "Lorenz"
+      },
+      {
+        "family": "Cohen",
+        "given": "Y."
+      },
+      {
+        "family": "Cohen",
+        "given": "Yotam"
+      },
+      {
+        "family": "Mor",
+        "given": "Uria"
+      },
+      {
+        "family": "Elinav",
+        "given": "Eran"
+      }
+    ],
+    "container-title": "null",
+    "id": "Adlung2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Machine learning in clinical decision making",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/jcm12093298",
+    "PMCID": "null",
+    "PMID": "37176738",
+    "abstract": "Prenatal ultrasonography is the most crucial imaging modality during pregnancy. However, problems such as high fetal mobility, excessive maternal abdominal wall thickness, and inter-observer variability limit the development of traditional ultrasound in clinical applications. The combination of artificial intelligence (AI) and obstetric ultrasound may help optimize fetal ultrasound examination by shortening the examination time, reducing the physician’s workload, and improving diagnostic accuracy. AI has been successfully applied to automatic fetal ultrasound standard plane detection, biometric parameter measurement, and disease diagnosis to facilitate conventional imaging approaches. In this review, we attempt to thoroughly review the applications and advantages of AI in prenatal fetal ultrasound and discuss the challenges and promises of this new field.",
+    "author": [
+      {
+        "family": "Xiao",
+        "given": "Sushan"
+      },
+      {
+        "family": "Zhang",
+        "given": "Junmin"
+      },
+      {
+        "family": "Zhu",
+        "given": "Ye"
+      },
+      {
+        "family": "Zhang",
+        "given": "Zisang"
+      },
+      {
+        "family": "Cao",
+        "given": "Haiyan"
+      },
+      {
+        "family": "Xie",
+        "given": "Mingxing"
+      },
+      {
+        "family": "Zhang",
+        "given": "Li"
+      }
+    ],
+    "container-title": "null",
+    "id": "Xiao2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Application and Progress of Artificial Intelligence in Fetal Ultrasound",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.18137/cardiometry.2023.27.111117",
+    "PMCID": "null",
+    "PMID": "null",
+    "abstract": "The article analyzes the use of digital methods and artificial intelligence capabilities for diagnostics in the field of obstetrics and gynecology. The author notes that digital methods and artificial intelligence (AI) have a high potential for the diagnosis of gynecological diseases, since it can analyze medical images and other medical data with great accuracy and speed. For example, AI can help in the diagnosis of cervical cancer by identifying anomalies in digital images and screening tests. The use of AI can also help in the recognition of other gynecological diseases, such as endometriosis, uterine fibroids, polyps, etc. In addition, AI can help improve the efficiency and accuracy of diagnostics, as well as reduce the time required to process medical data. This can be especially important in cases where diagnosis needs to be done quickly in order to start treatment as early as possible. However, it should be noted that AI cannot completely replace the experience and expertise of doctors. Still, it can help doctors make more accurate diagnoses and develop more effective treatment strategies.",
+    "author": [
+      {
+        "family": "Safiullina",
+        "given": "Elena"
+      },
+      {
+        "family": "Rychkova",
+        "given": "E. I."
+      },
+      {
+        "family": "Mayorova",
+        "given": "Irina"
+      },
+      {
+        "family": "Khairutdinova",
+        "given": "D.Kh."
+      },
+      {
+        "family": "Slonskaya",
+        "given": "A. A."
+      },
+      {
+        "family": "Faronova",
+        "given": "A. S."
+      },
+      {
+        "family": "Davydova",
+        "given": "Yulia"
+      },
+      {
+        "family": "Mussova",
+        "given": "I. A."
+      }
+    ],
+    "container-title": "null",
+    "id": "Safiullina2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Application of digital methods and artificial intelligence capabilities for diagnostics in obstetrics and gynecology",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.3390/jcm12216833",
+    "PMCID": "null",
+    "PMID": "37959298",
+    "abstract": "Artificial intelligence (AI) has gained prominence in medical imaging, particularly in obstetrics and gynecology (OB/GYN), where ultrasound (US) is the preferred method. It is considered cost effective and easily accessible but is time consuming and hindered by the need for specialized training. To overcome these limitations, AI models have been proposed for automated plane acquisition, anatomical measurements, and pathology detection. This study aims to overview recent literature on AI applications in OB/GYN US imaging, highlighting their benefits and limitations. For the methodology, a systematic literature search was performed in the PubMed and Cochrane Library databases. Matching abstracts were screened based on the PICOS (Participants, Intervention or Exposure, Comparison, Outcome, Study type) scheme. Articles with full text copies were distributed to the sections of OB/GYN and their research topics. As a result, this review includes 189 articles published from 1994 to 2023. Among these, 148 focus on obstetrics and 41 on gynecology. AI-assisted US applications span fetal biometry, echocardiography, or neurosonography, as well as the identification of adnexal and breast masses, and assessment of the endometrium and pelvic floor. To conclude, the applications for AI-assisted US in OB/GYN are abundant, especially in the subspecialty of obstetrics. However, while most studies focus on common application fields such as fetal biometry, this review outlines emerging and still experimental fields to promote further research.",
+    "author": [
+      {
+        "family": "Jost",
+        "given": "Elena"
+      },
+      {
+        "family": "Kosian",
+        "given": "Philipp"
+      },
+      {
+        "family": "Cruz",
+        "given": "J Jiménez"
+      },
+      {
+        "family": "Albarqouni",
+        "given": "Shadi"
+      },
+      {
+        "family": "Gembruch",
+        "given": "Ulrich"
+      },
+      {
+        "family": "Strizek",
+        "given": "Brigitte"
+      },
+      {
+        "family": "Recker",
+        "given": "Florian"
+      }
+    ],
+    "container-title": "null",
+    "id": "Jost2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Evolving the Era of 5D Ultrasound? A Systematic Literature Review on the Applications for Artificial Intelligence Ultrasound Imaging in Obstetrics and Gynecology",
+    "type": "article-journal"
+  }
+]
