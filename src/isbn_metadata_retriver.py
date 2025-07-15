@@ -1,9 +1,6 @@
 import urllib.request
 import json
-import textwrap
-
 import pandas as pd
-
 from pathlib import Path
 
 class ISBNChecker:
