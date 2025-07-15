@@ -72,7 +72,12 @@ class BiblatexChecker:
             authors = a.get('author', [{'family':'', 'given': ''}])
             authors = pd.DataFrame(authors)
             if len(authors)>1:
-                authors = authors[~authors.duplicated(keep='first')]
+                #authors = authors[~authors.duplicated(keep='first')]
+                if authors.duplicated(keep='first').any():
+                    breakpoint()
+                #TODO: terminar de implementar
+                tmp = {(i['family'], i['given']): '' for i in a['author']}
+                authors = [{'family': i[0], 'given': i[1]} for i in tmp.keys()]
             #
             a['author'] = authors[['family', 'given']].to_dict('records')
             #
