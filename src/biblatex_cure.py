@@ -6,21 +6,6 @@ import pypandoc, json
 
 
 class BiblatexChecker:
-    replace_symb = {
-            '%': '\\%',
-            '±': '$\\pm$',
-            '&': '\\&',
-            '’': "'",
-            '<': '$<$',
-            '>': '$>$',
-            ' ': ' ',
-            'κ': '$\\kappa$',
-            ' ': ' ',
-            '≥': '$\\geq$',
-            '–': '--',
-            '·': '.',
-            '"': "''"
-         }
     replace_bibkeys = {
             'ß': 'ss', #'\\s',
             'ã': 'a',  #'\\~{a}',
@@ -38,13 +23,13 @@ class BiblatexChecker:
             'Ú': 'U',
             'ü': 'U',
             'Ü': 'U',
+            'ć': 'c',
             '_': ''
          }
     replace_seq = (
-        ('&amp', r'\&'),
-        ( '“'  , '``' ),
-        ( '”'  , "''" ),
-        (r"\'\'", "''") #TODO: to optimize
+        (r'\&amp', r'\&'),
+        (r'~'    , '' ),
+        (r'‐'  , "-" ),
      )
     def __init__(self):
         self.path = Path(__file__).parent.parent / 'data'
@@ -60,16 +45,6 @@ class BiblatexChecker:
         except UnicodeDecodeError:
             print("Error: Could not decode the file with UTF-8 encoding.")
     #
-    def gral_replace(self, text):
-        replacements = str.maketrans(BiblatexChecker.replace_symb)
-        doc_rep = text.translate(replacements)
-        doc_rep = doc_rep.replace('\\n', ' ')
-        #
-        for rep in BiblatexChecker.replace_seq:
-            doc_rep = doc_rep.replace(*rep)
-        #TODO
-        return doc_rep
-    #
     def clean_bibkeys(self, text):
         replacements = str.maketrans(BiblatexChecker.replace_bibkeys)
         text = re.sub(
@@ -80,7 +55,7 @@ class BiblatexChecker:
         #
         return text
     #
-    def __to_dict(self, text):
+    def _text_to_json(self, text):
         raw_json = (
             pypandoc
                 .convert_text(
@@ -91,45 +66,55 @@ class BiblatexChecker:
          )
         return json.loads(raw_json)
     #
-    def run(self, fname):
-        text = self.load_bibfile(fname)
-        text = self.gral_replace(text)
-        text = self.clean_bibkeys(text)
-        text_decode = self.__to_dict(text)
-        text_cure_authors = self.__check_duplicate_authors(text_decode)
-    
-        self.__save(text_cure_authors)
-        breakpoint()
-        return text
-    #
-    def __save(self, text):
-        json_data = json.dumps(text, ensure_ascii=False, indent=2)
-        #
-        biblatex = pypandoc.convert_text(
-            source=json_data,
-            format='csljson',
-            to='biblatex'
-         )
-        #
-        Path("entries.bib").write_text(biblatex, encoding="utf-8") 
-
-    #
-    def __check_duplicate_authors(self, text):
-        for a in text:
+    def _scan_authors_and_abstracts(self, entries):
+        abstracts = []
+        for a in entries:
             authors = a.get('author', [{'family':'', 'given': ''}])
             authors = pd.DataFrame(authors)
             if len(authors)>1:
                 authors = authors[~authors.duplicated(keep='first')]
             #
             a['author'] = authors[['family', 'given']].to_dict('records')
+            #
+            abstracts.append(
+                {'doi': a.get('DOI', 'null'),
+                 'abstract': a.get('abstract', 'null'),
+                 'bibkey': a.get('id'),
+                 'fst author': ', '.join(a.get('author')[0].values())
+                 }
+            )
+        abstracts = pd.DataFrame(abstracts)
         #
-        return text
+        return entries, abstracts
     #
+    def _save(self, entries, abstracts):
+        json_data = json.dumps(entries, ensure_ascii=False, indent=2)
+        #
+        biblatex = pypandoc.convert_text(
+            source=json_data,
+            format='csljson',
+            to='biblatex'
+         )
+        for rep in BiblatexChecker.replace_seq:
+            biblatex = biblatex.replace(*rep)
+        #
+        (self.path/"output.bib").write_text(biblatex, encoding="utf-8")
+        #
+        abstracts.to_csv(self.path/"abstracts.csv", index=False)
+    #
+    def clean_entries(self, fname):
+        text = self.load_bibfile(fname)
+        text = self.clean_bibkeys(text)
+        json_entries = self._text_to_json(text)
+        json_entries, abstracts = self._scan_authors_and_abstracts(json_entries)
+        #
+        self._save(json_entries, abstracts)
+        breakpoint()
 #
 #
 def main():
     bib = BiblatexChecker()
-    text_clean = bib.run('ResearchRabbit_Export.bib')
+    bib.clean_entries('ResearchRabbit_Export.bib')
     breakpoint()
 #
 #
