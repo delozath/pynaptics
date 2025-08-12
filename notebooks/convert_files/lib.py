@@ -1,38 +1,41 @@
+
 import pandas as pd
-from pathlib import Path
 
 import re
+import os
 
-def _get_extension(path_file):
-    extension = r"\.([^.]+)$"
-    ext = re.search(extension, path_file)
-    return ext
-
-def _load_sav(path_file):
-    data = pd.read_spss(path_file)
-    return data
-
-def load_ext(path_file):
-    ext = _get_extension(path_file)
+class FileDriver:
+    def __init__(self):
+        self.driver_load = {'sav': self._load_sav}
+        self.driver_save = {'csv': self._save_csv}
     #
-    drivers = {'sav': _load_sav}
+    def _get_extension(self, pfname, default=None):
+        _, ext = os.path.splitext(pfname)
+        #
+        ext = ext[1:].lower() if len(ext)>1 else default
+        return ext
     #
-    if ext:
-        ext = ext.group(1)
-        data = drivers[ext](path_file)
+    def _load_sav(self, pfname):
+        data = pd.read_spss(pfname)
         return data
-    else:
-        raise TypeError(f"File with no extension")
-
-def _save_csv(df, pfname, ext):
-    df.to_csv((f"{pfname}.{ext}"))
-
-def save_ext(df, path_file, ext):
-    drivers = {'csv': _save_csv}
-    try:
-        drivers[ext.lower()](df, path_file, ext)
-        print('Data saved')
-    except KeyError:
-        "No driver for the given extensiton"
+    #
+    def load(self, pfname):
+        if ext:=self._get_extension(pfname):
+            data = self.driver_load[ext](pfname)
+            return data
+        else:
+            raise TypeError(f"File with no extension")
+    #
+    def _save_csv(self, df, pfname):
+        df.to_csv(pfname)
+    #
+    def save(self, df, pfname):
+        ext = self._get_extension(pfname, default='csv')
+        try:
+            func = self.driver_save.get(ext)
+            func(df, pfname)
+            print('Data saved')
+        except KeyError:
+            "No driver for the given extensiton"
     
 
