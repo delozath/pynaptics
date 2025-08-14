@@ -32,7 +32,7 @@ class FileDriver:
         df.to_csv(pfname)
     #
     def save(self, df, pfname):
-        ext = self._get_extension(pfname, default='csv')
+        ext = self._get_extension(pfname, default='.csv')
         try:
             func = self.driver_save.get(ext)
             func(df, pfname)
@@ -41,4 +41,40 @@ class FileDriver:
             "No driver for the given extensiton"
 #
 #
-class Dialogs
+class Dialogs:
+    def __init__(self):
+        self.exts = ['csv']
+    #
+    def load(self):
+        window = tk.Tk()
+        window.withdraw()
+        #
+        pfname = filedialog.askopenfilename(
+            title="Select a file",
+            filetypes=[
+                #("All files", "*.*"),
+                ("SPSS files", "*.sav"),
+                ("Excel files", "*.xsl"),
+                ("Excel 2005 files", "*.xlsx")
+            ]
+        )
+        #
+        return pfname
+    #
+    def save(self):
+        pfname = filedialog.asksaveasfilename(
+        title="Save file as",
+        defaultextension=".csv",
+        filetypes=[
+            ("CSV file", "*.csv"),
+            ]
+        )
+        #
+        pfname, ext = self._test_extension(pfname)
+        return f"{pfname}.{ext}"
+    #
+    def _test_extension(self, pfname):
+        pfname, ext = os.path.splitext(pfname)
+        ext = ext[1:] if ext in self.exts else 'csv'
+        #
+        return pfname, ext
