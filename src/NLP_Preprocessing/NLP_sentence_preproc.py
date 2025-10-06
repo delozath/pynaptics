@@ -1,60 +1,65 @@
-import os, spacy, spacy_transformers
+import os
+import yaml
+from yaml.loader import SafeLoader
+from pathlib import Path
+
+import spacy, spacy_transformers
 
 # GPU
 import torch
 #torch.cuda.set_device(0)
 spacy.prefer_gpu()
 
-# Modelo base (lemmatización/pos)
-nlp = spacy.load("es_core_news_lg")
-
 # Transformer HF en GPU (elige otro backbone si quieres)
 #BACKBONE = "dccuchile/bert-base-spanish-wwm-uncased"
 #nlp.add_pipe("transformer", first=True, config={"model": {"name": BACKBONE}})
 #nlp.initialize()
 
-# Stopwords ES + extras MX
-mx_extra_stops = {
-    "órale","orale","ándale","andale","chale","nel","neta",
-    "nomás","nomas","pos","pa","ora","sale","vale",
-    "osea","o","sea","este","eh","mmm"
-}
-stopwords = set(nlp.Defaults.stop_words) | {w.lower() for w in mx_extra_stops}
-stopwords.discard("no")
+class LoadYaml:
+    def __init__(self, fname='extra.yml') -> None:
+        path = Path('.') / 'src/NLP_Preprocessing' / fname
+        with open(path.absolute(), 'r') as file:
+            docs = [*yaml.load_all(file, Loader=SafeLoader)]
+            for d in docs:
+                setattr(self, *[*d.items()][0])
 
-# Overrides lemas MX
-LEMMA_OVERRIDES_ES_MX = {
-    "checo":"checar","checas":"checar","checa":"checar","checamos":"checar","checan":"checar","checando":"checar",
-    "checado":"checar","chequé":"checar","checaste":"checar","checaron":"checar","checó":"checar","checar":"checar",
-    "chambeo":"chambear","chambeas":"chambear","chambea":"chambear","chambeamos":"chambear","chambeando":"chambear",
-    "chateo":"chatear","chateas":"chatear","chatea":"chatear","chateando":"chatear",
-    "whatsappeo":"whatsappear","whatsappeas":"whatsappear","whatsappea":"whatsappear","whatsappeando":"whatsappear",
-    "texteo":"textear","texteas":"textear","textea":"textear","texteando":"textear",
-    "parqueo":"parquear","parqueas":"parquear","parquea":"parquear","parqueando":"parquear",
-}
 
-def lemma_with_overrides(tok):
-    l = tok.text.lower()
-    if l in LEMMA_OVERRIDES_ES_MX:
-        return LEMMA_OVERRIDES_ES_MX[l]
-    if tok.pos_ in ("VERB","AUX"):
-        return tok.lemma_.lower() if tok.lemma_ else l
-    return tok.lemma_.lower() if tok.lemma_ else l
+class SentenceNLPPreproc:
+    def __init__(self) -> None:
+        self.nlp_pipeline = spacy.load("es_core_news_lg")
+        config = LoadYaml()
+        self.STOPWORDS = self._set_extra_stopwords(config)
+        self.EXTRA_LEMMAS = self._set_extra_lemmas(config)
 
-def preprocess(text: str):
-    doc = nlp(text)
-    out = []
-    for tok in doc:
-        if not tok.is_alpha:
-            continue
+    def _set_extra_stopwords(self, config):
+        stopwords = set(self.nlp_pipeline.Defaults.stop_words) | {w.lower() for w in config.stopwords}
+        stopwords.discard("no")
+        return stopwords
+    
+    def _set_extra_lemmas(self, config):
+        return {j: k for k, i in config.lemmas.items() for j in i}
+
+    def _extra_lemmas(self, tok):
         lw = tok.text.lower()
-        if lw != "no" and lw in stopwords:
-            continue
-        out.append(lemma_with_overrides(tok))
-    return out
+        if lw in self.EXTRA_LEMMAS:
+            return self.EXTRA_LEMMAS[lw]
+        if tok.pos_ in ("VERB","AUX"):
+            return tok.lemma_.lower() if tok.lemma_ else lw
+        return tok.lemma_.lower() if tok.lemma_ else lw
+
+    def run(self, text: str):
+        doc = self.nlp_pipeline(text)
+        out = []
+        for tok in doc:
+            if tok.is_alpha:
+                lw = tok.text.lower()
+                if not lw in self.STOPWORDS:
+                    out.append(self._extra_lemmas(tok))
+        return out
 
 if __name__ == "__main__":
-    txt = "Por qué mi madre dice que tengo que darle juguito a mi bebé desde recien nacido"
-    res = preprocess(txt)
+    text = "Mi mama me dijo que le empiece a dar jugo a mi niño recién nacido"
+    nlp = SentenceNLPPreproc()
+    res = nlp.run(text)
     print(" ".join(res))
     breakpoint()
