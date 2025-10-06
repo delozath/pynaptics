@@ -46,3 +46,5 @@ if torch.cuda.is_available():
 PY
 ```
 uv pip install https://github.com/explosion/spacy-models/releases/download/es_core_news_lg-3.8.0/es_core_news_lg-3.8.0-py3-none-any.whl
+
+uv run -m src.NLP_Preprocessing.NLP_sentence_preproc
