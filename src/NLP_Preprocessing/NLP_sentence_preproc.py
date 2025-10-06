@@ -58,7 +58,7 @@ class SentenceNLPPreproc:
         return out
 
 if __name__ == "__main__":
-    text = "Mi mama me dijo que le empiece a dar jugo a mi niño recién nacido"
+    text = "La mamá de la paciente embarazada refiere que se le debe dar jugos y agua a los bebés recién nacidos porque no quedan satisfechos"
     nlp = SentenceNLPPreproc()
     res = nlp.run(text)
     print(" ".join(res))
