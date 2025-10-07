@@ -41,3 +41,20 @@ lemmas:
     "parqueare", "parqueares", "parqueáremos", "parquearen"
   ]
 ...
+
+---
+negative:
+  - "no"
+  - ni
+  - nunca
+  - jamas
+  - sin
+  - tampoco
+  - ningun
+  - ninguna
+  - ninguno
+  - ningunas
+  - ningunos
+  - nada
+  - nadie
+...
