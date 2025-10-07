@@ -1,108 +1,88 @@
-# gpu_spacy_text_preprocessed_negnums.py
-# Ejecuta así (sin validaciones):
-#   uv run python gpu_spacy_text_preprocessed_negnums.py
-#
-# Requisitos (ya asumidos por tu entorno):
-#   - spacy, spacy-transformers, torch (GPU OK)
-#   - modelo: es_core_news_trf
-
 import re
 import unicodedata
 import spacy
 from spacy.lang.es.stop_words import STOP_WORDS as SPACY_STOP_ES
 
-spacy.require_gpu()
-nlp = spacy.load("es_dep_news_trf")
-nlp.max_length = 2_000_000
+from src.NLP_Preprocessing.NLP_sentence_preproc import LoadYaml
 
-BATCH_SIZE = 64
-N_PROC = 1  # con GPU y transformer, 1 proceso
+class SentencesNLPPreprocTransformer:
+    BATCH_SIZE = 64
+    N_PROC = 1
 
-# -------------------------------------------------------------------
-# Normalización
-# -------------------------------------------------------------------
-def strip_accents(s: str) -> str:
-    return "".join(
-        ch for ch in unicodedata.normalize("NFD", s)
-        if unicodedata.category(ch) != "Mn"
-    )
+    def __init__(self) -> None:
+        spacy.require_gpu()
+        self.nlp_pipeline = spacy.load("es_dep_news_trf")
+        self.nlp_pipeline.max_length = 2_000_000
+        config = LoadYaml()
 
-# Preparamos el set de stopwords y las negaciones a conservar.
-STOP_ES_NOACC = {strip_accents(w.lower()) for w in SPACY_STOP_ES}
+        self.STOP_ES_NOACC = {self._strip_accents(w.lower()) for w in SPACY_STOP_ES}
+        self.NEG_KEEP_BASE = self._set_negative_words(config)
 
-# “no y sus variantes” (ajusta si quieres ser más estricto o más laxo):
-NEG_KEEP_BASE = {
-    "no", "ni", "nunca", "jamas", "sin", "tampoco",
-    "ningun", "ninguna", "ninguno", "ningunas", "ningunos", "nada", "nadie"
-}
-# Nota: usamos formas sin acento para comparar tras strip_accents.
+    def _strip_accents(self, s: str) -> str:
+        return "".join(
+            ch for ch in unicodedata.normalize("NFD", s)
+            if unicodedata.category(ch) != "Mn"
+        )
 
-# Detecta tokens numéricos (además de t.like_num) incluyendo formatos clínicos: 3, 3.5, 3,5, 1e-3, 12%, 120/80
-NUM_PAT = re.compile(
-    r"""^(
-        (\d+([.,]\d+)?([eE][+-]?\d+)?)      # 12 / 12.3 / 12,3 / 1e-3
-        (/%|%|‰|‱)?                         # sufijos de porcentaje
-        |
-        (\d+/\d+)                           # fracción simple como 120/80
-    )$""",
-    re.VERBOSE
-)
+    def _set_negative_words(self, config):
+        return config.negative
 
-def is_numeric_token(t) -> bool:
-    txt = t.text
-    if t.like_num:
-        return True
-    if NUM_PAT.match(txt):
-        return True
-    return False
+    def _is_numeric_token(self, tok) -> bool:
+        pattern = re.compile(
+                r"""^(
+                    (\d+([.,]\d+)?([eE][+-]?\d+)?)      # 12 / 12.3 / 12,3 / 1e-3
+                    (/%|%|‰|‱)?                         # sufijos de porcentaje
+                    |
+                    (\d+/\d+)                           # fracción simple como 120/80
+                )$""",
+                re.VERBOSE
+             )
 
-def normalize_token(t) -> str:
-    # 1) lema contextual en minúsculas
-    x = t.lemma_.lower()
+        txt = tok.text
+        if tok.like_num or pattern.match(txt):
+            return True
+        else:
+            return False
+    
+    def _normalize_token(self, token) -> str:
+        if self._is_numeric_token(token):
+            return token.text
 
-    # 2) convertir a marcador numérico si es cantidad
-    if is_numeric_token(t):
-        return "<num>"
+        if token.is_space or token.is_punct:
+            return ""
 
-    # 3) descartar puntuación/espacio
-    if t.is_space or t.is_punct:
-        return ""
+        lem = token.lemma_.lower()
+        lem = self._strip_accents(lem)
 
-    # 4) quitar acentos
-    x_noacc = strip_accents(x)
+        if lem in self.STOP_ES_NOACC and lem not in self.NEG_KEEP_BASE:
+            return ""
 
-    # 5) eliminar stopwords excepto negaciones
-    if x_noacc in STOP_ES_NOACC and x_noacc not in NEG_KEEP_BASE:
-        return ""
+        return lem
+    
+    def run(self, texts):
+        out = []
+        for doc in self.nlp_pipeline.pipe(texts, batch_size=self.BATCH_SIZE, n_process=self.N_PROC):
+            toks = [self._normalize_token(t) for t in doc]
+            toks = [w for w in toks if w]
+            s = " ".join(toks)
+            s = " ".join(s.split())
+            out.append(s)
+        return out
 
-    return x_noacc
 
-# -------------------------------------------------------------------
-# API principal
-# -------------------------------------------------------------------
-def preprocess_texts_to_string(texts):
-    """
-    Devuelve lista de strings lematizados, sin stopwords, SIN acentos,
-    conservando negaciones (no/ni/nunca/…),
-    y con cantidades numéricas normalizadas a <num>.
-    """
-    out = []
-    for doc in nlp.pipe(texts, batch_size=BATCH_SIZE, n_process=N_PROC):
-        toks = [normalize_token(t) for t in doc]
-        toks = [w for w in toks if w]           # quitar vacíos
-        s = " ".join(toks)                      # mezcla final
-        s = " ".join(s.split())                 # colapsar espacios múltiples
-        out.append(s)
-    return out
-
-# -------------------------------------------------------------------
-# Ejemplo mínimo (sin validaciones)
-# -------------------------------------------------------------------
 if __name__ == "__main__":
     textos = [
-        "El inhibidor no mostró una reducción significativa del biomarcador en 24 horas (12%).",
-        "La RM no reveló lesiones compatibles con esclerosis múltiple: 120/80 mmHg.",
-        "El paciente nunca toma alcohol ni tabaco; saturación 96.5%."
+        "La mamá de la paciente embarazada refiere que se le debe dar jugos y agua a los bebés recién nacidos porque no quedan satisfechos",
+        "Que hacer si no se sienten movimientos del bebé por más de 8 horas",
+        "Puedo tomar bebidas alcoholicas mientras le estoy dando pecho a mi bebé, tiene 6 meses",
+        "Mi bebé de 4 meses aún no puede sostener su cabeza, eso es normal",
+        "A los cuantos meses ya le puedo dar de comer otra cosa a mi bebé que no sea leche o formula"
     ]
-    for s in preprocess_texts_to_string(textos):
-        print(s)
+
+    model = SentencesNLPPreprocTransformer()
+    for n, (org, proc) in enumerate(zip(textos, model.run(textos))):
+        print(f"\n{n+1}:\n  {org}\n  {proc}")
+    breakpoint()
+
+
+

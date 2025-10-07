@@ -18,7 +18,7 @@ spacy.prefer_gpu()
 class LoadYaml:
     def __init__(self, fname='extra.yml') -> None:
         path = Path('.') / 'src/NLP_Preprocessing' / fname
-        with open(path.absolute(), 'r') as file:
+        with open(path.absolute(), 'r', encoding="utf-8") as file:
             docs = [*yaml.load_all(file, Loader=SafeLoader)]
             for d in docs:
                 setattr(self, *[*d.items()][0])
@@ -26,8 +26,8 @@ class LoadYaml:
 
 class SentenceNLPPreproc:
     def __init__(self) -> None:
-        self.nlp_pipeline = spacy.load("es_core_news_lg")
         config = LoadYaml()
+        self.nlp_pipeline = spacy.load("es_core_news_lg")
         self.STOPWORDS = self._set_extra_stopwords(config)
         self.EXTRA_LEMMAS = self._set_extra_lemmas(config)
 
