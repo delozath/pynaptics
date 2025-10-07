@@ -1,3 +1,0 @@
-#git config merge.ours.driver true
-uv.lock  merge=ours
-pyproject.toml  merge=ours
