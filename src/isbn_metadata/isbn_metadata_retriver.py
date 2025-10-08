@@ -134,7 +134,7 @@ class ISBNDataBaseDriver:
     """
     #
     def __init__(self, fname):
-        self.path = Path(__file__).parent.parent / 'data'
+        self.path = Path.cwd() / 'data'
         self.fname = fname
     #
     @property
