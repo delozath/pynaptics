@@ -12,7 +12,7 @@ import unicodedata
 import spacy
 from spacy.lang.es.stop_words import STOP_WORDS as SPACY_STOP_ES
 
-from NLP_Preprocessing.sentence_preproc import LoadYaml
+from src.NLP_Preprocessing.sentence_preproc import LoadYaml
 
 
 class SentencePreprocTransformer:
