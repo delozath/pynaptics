@@ -1,8 +1,7 @@
-# Natural Language Procesing
-## Sentence Preprocesing in Mexican Spanish
+# Natural Language Processing
+## Sentence Preprocessing in Mexican Spanish
 
-
-### Setting up
+### Setup
 pyproject.toml
 ```
 [project]
@@ -14,22 +13,22 @@ uv sync
 source .venv/bin/activate
 ```
 
-**Install CUDA-nvidia**
+#### Install CUDA-nvidia
 
-Check for the GPU model
+Check your GPU model:
 ```bash
 lspci | grep -i nvidia
 sudo lshw -C display
 
 ```
 
-Search for the GPU, if something like this is displayed
+If the following output appears when searching for the GPU:
 ```bash
 driver=nouveau
 ```
-it means that there is no appropiated driver installed
+it means that no appropriate driver is installed.
 
-To install Nvidia drivers, first to check for the recommended driver through
+To install NVIDIA drivers, first check for the recommended driver using:
 ```bash
 sudo apt update
 sudo ubuntu-drivers devices
@@ -37,13 +36,16 @@ sudo ubuntu-drivers devices
 
 Select the driver maked as *recomended*
 ```bash
-sudo apt install -y nvidia-driver-X #use the recomended
+sudo apt install -y nvidia-driver-X # use the recomended driver
 nvidia-smi
 ```
 
 The lastest command are going to show the Driver and CUDA version, and also the GPU Model.
 
-Install cupy, pytoch, spacy, and the models *es_core_news_lg* and *es_dep_news_trf*
+
+#### Install python libraries using uv + pip
+
+Install CuPy, PyTorch, spaCy, and the models *es_core_news_lg* and *es_dep_news_trf*
 
 ```bash
 uv add cupy
@@ -54,7 +56,7 @@ uv pip install https://github.com/explosion/spacy-models/releases/download/es_de
 
 ```
 
-For testing the instalation 
+To test the installation:
 ```bash
 uv run python - <<'PY'
 import torch
@@ -65,15 +67,15 @@ if torch.cuda.is_available():
 PY
 ```
 
-### To run the scripts
+### Running the scripts
 
 CPU-based
 ```bash
-uv run -m src.NLP_Preprocessing.NLP_sentence_preproc
+uv run -m src.NLP_Preprocessing.sentence_preproc
 ```
 
 Transformer-based (GPU only)
 ```bash
-uv run -m src.NLP_Preprocessing.NLP_sentence_preproc_trf
+uv run -m src.NLP_Preprocessing.sentence_preproc_trf
 ```
 
