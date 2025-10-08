@@ -18,6 +18,8 @@ Use cases include:
 ## 📦 Projects
 - [ISBN Metadata Retriever](#isbn-metadata-retriever)
 - [BibLaTeX Checker](#biblatex-checker)
+- [NLP for Spanish Sentences](#natural-language-processing-sentence-preprocessing-in-mexican-spanish)
+- [Latex generated PDF to plain text](#latex-generated-pdf-to-plain-text)
 ---
 
 ## ISBN Metadata Retriever
@@ -43,7 +45,7 @@ A lightweight tool to enrich lists of ISBNs with metadata by querying the Google
 
 A lightweight tool to clean, normalize, and convert BibLaTeX files into JSON and back, extracting abstracts into a CSV.
 
-[🔗 repository link](./src/biblatex_checker.py)
+[🔗 repository link](./src/biblatex_checker)
 
 ### 📚 What It Does
 
@@ -55,3 +57,25 @@ A lightweight tool to clean, normalize, and convert BibLaTeX files into JSON and
 
   * `data/output.bib` 
   * `data/abstracts.csv`
+
+
+------
+## Natural Language Processing: Sentence Preprocessing in Mexican Spanish
+Provides tools to perform a preprocessing pipeline suitable for Natural Language Processing: tokenize, lemmanize, also to remove stopwords, accents and puctuation signs for Mexican Spanish senteces.
+
+[🔗 repository link](./src/nlp_preprocessing)
+
+### 📚 What It Does
+
+* **Loads** `SpaCy` models: CPU and GPU based
+* **Normalizes** Lower case, remove accents and stopwords, preserving negative words
+* **Processing** Extract lemmas
+* **Display** Show results in CLI
+
+
+------
+## Latex generated PDF to plain text
+[🔗 repository link](./src/latexpdf_to_plaintext)
+Pending documentation
+
+------
