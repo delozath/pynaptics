@@ -66,6 +66,13 @@ if torch.cuda.is_available():
     print("device:", torch.cuda.get_device_name(0))
 PY
 ```
+if CuPy installation fails, try:
+
+```bash
+uv remove cupy
+uv add cupy-cuda12x # builed version
+```
+
 
 ### Running the scripts
 
