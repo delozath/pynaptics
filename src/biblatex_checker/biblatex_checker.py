@@ -32,8 +32,8 @@ class BiblatexChecker:
         (r'‐', '-'),
      )
     def __init__(self):
-        self.path = Path(__file__).parent.parent / 'data'
-    #
+        self.path = Path.cwd() / 'data'
+    
     def load_bibfile(self, fname):
         fname = self.path / fname
         try:
@@ -44,7 +44,7 @@ class BiblatexChecker:
             print(f"Error: The file '{fname.as_posix()}' was not found.")
         except UnicodeDecodeError:
             print("Error: Could not decode the file with UTF-8 encoding.")
-    #
+    
     def clean_bibkeys(self, text):
         """
         Sanitize BibLaTeX entry keys by replacing special characters.
@@ -67,7 +67,7 @@ class BiblatexChecker:
          )
         #
         return text
-    #
+    
     def _text_to_json(self, text):
         raw_json = (
             pypandoc
@@ -78,7 +78,7 @@ class BiblatexChecker:
                  )
          )
         return json.loads(raw_json)
-    #
+    
     def _scan_authors_and_abstracts(self, entries):
         """
         Normalize author lists and extract abstracts into a DataFrame.
@@ -111,9 +111,9 @@ class BiblatexChecker:
                  }
             )
         abstracts = pd.DataFrame(abstracts)
-        #
+        
         return entries, abstracts
-    #
+    
     def _save(self, entries, abstracts):
         """
         Write cleaned entries back to BibLaTeX and save abstracts CSV.
@@ -126,7 +126,7 @@ class BiblatexChecker:
             DataFrame of extracted abstracts.
         """
         json_data = json.dumps(entries, ensure_ascii=False, indent=2)
-        #
+        
         biblatex = pypandoc.convert_text(
             source=json_data,
             format='csljson',
@@ -134,11 +134,11 @@ class BiblatexChecker:
          )
         for rep in BiblatexChecker.replace_seq:
             biblatex = biblatex.replace(*rep)
-        #
+        
         (self.path/"output.bib").write_text(biblatex, encoding="utf-8")
-        #
+        
         abstracts.to_csv(self.path/"abstracts.csv", index=False)
-    #
+    
     def clean_entries(self, fname):
         text = self.load_bibfile(fname)
         text = self.clean_bibkeys(text)
