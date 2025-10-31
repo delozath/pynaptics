@@ -45,7 +45,7 @@ class LoadYaml:
     enables a flexible, document-per-setting YAML layout.
     """
     def __init__(self, fname='extra.yml') -> None:
-        path = Path('.') / 'src/NLP_Preprocessing' / fname
+        path = Path('.') / 'src/nlp_preprocessing' / fname
         with open(path.absolute(), 'r', encoding="utf-8") as file:
             docs = [*yaml.load_all(file, Loader=SafeLoader)]
             for d in docs:
