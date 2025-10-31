@@ -1,6 +1,8 @@
-# Natural Language Procesing
-## Sentence Preprocesing in Mexican Spanish
+# Natural Language Processing
+## Sentence Preprocessing in Mexican Spanish
 
+### Setup
+pyproject.toml
 ```
 [project]
 dependencies = ['numpy', 'pandas', 'matplotlib', 'seaborn', 'pypandoc', 'spacy', 'spacy-transformers', 'es_dep_news_trf']
@@ -11,32 +13,51 @@ uv sync
 source .venv/bin/activate
 ```
 
+#### Install CUDA-nvidia
+
+Check your GPU model:
 ```bash
 lspci | grep -i nvidia
 sudo lshw -C display
 
 ```
 
-buacar GeForce
+If the following output appears when searching for the GPU:
+```bash
+driver=nouveau
+```
+it means that no appropriate driver is installed.
 
-driver=nouveau -> no cuda
-
+To install NVIDIA drivers, first check for the recommended driver using:
 ```bash
 sudo apt update
 sudo ubuntu-drivers devices
 ```
 
-driver   : nvidia-driver-580-open - distro non-free recommended
+Select the driver maked as *recomended*
+```bash
+sudo apt install -y nvidia-driver-X # use the recomended driver
+nvidia-smi
+```
+
+The lastest command are going to show the Driver and CUDA version, and also the GPU Model.
+
+
+#### Install python libraries using uv + pip
+
+Install CuPy, PyTorch, spaCy, and the models *es_core_news_lg* and *es_dep_news_trf*
 
 ```bash
-sudo apt install -y nvidia-driver-580-open
-nvidia-smi
-
+uv add cupy
 uv pip install --find-links https://download.pytorch.org/whl/cu128 torch==2.8.0
 uv add "spacy>=3.8,<3.9" "spacy-transformers>=1.3,<2"
+uv pip install https://github.com/explosion/spacy-models/releases/download/es_core_news_lg-3.8.0/es_core_news_lg-3.8.0-py3-none-any.whl
 uv pip install https://github.com/explosion/spacy-models/releases/download/es_dep_news_trf-3.8.0/es_dep_news_trf-3.8.0-py3-none-any.whl
 
+```
 
+To test the installation:
+```bash
 uv run python - <<'PY'
 import torch
 print("torch:", torch.__version__, "build:", torch.version.cuda)
@@ -45,10 +66,23 @@ if torch.cuda.is_available():
     print("device:", torch.cuda.get_device_name(0))
 PY
 ```
-uv pip install https://github.com/explosion/spacy-models/releases/download/es_core_news_lg-3.8.0/es_core_news_lg-3.8.0-py3-none-any.whl
+if CuPy installation fails, try:
 
-uv run -m src.NLP_Preprocessing.NLP_sentence_preproc
+```bash
+uv remove cupy
+uv add cupy-cuda12x # builed version
+```
 
-uv add CuPy
 
-https://github.com/explosion/spacy-models/releases/download/es_dep_news_trf-3.8.0/es_dep_news_trf-3.8.0-py3-none-any.whl
+### Running the scripts
+
+CPU-based
+```bash
+uv run -m src.NLP_Preprocessing.sentence_preproc
+```
+
+Transformer-based (GPU only)
+```bash
+uv run -m src.NLP_Preprocessing.sentence_preproc_trf
+```
+
