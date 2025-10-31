@@ -1,6 +1,4 @@
 """
-Text preprocessing utilities for Spanish clinical sentences using spaCy.
-
 This module provides:
 - `LoadYaml`: loads project-specific configuration (stopwords and lemmatization
   mappings) from a YAML file.
@@ -9,15 +7,12 @@ This module provides:
 
 Notes
 -----
-- Requires the spaCy model ``es_core_news_lg`` to be installed.
-- YAML file is expected under ``./src/NLP_Preprocessing/<fname>``.
+- YAML file is expected under ``./src/nlp_preprocessing/<fname>``.
 """
 
 import yaml
 from yaml.loader import SafeLoader
 from pathlib import Path
-
-import spacy
 
 
 class LoadYaml:
