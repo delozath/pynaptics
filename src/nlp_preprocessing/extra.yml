@@ -1,0 +1,60 @@
+---
+stopwords: ["órale","orale","ándale","andale","chale","nel","neta", "nomás","nomas","pos","pa","ora","sale","vale", "osea","o","sea","este","eh","mmm"]
+...
+
+---
+lemmas:
+  checar: [
+    "checar", "checando", "checado",
+    "checo", "checas", "checa", "checamos", "checan",
+    "chequé", "checaste", "checó", "checaron",
+    "checaba", "checabas", "checábamos", "checaban",
+    "checaría", "checarías", "checaríamos", "checarían",
+    "checaré", "checarás", "checará", "checaremos", "checarán",
+    "cheque", "cheques", "chequemos", "chequen",
+    "checara", "checaras", "checáramos", "checaran",
+    "checase", "checases", "checásemos", "checasen",
+    "checare", "checares", "checáremos", "checaren"
+  ]
+  chambear: [
+    "chambear", "chambeando", "chambeado",
+    "chambeo", "chambeas", "chambea", "chambeamos", "chambean",
+    "chambeé", "chambeaste", "chambeó", "chambearon",
+    "chambeaba", "chambeabas", "chambeábamos", "chambeaban",
+    "chambearía", "chambearías", "chambearíamos", "chambearían",
+    "chambearé", "chambearás", "chambeará", "chambearemos", "chambearán",
+    "chambee", "chambees", "chambeemos", "chambeen",
+    "chambeara", "chambearas", "chambeáramos", "chambearan",
+    "chambease", "chambeases", "chambeásemos", "chambeasen",
+    "chambeare", "chambeares", "chambeáremos", "chambearen"
+  ]
+  parquear: [
+    "parquear", "parqueando", "parqueado",
+    "parqueo", "parqueas", "parquea", "parqueamos", "parquean",
+    "parqueé", "parqueaste", "parqueó", "parquearon",
+    "parqueaba", "parqueabas", "parqueábamos", "parqueaban",
+    "parquearía", "parquearías", "parquearíamos", "parquearían",
+    "parquearé", "parquearás", "parqueará", "parquearemos", "parquearán",
+    "parquee", "parquees", "parqueemos", "parqueen",
+    "parqueara", "parquearas", "parqueáramos", "parquearan",
+    "parquease", "parqueases", "parqueásemos", "parqueasen",
+    "parqueare", "parqueares", "parqueáremos", "parquearen"
+  ]
+...
+
+---
+negative:
+  - "no"
+  - ni
+  - nunca
+  - jamas
+  - sin
+  - tampoco
+  - ningun
+  - ninguna
+  - ninguno
+  - ningunas
+  - ningunos
+  - nada
+  - nadie
+...
