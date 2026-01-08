@@ -19,6 +19,7 @@ Use cases include:
 - [ISBN Metadata Retriever](#isbn-metadata-retriever)
 - [BibLaTeX Checker](#biblatex-checker)
 - [NLP for Spanish Sentences](#natural-language-processing-sentence-preprocessing-in-mexican-spanish)
+- [Biblatex PDF Automation](#biblatex-pdf-automation)
 - [Latex generated PDF to plain text](#latex-generated-pdf-to-plain-text)
 ---
 
@@ -75,7 +76,7 @@ Provides tools to perform a preprocessing pipeline suitable for Natural Language
 ------
 
 
-## Bibtex/Biblatex PDF Automation
+## Biblatex PDF Automation
 This repository contains scripts to automate the retrieval of BibTeX/BibLaTeX entries from online sources and to rename PDF files based on their bibliographic information, thes files are move to a specified directory.
 
 [🔗 repository link](./src/folder_biblatex_pdf_automation)
