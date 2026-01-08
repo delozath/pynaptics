@@ -72,8 +72,25 @@ Provides tools to perform a preprocessing pipeline suitable for Natural Language
 * **Processing** Extract lemmas
 * **Display** Show results in CLI
 
+------
+
+
+## Bibtex/Biblatex PDF Automation
+This repository contains scripts to automate the retrieval of BibTeX/BibLaTeX entries from online sources and to rename PDF files based on their bibliographic information, thes files are move to a specified directory.
+
+[🔗 repository link](./src/folder_biblatex_pdf_automation)
+
+
+### 📚 What It Does
+
+* **Fetches** BibTeX/BibLaTeX entries using DOI
+* **Renames** PDF files according to a SurnameYear format using the retrieved bibliographic data
+* **Organizes** files into specified directories
+* **Update** bibliographic bib-database with new entries
 
 ------
+
+
 ## Latex generated PDF to plain text
 [🔗 repository link](./src/latexpdf_to_plaintext)
 Pending documentation

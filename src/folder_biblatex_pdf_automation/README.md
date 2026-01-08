@@ -34,7 +34,15 @@ Download PDF from internet sources (e.g., journal websites) and copy the DOI to 
 python python ./folder_latex.py
 ```
 
-## 3. Notes
+### 3. Folder Structure
+```plaintext
+folder_biblatex_pdf_automation/
+├── .env
+├── folder_latex.py
+└── README.md
+```
+
+## 4. Notes
 - Ensure that the DOI is correctly copied to the clipboard before running the script.
 - The script will handle errors such as missing DOI entries or file renaming conflicts.
 - Make sure the paths in the `.env` file are correctly set to avoid file handling errors
