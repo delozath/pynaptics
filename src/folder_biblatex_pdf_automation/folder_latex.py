@@ -1,22 +1,18 @@
+from typing import Literal
+
 import os
 import shutil
 import unicodedata
-import pyperclip
-from urllib.parse import quote
-
-from typing import Literal
-
-import bibtexparser
-from bibtexparser.bibdatabase import BibDatabase
-
 import requests
-
 import dotenv
-
 
 from pathlib import Path
 
-from sympy import Li
+
+import pyperclip
+import bibtexparser
+from bibtexparser.bibdatabase import BibDatabase
+
 
 class DOI2BibManager:
     latex_chars = (
