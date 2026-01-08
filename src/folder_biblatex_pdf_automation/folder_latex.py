@@ -1,13 +1,22 @@
-import re
+import os
+import shutil
 import unicodedata
 import pyperclip
 from urllib.parse import quote
 
+from typing import Literal
+
 import bibtexparser
 from bibtexparser.bibdatabase import BibDatabase
 
-
 import requests
+
+import dotenv
+
+
+from pathlib import Path
+
+from sympy import Li
 
 class DOI2BibManager:
     latex_chars = (
@@ -35,7 +44,7 @@ class DOI2BibManager:
         text = (
             unicodedata
                 .normalize('NFC', text)
-                .encode('mac_roman', 'ignore')
+                .encode('utf-8', 'ignore')
                 .decode('utf-8')
          )
         return text
@@ -129,7 +138,7 @@ class DOI2BibManager:
         db.strings = {}
         return bibtexparser.dumps(db)
         
-    def fetch(self, text: str):
+    def fetch(self, text: str, format: Literal['bib', 'dict']) -> tuple[str, str | dict]:
         """
         Fetch doi from internet, clean encoding, remove mojibake, replace special Latex characters and return cleaned BibTeX entry.
         
@@ -137,11 +146,13 @@ class DOI2BibManager:
         ----------
         text : str
             DOI or URL containing DOI.
+        format : Literal['bib', 'dict']
+            Desired output format: 'bib' for BibTeX string, 'dict' for dictionary
         
         Returns
         -------
-        str
-            Cleaned BibTeX entry as a string.
+        tuple[str, str | dict]
+            Tuple containing BibTeX key and the BibTeX entry in the specified format.
         """
         doi = self.doi_strip(text)
         bib = self.fetch_bibtex(doi)
@@ -150,11 +161,29 @@ class DOI2BibManager:
         bib_decode = bibtexparser.loads(bib).entries[0]
         bib_clean = self.clean_bibkey(bib_decode)
         bib_clean = self.clean_fields(bib_clean)
-        bib_entry = self.dict_to_bib_entry(bib_clean)
         
-        return bib_entry
+        bibkey = bib_clean['ID']
+        match format:
+            case 'dict':
+                return bibkey, bib_clean
+            case 'bib':
+                bib_entry = self.dict_to_bib_entry(bib_clean)
+                return bibkey, bib_entry
+            case _:
+                raise ValueError(f"Unsupported format: {format}")
 
     def doi_strip(self, doi: str) -> str:
+        """
+        Extract DOI from a given string, removing URL prefixes if present.
+        Parameters
+        ----------
+        doi : str
+            Input string containing DOI or DOI URL.
+        
+        Returns
+        -------
+        str
+            Extracted DOI."""
         doi = doi.strip()
         if doi.startswith("http://") or doi.startswith("https://"):
             return doi.split("doi.org/")[-1]
@@ -162,11 +191,90 @@ class DOI2BibManager:
             return doi
 
 
+class PDFFileManager:
+    def __init__(self):
+        """
+        Initialize PDFFileManager by loading environment variables for origin and destination paths.
 
-if __name__ == "__main__":
+        Raises
+        -------
+        NotADirectoryError
+            If either the origin or destination path is not a valid directory.
+        """
+        dotenv.load_dotenv()
+        self.pth_org = Path(os.getenv("PATH_ORIGIN"))
+        self.pth_dest = Path(os.getenv("PATH_DESTINATION"))
+
+        if not self.pth_org.is_dir():
+            raise NotADirectoryError(f"{self.pth_org} is not a directory.")
+        if not self.pth_dest.is_dir():
+            raise NotADirectoryError(f"{self.pth_dest} is not a directory.")
+    
+    def newest_file(self):
+        """
+        Find the most recently modified PDF file in the origin directory.
+
+        Returns
+        -------
+        Path
+            Path to the most recently modified PDF file.
+        
+        Raises
+        -------
+        FileNotFoundError
+            If no PDF files are found in the origin directory.
+        """
+        pdfs = [p for p in self.pth_org.iterdir() if p.is_file() and p.suffix.lower() == ".pdf"]
+        if len(pdfs) == 0:
+            raise FileNotFoundError(f"No PDF files found in: {self.pth_org}")
+        return max(pdfs, key=lambda p: p.stat().st_mtime)
+    
+    def move_file(self, fname: Path):
+        """
+        Move the most recently modified PDF file from the origin directory to the destination directory with a new name.
+
+        Parameters
+        ----------
+        fname : Path
+            New filename (without extension) for the moved PDF file.
+        
+        Raises
+        -------
+        FileExistsError
+            If a file with the new name already exists in the destination directory.
+        """
+        old_pfname = self.newest_file()
+        new_pfname = self.pth_dest / f"{fname}.pdf"
+
+        if new_pfname.exists():
+            raise FileExistsError(f"File already exists: {new_pfname}")
+        
+        shutil.move(
+            old_pfname.as_posix(),
+            new_pfname.as_posix()
+         )
+        
+        print(f"Moved file from {old_pfname} to {new_pfname}")
+
+
+def orchestrator():
+    """
+    Orchestrate the process of fetching BibTeX entry from DOI in clipboard, copying it back to clipboard,
+    and moving the most recent PDF file to the destination directory with the BibTeX key as filename.
+    """
     text = pyperclip.paste()
     doi2bib = DOI2BibManager()
-    bib_entry = doi2bib.fetch(text)
+    bibkey, bib_entry = doi2bib.fetch(text, format='dict')
+    bib_entry['file'] = f":{bibkey}.pdf:PDF"
+    bib_entry = doi2bib.dict_to_bib_entry(bib_entry)
+    pyperclip.copy(bib_entry)
     print(bib_entry)
+    print("\nBibTeX entry copied to clipboard.")
     
-    breakpoint()
+    pdf_manager = PDFFileManager()
+    pdf_manager.move_file(bibkey)
+    
+
+if __name__ == "__main__":
+    #https://doi.org/10.1136/bmj-2023-078378
+    orchestrator()
