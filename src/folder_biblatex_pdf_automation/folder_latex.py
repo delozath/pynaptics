@@ -191,6 +191,43 @@ class DOI2BibManager:
             return doi
 
 
+class BibtexParserDriver:
+    def __init__(self):
+        """
+        Initialize BibtexParserDriver with the path to a BibTeX file.
+
+        Parameters
+        ----------
+        bibfile : Path
+            Path to the BibTeX file.
+        """
+        dotenv.load_dotenv()
+        self.bibfile = Path(os.getenv("BIBTEX_PATH"))
+
+        self.bib_str = self.bibfile.read_text(encoding="utf-8")
+        self.entries = bibtexparser.loads(self.bib_str)
+    
+    def append_entry(self, bib_entry: dict):
+        """
+        Append a new BibTeX entry to the existing BibTeX database.
+
+        Parameters
+        ----------
+        bib_entry : dict
+            BibTeX entry as a dictionary.
+        """
+        #TODO: check for duplicates
+        self.entries.entries.append(bib_entry)
+    
+    def save(self):
+        """
+        Save the current BibTeX database back to the BibTeX file.
+        """
+        bib_str = bibtexparser.dumps(self.entries)
+        self.bibfile.write_text(bib_str)
+        print("\nBibTeX entry saved.")
+    
+
 class PDFFileManager:
     def __init__(self):
         """
@@ -266,15 +303,19 @@ def orchestrator():
     doi2bib = DOI2BibManager()
     bibkey, bib_entry = doi2bib.fetch(text, format='dict')
     bib_entry['file'] = f":{bibkey}.pdf:PDF"
-    bib_entry = doi2bib.dict_to_bib_entry(bib_entry)
-    pyperclip.copy(bib_entry)
+    #bib_entry = doi2bib.dict_to_bib_entry(bib_entry)
+
+    bib_db = BibtexParserDriver()
+    bib_db.append_entry(bib_entry)
+    bib_db.save()
     print(bib_entry)
-    print("\nBibTeX entry copied to clipboard.")
     
     pdf_manager = PDFFileManager()
     pdf_manager.move_file(bibkey)
     
 
 if __name__ == "__main__":
+    # Example DOIs for testing:
     #https://doi.org/10.1136/bmj-2023-078378
+    #http://dx.doi.org/10.1136/bmj-2024-082505
     orchestrator()
