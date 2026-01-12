@@ -84,7 +84,7 @@ class DOI2BibManager:
         for k in [k for k in bib_entry.keys() if k not in ['ID', 'year']]:
             tmp = unicodedata.normalize('NFC', bib_entry[k])
             for old, new in self.latex_chars:
-                tmp = tmp.replace(old, new)    
+                tmp = tmp.replace(old, new).replace("4â€“", '-')
             bib_entry[k] = tmp
         
         return bib_entry
@@ -153,10 +153,15 @@ class DOI2BibManager:
         doi = self.doi_strip(text)
         bib = self.fetch_bibtex(doi)
         bib = self.clean_encoding(bib)
-        
-        bib_decode = bibtexparser.loads(bib).entries[0]
-        bib_clean = self.clean_bibkey(bib_decode)
-        bib_clean = self.clean_fields(bib_clean)
+        try:
+            bib_decode = bibtexparser.loads(bib).entries[0]
+        except Exception as e:
+            print(f"Error parsing BibTeX entry\n: retrived entry:\n{bib}\n")
+            bib_decode = input("Please add manual reviewed BibTeX entry here:\n")
+            bib_decode = bibtexparser.loads(bib_decode).entries[0]
+        finally:
+            bib_clean = self.clean_bibkey(bib_decode)
+            bib_clean = self.clean_fields(bib_clean)
         
         bibkey = bib_clean['ID']
         match format:
