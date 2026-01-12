@@ -84,7 +84,7 @@ class DOI2BibManager:
         for k in [k for k in bib_entry.keys() if k not in ['ID', 'year']]:
             tmp = unicodedata.normalize('NFC', bib_entry[k])
             for old, new in self.latex_chars:
-                tmp = tmp.replace(old, new)    
+                tmp = tmp.replace(old, new).replace("4â€“", '-')
             bib_entry[k] = tmp
         
         return bib_entry
