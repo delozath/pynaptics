@@ -1,0 +1,179 @@
+schema_type: dataframe
+version: 0.0.1
+columns:
+  paciente_id:
+    title: null
+    description: null
+    dtype: string
+    nullable: false
+    checks:
+      greater_than_or_equal_to:
+        min_value: 0
+      less_than:
+        max_value: 50
+    unique: true
+    coerce: false
+    required: true
+    regex: false
+  edad:
+    title: null
+    description: null
+    dtype: int64
+    nullable: false
+    checks:
+      greater_than_or_equal_to:
+        min_value: 18.0
+      less_than_or_equal_to:
+        max_value: 92.0
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  sexo:
+    title: null
+    description: null
+    dtype: string
+    nullable: false
+    checks:
+      isin:
+        allowed_values:
+        - F
+        - M
+    unique: false
+    coerce: true
+    required: true
+    regex: false
+  peso_kg:
+    title: null
+    description: null
+    dtype: float64
+    nullable: true
+    checks:
+      greater_than_or_equal_to:
+        min_value: 42.5
+      less_than_or_equal_to:
+        max_value: 128.3
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  talla_cm:
+    title: null
+    description: null
+    dtype: float64
+    nullable: true
+    checks:
+      greater_than_or_equal_to:
+        min_value: 145.0
+      less_than_or_equal_to:
+        max_value: 196.0
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  imc:
+    title: null
+    description: null
+    dtype: float64
+    nullable: true
+    checks:
+      greater_than_or_equal_to:
+        min_value: 15.8
+      less_than_or_equal_to:
+        max_value: 44.9
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  codigo_postal:
+    title: null
+    description: null
+    dtype: object
+    nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  estado:
+    title: null
+    description: null
+    dtype: object
+    nullable: true
+    checks:
+      isin:
+        allowed_values:
+        - Ciudad de México
+        - Jalisco
+        - Nuevo León
+        - Estado de México
+        - Puebla
+      greater_than:
+        min_value: 0
+      less_than:
+        max_value: 100
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  email:
+    title: null
+    description: null
+    dtype: object
+    nullable: true
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  fecha_ingreso:
+    title: null
+    description: null
+    dtype: datetime64[ns]
+    nullable: false
+    checks:
+      greater_than_or_equal_to:
+        min_value: '2021-01-15'
+      less_than_or_equal_to:
+        max_value: '2024-11-30'
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  glucosa_mg_dl:
+    title: null
+    description: null
+    dtype: float64
+    nullable: true
+    checks:
+      greater_than_or_equal_to:
+        min_value: 68.0
+      less_than_or_equal_to:
+        max_value: 255.0
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  hipertension:
+    title: null
+    description: null
+    dtype: bool
+    nullable: false
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+checks: null
+index: null
+dtype: null
+coerce: false
+strict: false
+name: null
+ordered: false
+unique: null
+report_duplicates: all
+unique_column_names: false
+add_missing_columns: false
+title: null
+description: null
