@@ -1,0 +1,22 @@
+{% extends "schema_editor/editor_base.html" %}
+
+{% block title %}Globales — Pandera Schema Editor{% endblock %}
+
+{% block editor_content %}
+  <h1>Propiedades globales</h1>
+
+  <section class="card">
+    <form method="post" action="{{ own_url }}" class="stacked-form">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ own_url }}">
+
+      <div class="checkbox-row">
+        <label>{{ form.strict }} strict</label>
+        <label>{{ form.coerce }} coerce</label>
+        <label>{{ form.unique_column_names }} unique_column_names</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Aplicar globales</button>
+    </form>
+  </section>
+{% endblock %}

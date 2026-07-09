@@ -1,0 +1,17 @@
+{% extends "schema_editor/base.html" %}
+
+{% block title %}Continuar progreso — Pandera Schema Editor{% endblock %}
+
+{% block content %}
+  <h1>Progreso encontrado</h1>
+  <p>¿Continuar desde el progreso guardado en <code>{{ checkpoint_name }}</code>?</p>
+  <p class="hint">Origen: <code>{{ original }}</code></p>
+
+  <div class="button-row">
+    <a class="btn btn-primary" href="{{ yes_url }}">Sí, continuar desde el checkpoint</a>
+    <form method="post" action="{{ discard_url }}">
+      {% csrf_token %}
+      <button type="submit" class="btn">No, partir del original</button>
+    </form>
+  </div>
+{% endblock %}

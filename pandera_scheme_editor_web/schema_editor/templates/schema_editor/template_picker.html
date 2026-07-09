@@ -1,0 +1,51 @@
+{% extends "schema_editor/editor_base.html" %}
+{% load static %}
+
+{% block title %}Plantillas — {{ column.name }} — Pandera Schema Editor{% endblock %}
+
+{% block editor_content %}
+  <h1>Plantillas predefinidas: {{ column.name }}</h1>
+  <p><a href="{{ column_url }}">← Volver a {{ column.name }}</a></p>
+
+  <section class="card">
+    <form method="get" action="{% url 'schema_editor:column_template' column_name=column.name %}" id="template-picker-form" class="inline-form">
+      <input type="hidden" name="src" value="{{ src }}">
+      <label for="template-select">Plantilla</label>
+      <select name="template" id="template-select">
+        {% for key, label in template_choices %}
+          <option value="{{ key }}" {% if key == template_key %}selected{% endif %}>{{ label }}</option>
+        {% endfor %}
+      </select>
+      <noscript><button type="submit" class="btn btn-small">Ver</button></noscript>
+    </form>
+
+    <p class="hint" id="template-description">{{ template.description }}</p>
+
+    <form method="post" class="stacked-form">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ column_url }}">
+      <input type="hidden" name="template_key" id="template-key-field" value="{{ template_key }}">
+
+      <div id="template-parameters">
+        {% for spec in specs %}
+          <label for="tpl-field-{{ spec.name }}">{{ spec.label }}</label>
+          {% if spec.kind == "list" %}
+            <textarea id="tpl-field-{{ spec.name }}" name="{{ spec.name }}" rows="4">{{ spec.initial_text }}</textarea>
+          {% else %}
+            <input type="text" id="tpl-field-{{ spec.name }}" name="{{ spec.name }}" value="{{ spec.initial_text }}">
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="checkbox-row">
+        <label><input type="checkbox" name="nullable" id="template-nullable-checkbox" {% if default_nullable %}checked{% endif %}> nullable</label>
+        <label><input type="checkbox" name="replace_existing_checks"> Reemplazar checks existentes</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Aplicar plantilla a columna</button>
+    </form>
+  </section>
+
+  <script type="application/json" id="template-data">{{ template_data_json|safe }}</script>
+  <script src="{% static 'schema_editor/js/app.js' %}" defer></script>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "schema_editor/base.html" %}
+
+{% block content %}
+  <div class="editor-header">
+    <div class="editor-header-info">
+      <p class="src-label">Origen: <code>{{ src }}</code></p>
+      {% if checkpoint_path %}
+        <p class="checkpoint-label">Progreso guardado en: <code>{{ checkpoint_path }}</code></p>
+      {% else %}
+        <p class="checkpoint-label">Sin progreso guardado</p>
+      {% endif %}
+    </div>
+    <div class="editor-header-actions">
+      <details class="menu">
+        <summary class="btn-small">Más</summary>
+        <div class="menu-panel">
+          <a href="{% url 'schema_editor:globals_edit' %}?src={{ src|urlencode }}">Globales del esquema</a>
+          <a class="menu-item-muted" href="{% url 'schema_editor:load' %}">Cambiar archivo</a>
+        </div>
+      </details>
+      <a class="btn btn-small btn-primary" href="{% url 'schema_editor:save_as' %}?src={{ src|urlencode }}">Guardar como…</a>
+    </div>
+  </div>
+
+  <div class="editor-layout">
+    <aside class="sidebar">
+      {% include "schema_editor/_sidebar_columns.html" %}
+    </aside>
+    <section class="editor-content">
+      {% block editor_content %}{% endblock %}
+    </section>
+  </div>
+{% endblock %}

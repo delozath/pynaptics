@@ -1,0 +1,43 @@
+<section class="card">
+  <h2>Checks manuales</h2>
+
+  <form method="post"
+        action="{% url 'schema_editor:check_add' column_name=column.name %}?src={{ src|urlencode }}"
+        class="inline-form">
+    {% csrf_token %}
+    <select name="check_key" id="add-check-select">
+      {% for key, label in offered_checks %}
+        <option value="{{ key }}">{{ label }} ({{ key }})</option>
+      {% endfor %}
+    </select>
+    <button type="submit" class="btn btn-small">Agregar/activar check</button>
+  </form>
+
+  {% if show_all_checks %}
+    <a class="toggle-link" href="{{ own_url }}">Ocultar checks no relevantes para este dtype</a>
+  {% else %}
+    <a class="toggle-link" href="{{ own_url }}&show_all_checks=1">Mostrar todos los checks</a>
+  {% endif %}
+
+  <h3>Checks activos</h3>
+  {% if active_checks %}
+    <ul class="active-checks-list">
+      {% for key, label in active_checks %}
+        <li>
+          <a href="{% url 'schema_editor:check_payload_edit' column_name=column.name check_key=key %}?src={{ src|urlencode }}">
+            {{ label }} <span class="check-key">({{ key }})</span>
+          </a>
+          <form method="post"
+                action="{% url 'schema_editor:check_delete' column_name=column.name check_key=key %}?src={{ src|urlencode }}"
+                class="inline-delete-form">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ own_url }}">
+            <button type="submit" class="btn btn-small btn-danger">Eliminar</button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="hint">Esta columna no tiene checks activos.</p>
+  {% endif %}
+</section>

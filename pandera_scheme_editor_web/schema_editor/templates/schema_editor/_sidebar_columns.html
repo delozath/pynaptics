@@ -1,0 +1,15 @@
+<nav class="column-nav">
+  <p class="column-nav-title">Columnas</p>
+  <ul>
+    {% for column_name in contract.column_names %}
+      <li>
+        <a
+          class="column-link {% if column_name == selected_column %}active{% endif %}"
+          href="{% url 'schema_editor:column_detail' column_name=column_name %}?src={{ src|urlencode }}"
+        >{{ column_name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a class="column-link globals-link {% if selected_column is None %}active{% endif %}"
+     href="{% url 'schema_editor:globals_edit' %}?src={{ src|urlencode }}">Globales del esquema</a>
+</nav>

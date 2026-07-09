@@ -1,0 +1,35 @@
+{% extends "schema_editor/editor_base.html" %}
+
+{% block title %}{{ check_key }} — {{ column.name }} — Pandera Schema Editor{% endblock %}
+
+{% block editor_content %}
+  <h1>Editar check: {{ check_key }}</h1>
+  <p><a href="{{ own_url }}">← Volver a {{ column.name }}</a></p>
+
+  <section class="card">
+    <form method="post" class="stacked-form">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ own_url }}">
+
+      {% for spec in specs %}
+        <label for="field-{{ spec.name }}">{{ spec.label }}</label>
+        {% if spec.kind == "list" %}
+          <textarea id="field-{{ spec.name }}" name="{{ spec.name }}" class="{{ spec.css_class }}" rows="4">{{ spec.initial_text }}</textarea>
+          <p class="hint">Un valor por línea, o sintaxis de lista de Python, ej. ["A", "B"].</p>
+        {% else %}
+          <input type="text" id="field-{{ spec.name }}" name="{{ spec.name }}" class="{{ spec.css_class }}" value="{{ spec.initial_text }}">
+        {% endif %}
+      {% endfor %}
+
+      <button type="submit" class="btn btn-primary">Aplicar check editado</button>
+    </form>
+
+    <form method="post"
+          action="{% url 'schema_editor:check_delete' column_name=column.name check_key=check_key %}?src={{ src|urlencode }}"
+          class="inline-delete-form">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ own_url }}">
+      <button type="submit" class="btn btn-danger">Eliminar check seleccionado</button>
+    </form>
+  </section>
+{% endblock %}

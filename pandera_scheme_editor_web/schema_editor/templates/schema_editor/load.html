@@ -1,0 +1,47 @@
+{% extends "schema_editor/base.html" %}
+
+{% block title %}Cargar YAML — Pandera Schema Editor{% endblock %}
+
+{% block content %}
+  <h1>Cargar YAML inferido</h1>
+  <p class="hint">
+    Carga un YAML generado con <code>pandera.infer_schema(df).to_yaml(path)</code>.
+    Elige <strong>una</strong> de las tres opciones de abajo; si llenas varias,
+    el orden de prioridad es: archivo subido &gt; ruta escrita &gt; archivo del workspace.
+  </p>
+
+  {% if form.non_field_errors %}
+    <ul class="errorlist">
+      {% for error in form.non_field_errors %}<li>{{ error }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+
+  <form method="post" enctype="multipart/form-data" class="stacked-form">
+    {% csrf_token %}
+
+    <fieldset>
+      <legend>Ruta en el servidor</legend>
+      <label for="{{ form.path.id_for_label }}">{{ form.path.label }}</label>
+      {{ form.path }}
+      {% for error in form.path.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+      <p class="hint">Ruta absoluta o relativa, igual que el selector de archivos de la versión GTK.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Archivos en el workspace</legend>
+      <label for="{{ form.workspace_choice.id_for_label }}">{{ form.workspace_choice.label }}</label>
+      {{ form.workspace_choice }}
+      {% for error in form.workspace_choice.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+    </fieldset>
+
+    <fieldset>
+      <legend>Subir archivo</legend>
+      <label for="{{ form.upload.id_for_label }}">{{ form.upload.label }}</label>
+      {{ form.upload }}
+      {% for error in form.upload.errors %}<p class="field-error">{{ error }}</p>{% endfor %}
+      <p class="hint">Se guarda en el workspace del servidor; nunca sobrescribe un archivo existente con el mismo nombre.</p>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Cargar</button>
+  </form>
+{% endblock %}

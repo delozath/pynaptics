@@ -2,6 +2,11 @@
 
 Editor GTK 4 para cargar un YAML generado por `pa.infer_schema(df).to_yaml(...)`, modificar tipos, checks y plantillas por columna, y guardar un nuevo YAML corregido sin sobrescribir el original.
 
+> Esta es la versión de escritorio. También existe una
+> [versión web (Django)](../pandera_scheme_editor_web/README.md) con la misma
+> lógica de dominio. Ver el [README general](../README.md) para comparar
+> ambas.
+
 ## Alcance
 
 Este proyecto hace exactamente esto:
@@ -87,16 +92,13 @@ sudo apt install -y \
   python3-gi \
   python3-gi-cairo \
   gir1.2-gtk-4.0 \
-  libgtk-4-dev
+  libgtk-4-dev \
   gobject-introspection \
-  libgirepository-2.0-dev
+  libgirepository-2.0-dev \
+  libcairo2-dev \
+  libgirepository1.0-dev \
+  pkg-config
 ```
-
-
-sudo apt install libcairo2-dev libgirepository1.0-dev pkg-config
-
-pip install pycairo PyGObject
-
 
 Crea el entorno virtual desde la raíz del proyecto. En muchas distribuciones conviene usar `--system-site-packages` para que el entorno vea `python3-gi` instalado por `apt`:
 
@@ -361,3 +363,4 @@ ValueError No se permite sobrescribir el YAML original
 - El repositorio resuelve rutas absolutas antes de comparar origen y destino.
 - La comparación anti-sobrescritura vive en `adapters/yaml_schema_repository.py`, no en la GUI.
 - El dominio preserva claves Pandera desconocidas porque edita el árbol YAML original en vez de reconstruirlo desde cero.
+- La versión web reutiliza este mismo diseño de dominio (`domain/`, `ports/`, `application/`) bajo el nombre `pandera_core`, cambiando solo el adaptador de interfaz (Django en vez de GTK). Ver [`pandera_scheme_editor_web/README.md`](../pandera_scheme_editor_web/README.md#descripción-técnica-para-desarrolladores) para el detalle de esa capa. La GUI GTK mantiene un único contrato vivo en memoria mientras el proceso corre; la versión web, al ser sin estado entre requests, resuelve esto releyendo el checkpoint más reciente en cada petición — una diferencia de arquitectura, no de dominio.
