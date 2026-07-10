@@ -95,6 +95,20 @@ class GlobalsForm(forms.Form):
     unique_column_names = forms.BooleanField(label="unique_column_names", required=False)
 
 
+class ColumnMetadataForm(forms.Form):
+    """Free-form `unit`/`description` tag for a column.
+
+    Both fields are optional: an empty submission is a valid way to clear a
+    field's value without removing the whole metadata tag (use the separate
+    delete action for that).
+    """
+
+    unit = forms.CharField(label="Unidad de medición", required=False, max_length=120)
+    description = forms.CharField(
+        label="Descripción", required=False, widget=forms.Textarea(attrs={"rows": 4})
+    )
+
+
 class SaveAsForm(forms.Form):
     """Destination path for a save-as operation."""
 

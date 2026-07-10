@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from django.urls import path
 
-from .views import checks, columns, globals_save, load, template_editor
+from .views import checks, columns, globals_save, load, metadata, template_editor
 
 app_name = "schema_editor"
 
@@ -34,6 +34,16 @@ urlpatterns = [
         "editor/column/<str:column_name>/template/",
         template_editor.template_picker_view,
         name="column_template",
+    ),
+    path(
+        "editor/column/<str:column_name>/metadata/",
+        metadata.metadata_save_view,
+        name="column_metadata_save",
+    ),
+    path(
+        "editor/column/<str:column_name>/metadata/delete/",
+        metadata.metadata_delete_view,
+        name="column_metadata_delete",
     ),
     path("editor/globals/", globals_save.globals_edit_view, name="globals_edit"),
     path("editor/save-as/", globals_save.save_as_view, name="save_as"),

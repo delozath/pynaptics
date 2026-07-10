@@ -515,24 +515,42 @@ select:focus {
   gap: 0.4rem;
 }
 
-.active-checks-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.active-checks-list > .check-disclosure {
   padding: 0.55rem 0.75rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   background: var(--surface-alt);
 }
 
-.active-checks-list li a {
-  text-decoration: none;
-  color: var(--text);
+.check-disclosure > summary {
+  list-style: none;
+  cursor: pointer;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.active-checks-list li a:hover {
-  color: var(--primary);
+.check-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.check-disclosure > summary::before {
+  content: "▸";
+  font-size: 0.75em;
+  color: var(--text-muted);
+}
+
+.check-disclosure[open] > summary::before {
+  content: "▾";
+}
+
+.check-disclosure[open] > summary {
+  margin-bottom: 0.75rem;
+}
+
+.check-disclosure form {
+  margin-top: 0.6rem;
 }
 
 .check-key {
@@ -543,6 +561,26 @@ select:focus {
 
 .template-preview {
   margin-top: 0.75rem;
+}
+
+/* --- Inline collapsible section (native <details>, not the header dropdown) --- */
+
+.disclosure > summary {
+  list-style: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.disclosure > form {
+  margin-top: 0.9rem;
+}
+
+.disclosure > .inline-delete-form {
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 720px) {

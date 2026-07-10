@@ -86,9 +86,17 @@ class ColumnContract:
             raise TypeError(f"Los checks de la columna {self.name!r} no son un dict")
         return checks
 
-    def set_check(self, key: str, payload: RawMapping | dict[str, Any]) -> None:
-        """Create or replace a check payload."""
-        self.checks[key] = deepcopy(dict(payload))
+    def set_check(self, key: str, payload: Any) -> None:
+        """Create or replace a check's raw value.
+
+        `payload` is usually a named-field dict (``{"min_value": 0}``), but a
+        bare scalar or list is equally valid Pandera YAML for a check with a
+        single stat (e.g. ``30000.0`` for `greater_than_or_equal_to`, or a
+        plain list for `isin`) - see
+        `pandera_core.domain.payload_fields.collapse_payload`, which produces
+        that shape. Either way this just stores a deep copy as-is.
+        """
+        self.checks[key] = deepcopy(payload)
 
     def remove_check(self, key: str) -> None:
         """Remove a check if it exists."""
@@ -97,6 +105,27 @@ class ColumnContract:
     def clear_checks(self) -> None:
         """Remove all checks from the column."""
         self.raw["checks"] = {}
+
+    @property
+    def metadata(self) -> RawMapping | None:
+        """Return the column's `unit`/`description` metadata tag, if any.
+
+        This is not a Pandera-recognized column key - Pandera's own YAML
+        loader ignores unknown keys on a column (verified against its
+        `_deserialize_component_stats`), so storing it here can't break
+        loading the schema back into Pandera; it round-trips through this
+        tool's own save/checkpoint mechanism like any other column key.
+        """
+        value = self.raw.get("metadata")
+        return value if isinstance(value, MutableMapping) else None
+
+    def set_metadata(self, *, unit: str | None, description: str | None) -> None:
+        """Create or replace the column's metadata tag."""
+        self.raw["metadata"] = {"unit": unit, "description": description}
+
+    def clear_metadata(self) -> None:
+        """Remove the column's metadata tag entirely, if present."""
+        self.raw.pop("metadata", None)
 
 
 @dataclass(slots=True)

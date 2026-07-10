@@ -95,6 +95,17 @@ def _nullable_parameter(default: bool = False) -> TemplateParameter:
 
 
 VALIDATION_TEMPLATES: dict[str, ValidationTemplate] = {
+    "yes_no": ValidationTemplate(
+        key="yes_no",
+        label="SI/NO",
+        description="String con valores permitidos SI/NO.",
+        recommended_dtype="string",
+        default_nullable=False,
+        default_coerce=True,
+        default_unique=None,
+        checks={"isin": {"allowed_values": ["SI", "NO"]}},
+        parameters=(_nullable_parameter(False),),
+    ),
     "human_age": ValidationTemplate(
         key="human_age",
         label="Edad humana",

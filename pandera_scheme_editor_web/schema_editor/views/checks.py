@@ -9,6 +9,7 @@ from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 
 from pandera_core.domain.pandera_checks import default_check_payload
+from pandera_core.domain.payload_fields import collapse_payload, normalize_payload
 
 from ..dynamic_fields import check_payload_field_specs, read_specs_from_post
 from ..forms import AddCheckForm
@@ -40,7 +41,7 @@ def add_check_view(request: HttpRequest, column_name: str) -> HttpResponse:
         return redirect(own_url)
 
     check_key = form.cleaned_data["check_key"]
-    column.set_check(check_key, default_check_payload(check_key))
+    column.set_check(check_key, collapse_payload(check_key, default_check_payload(check_key)))
     get_use_cases().save_checkpoint(contract)
     messages.success(request, f"Check «{check_key}» agregado/activado.")
 
@@ -65,9 +66,7 @@ def check_payload_edit_view(request: HttpRequest, column_name: str, check_key: s
         messages.error(request, f"El check «{check_key}» ya no está activo en «{column.name}».")
         return redirect(own_url)
 
-    payload = column.checks.get(check_key)
-    if not isinstance(payload, dict):
-        payload = {}
+    payload = normalize_payload(check_key, column.checks.get(check_key))
     # Rebuilt from the current on-disk payload on every request (GET or
     # POST) - never trusted from the client - so only known field names are
     # ever read back out of a POST body.
@@ -75,7 +74,7 @@ def check_payload_edit_view(request: HttpRequest, column_name: str, check_key: s
 
     if request.method == "POST":
         values = read_specs_from_post(specs, request.POST)
-        column.set_check(check_key, values)
+        column.set_check(check_key, collapse_payload(check_key, values))
         get_use_cases().save_checkpoint(contract)
         messages.success(request, f"Check «{check_key}» aplicado.")
         return redirect(resolve_next(request, own_url))

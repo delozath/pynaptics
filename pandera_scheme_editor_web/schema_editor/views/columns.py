@@ -10,7 +10,9 @@ from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 
 from pandera_core.domain.pandera_checks import CHECK_KEYS, CHECK_TEMPLATES, relevant_check_keys_for_dtype
+from pandera_core.domain.payload_fields import normalize_payload
 
+from ..dynamic_fields import check_payload_field_specs
 from ..forms import ColumnPropertiesForm
 from .common import (
     base_editor_context,
@@ -61,10 +63,20 @@ def column_detail_view(request: HttpRequest, column_name: str) -> HttpResponse:
     show_all_checks = request.GET.get("show_all_checks") == "1"
     offered_check_keys = list(CHECK_KEYS) if show_all_checks else relevant_check_keys_for_dtype(column.dtype)
 
+    # Each active check's own field specs are precomputed here so the checks
+    # panel can render every check's edit form inline (a <details> per check)
+    # instead of linking out to the separate check_payload_edit page.
+    active_checks = [
+        {
+            "key": key,
+            "label": CHECK_TEMPLATES[key].label,
+            "specs": check_payload_field_specs(key, normalize_payload(key, column.checks.get(key))),
+        }
+        for key in column.checks.keys()
+    ]
     # Pre-zipped (key, label) pairs: Django templates can't do a variable-key
     # dict lookup (`some_dict.loop_var`) without a custom filter, so the
     # label is attached here instead of passing a separate lookup dict.
-    active_checks = [(key, CHECK_TEMPLATES[key].label) for key in column.checks.keys()]
     offered_checks = [(key, CHECK_TEMPLATES[key].label) for key in offered_check_keys]
 
     context = base_editor_context(contract, src, selected_column=column.name)

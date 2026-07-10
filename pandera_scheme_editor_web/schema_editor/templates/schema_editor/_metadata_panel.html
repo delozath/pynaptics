@@ -1,0 +1,31 @@
+<section class="card">
+  <h2>Metadata de columna</h2>
+  <details class="disclosure" {% if column.metadata %}open{% endif %}>
+    <summary class="btn btn-small">{% if column.metadata %}Editar metadata{% else %}Agregar metadata{% endif %}</summary>
+
+    <form method="post"
+          action="{% url 'schema_editor:column_metadata_save' column_name=column.name %}?src={{ src|urlencode }}"
+          class="stacked-form">
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ own_url }}">
+
+      <label for="id_metadata_unit">Unidad de medición</label>
+      <input type="text" id="id_metadata_unit" name="unit" value="{{ column.metadata.unit|default:'' }}" placeholder="ej. kg, cm, MXN">
+
+      <label for="id_metadata_description">Descripción</label>
+      <textarea id="id_metadata_description" name="description" rows="4" placeholder="Descripción larga de la columna">{{ column.metadata.description|default:'' }}</textarea>
+
+      <button type="submit" class="btn btn-primary">Guardar metadata</button>
+    </form>
+
+    {% if column.metadata %}
+      <form method="post"
+            action="{% url 'schema_editor:column_metadata_delete' column_name=column.name %}?src={{ src|urlencode }}"
+            class="inline-delete-form">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ own_url }}">
+        <button type="submit" class="btn btn-small btn-danger">Eliminar metadata</button>
+      </form>
+    {% endif %}
+  </details>
+</section>

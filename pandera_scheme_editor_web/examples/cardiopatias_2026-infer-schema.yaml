@@ -1,0 +1,111 @@
+schema_type: dataframe
+columns:
+  id:
+    dtype: float64
+    greater_than_or_equal_to: 2.0
+    less_than_or_equal_to: 438.0
+  morbilidad_neonatal_compuesta:
+    dtype: object
+  tipo_morbilidad_neonatal_compuesta:
+    dtype: object
+    nullable: true
+  subtipo_cardiopatia_materna:
+    dtype: object
+    nullable: true
+  clase_funcional_nyha:
+    dtype: object
+    nullable: true
+  saturacion_materna_basal:
+    dtype: float64
+    nullable: true
+  funcion_ventricular_materna:
+    dtype: object
+    nullable: true
+  hipertension_pulmonar_materna:
+    dtype: object
+  arritmias_maternas:
+    dtype: object
+  uso_betabloqueadores:
+    dtype: object
+  uso_anticoagulacion:
+    dtype: object
+  uso_antiarritmicos:
+    dtype: object
+  uso_diureticos:
+    dtype: object
+  num_medicamentos_cardiologicos:
+    dtype: int64
+    greater_than_or_equal_to: 1.0
+    less_than_or_equal_to: 3.0
+  edad_materna:
+    dtype: int64
+    greater_than_or_equal_to: 16.0
+    less_than_or_equal_to: 49.0
+  num_hospitalizaciones_maternas:
+    dtype: int64
+    greater_than_or_equal_to: 1.0
+    less_than_or_equal_to: 10.0
+  preeclamsia:
+    dtype: object
+  diabetes_gestacional:
+    dtype: object
+  hipertension_arterial_cronica:
+    dtype: object
+  embarazo_multiple:
+    dtype: object
+  via_nacimiento:
+    dtype: object
+  edad_gestacional:
+    dtype: float64
+    greater_than_or_equal_to: 22.0
+    less_than_or_equal_to: 40.5
+  prematuridad:
+    dtype: object
+  peso_nacer:
+    dtype: int64
+    greater_than_or_equal_to: 690.0
+    less_than_or_equal_to: 4345.0
+  peso_bajo_nacer:
+    dtype: object
+  percentil_crecimiento_neonatal:
+    dtype: float64
+    greater_than_or_equal_to: 5.0
+    less_than_or_equal_to: 95.0
+  apgar_minuto_1:
+    dtype: int64
+    greater_than_or_equal_to: 1.0
+    less_than_or_equal_to: 9.0
+  apgar_minuto_5:
+    dtype: int64
+    greater_than_or_equal_to: 1.0
+    less_than_or_equal_to: 10.0
+  depresion_neonatal:
+    dtype: object
+  reanimacion_neonatal:
+    dtype: object
+  tipo_reanimacion_neonatal:
+    dtype: object
+  morbilidad_respiratoria_neonatal:
+    dtype: object
+  ventilacion_mecanica_neonatal:
+    dtype: object
+  hipoglucemia:
+    dtype: object
+  ingreso_ucin:
+    dtype: object
+  dias_estancia_ucin:
+    dtype: int64
+    greater_than_or_equal_to: 0.0
+    less_than_or_equal_to: 76.0
+  cardiopatia_congenita_neonatal:
+    dtype: object
+  tipo_cardiopatia_neonatal:
+    dtype: object
+  mortalidad_neonatal:
+    dtype: object
+index:
+- dtype: int64
+  greater_than_or_equal_to: 0.0
+  less_than_or_equal_to: 424.0
+coerce: true
+drop_invalid_rows: false
