@@ -8,9 +8,42 @@ from typing import Any
 import yaml
 
 from pandera_core.domain.contract import PanderaSchemaContract
+from pandera_core.domain.pandera_checks import CHECK_KEYS
 from pandera_core.ports.schema_repository import SchemaRepository
 
 _CHECKPOINT_SUFFIX = "-proc"
+
+# Raw pandas/numpy dtype spellings normalized to this app's preferred form
+# (the nullable pandas dtypes, capitalized; "str" over "string"). Pandera's
+# own `infer_schema` commonly writes the lowercase numpy spellings on the
+# left, which is why they used to leak into the dtype dropdown as redundant
+# extra options (see `dtype_choices_for` in `schema_editor.views.common`).
+_DTYPE_ALIASES: dict[str, str] = {
+    "int64": "Int64",
+    "int32": "Int32",
+    "float64": "Float64",
+    "float32": "Float32",
+    "string": "str",
+}
+
+# Column keys this app's domain model itself understands - anything else
+# sitting directly on a column is either a check (see `_unflatten_checks`)
+# or an untouched, opaque Pandera key this app preserves as-is.
+_COLUMN_RESERVED_KEYS: frozenset[str] = frozenset(
+    {
+        "title",
+        "description",
+        "dtype",
+        "nullable",
+        "checks",
+        "name",
+        "unique",
+        "coerce",
+        "required",
+        "regex",
+        "metadata",
+    }
+)
 
 
 def _validate_root(raw: Any) -> None:
@@ -26,6 +59,50 @@ def _validate_root(raw: Any) -> None:
         raise ValueError("El YAML debe contener la clave 'columns'")
     if not isinstance(raw["columns"], dict):
         raise ValueError("La clave 'columns' debe ser un dict")
+
+
+def _canonicalize_dtype(column: dict[str, Any]) -> None:
+    dtype = column.get("dtype")
+    if isinstance(dtype, str) and dtype in _DTYPE_ALIASES:
+        column["dtype"] = _DTYPE_ALIASES[dtype]
+
+
+def _unflatten_checks(column: dict[str, Any]) -> None:
+    """Move check-shaped sibling keys onto a `checks` mapping (in-place).
+
+    Depending on how a schema was produced, Pandera sometimes serializes a
+    column's checks as direct siblings of `dtype` (e.g. a bare
+    `greater_than_or_equal_to: 30000.0` key right on the column) instead of
+    nesting them under a `checks:` mapping. This app's domain model only ever
+    reads `checks`, so left alone, such checks would be silently invisible
+    and unmanageable in the UI. Only known `CHECK_KEYS` are moved - an
+    unrecognized extra column key is left untouched rather than guessed at.
+    """
+    flat_check_keys = [key for key in list(column) if key not in _COLUMN_RESERVED_KEYS and key in CHECK_KEYS]
+    if not flat_check_keys:
+        return
+    checks = column.get("checks")
+    if not isinstance(checks, dict):
+        checks = {}
+    for key in flat_check_keys:
+        checks.setdefault(key, column.pop(key))
+    column["checks"] = checks
+
+
+def _sanitize_schema(raw: dict[str, Any]) -> None:
+    """Normalize a freshly-parsed schema into this app's expected shape.
+
+    Runs once right after parsing, in-memory only - this never touches the
+    file on disk, only the working copy this app edits and later
+    checkpoints/saves. See `_canonicalize_dtype` and `_unflatten_checks`.
+    """
+    columns = raw.get("columns")
+    if not isinstance(columns, dict):
+        return
+    for column in columns.values():
+        if isinstance(column, dict):
+            _canonicalize_dtype(column)
+            _unflatten_checks(column)
 
 
 def compute_checkpoint_path(source_path: str | Path) -> Path:
@@ -63,6 +140,7 @@ class YamlSchemaRepository(SchemaRepository):
             raw: Any = yaml.safe_load(file)
 
         _validate_root(raw)
+        _sanitize_schema(raw)
 
         return PanderaSchemaContract(raw=raw, source_path=str(resolved_path))
 

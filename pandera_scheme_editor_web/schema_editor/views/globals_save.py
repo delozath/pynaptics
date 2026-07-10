@@ -53,6 +53,19 @@ def globals_edit_view(request: HttpRequest) -> HttpResponse:
     return render(request, "schema_editor/globals_edit.html", context)
 
 
+def _suggested_destination(true_original: Path) -> str:
+    """Suggest a sibling filename so the destination field is never blank.
+
+    A plain HTML page can't open the server's native "save as" file dialog -
+    the browser's own file pickers only ever address the *client* machine's
+    filesystem, not the server's, and using one here would bypass this
+    repository's overwrite-protection (which compares server-side paths).
+    Pre-filling a sensible default next to the original is the safe
+    equivalent: the user still types/edits a path, but rarely from scratch.
+    """
+    return str(true_original.with_name(f"{true_original.stem}_editado{true_original.suffix}"))
+
+
 @with_friendly_errors
 @require_http_methods(["GET", "POST"])
 def save_as_view(request: HttpRequest) -> HttpResponse:
@@ -78,7 +91,7 @@ def save_as_view(request: HttpRequest) -> HttpResponse:
                 messages.success(request, f"YAML guardado como: {destination}")
                 return redirect(own_url)
     else:
-        form = SaveAsForm()
+        form = SaveAsForm(initial={"destination_path": _suggested_destination(true_original)})
 
     context = base_editor_context(contract, src, selected_column=None)
     context.update({"form": form, "own_url": own_url, "protected_paths": protected_paths})
