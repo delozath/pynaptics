@@ -35,7 +35,7 @@ development; an earlier GTK desktop prototype is preserved separately.
 
 - Status: Usable | Active development
 
-### [Nomnema][./nomnema]
+### [Nomnema](./nomnema)
 
 Nomnema is an experimental desktop-assisted tool for organizing downloaded
 academic PDFs into a BibLaTeX-backed literature collection. It extracts a DOI,
