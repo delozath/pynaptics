@@ -25,7 +25,8 @@ structure that keeps the code understandable, testable, and reusable.
 
 ## Apps
 
-### [Dendrotype][dendrotype]
+### [Dendrotype](https://github.com/delozath/dendrotype)
+[dendrotype]
 
 Dendrotype is a local web editor for Pandera YAML schemas. It provides a visual
 interface for reviewing and editing inferred schemas, including column types,
@@ -35,7 +36,8 @@ development; an earlier GTK desktop prototype is preserved separately.
 
 - Status: Usable | Active development
 
-### [Nomnema](./nomnema)
+### [Nomnema](https://github.com/delozath/nomnema)
+[nomnema]: https://github.com/delozath/nomnema
 
 Nomnema is an experimental desktop-assisted tool for organizing downloaded
 academic PDFs into a BibLaTeX-backed literature collection. It extracts a DOI,
