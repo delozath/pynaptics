@@ -26,7 +26,7 @@ structure that keeps the code understandable, testable, and reusable.
 ## Apps
 
 ### [Dendrotype](https://github.com/delozath/dendrotype)
-[dendrotype]
+[dendrotype]: https://github.com/delozath/dendrotype
 
 Dendrotype is a local web editor for Pandera YAML schemas. It provides a visual
 interface for reviewing and editing inferred schemas, including column types,
